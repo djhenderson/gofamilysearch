@@ -9,7 +9,6 @@ import (
 	"io/ioutil"
 	"regexp"
 	"strings"
-	"log"
 )
 
 func (fs *FamilySearch) getUrl(key string, params map[string]string) (*url.URL, error) {
@@ -32,7 +31,6 @@ func (fs *FamilySearch) Get(u url.URL, params map[string]string, headers map[str
 	if err != nil {
 		return err
 	}
-	log.Println(string(body))
 	return xml.Unmarshal(body, target)
 }
 
