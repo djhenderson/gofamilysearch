@@ -14,24 +14,22 @@ Here's how you might use the SDK
       package main
       
       import (
-         "github.com/rootsdev/familysearch"
+         "github.com/rootsdev/gofamilysearch"
          "log"
+         "net/http"
       )
       
       func main() {
-         // the context can be shared among go-routines
-         ctx := familysearch.NewContext("your client id goes here", "sandbox")
+         // pass in client to allow running on appengine
+         client := &http.Client{};
+         env := gofamilysearch.NewEnvironment("your client id goes here", "sandbox", client)
+         c := gofamilysearch.NewContext(env, "access token for the requesting user goes here", client)
       
-         // the FamilySearch object is very lightweight
-         fs := &familysearch.FamilySearch {
-            Context: ctx,
-            AccessToken: "you must provide your own; the SDK doesn't currently have a way to generate one for you",
-         }
-      
-         user, err := fs.GetCurrentUser()
+         user, err := c.GetCurrentUser()
          if err != nil {
             log.Panic(err)
          }
       
          log.Printf("id=%s personId=%s treeUserId=%s\n", user.Id, user.PersonId, user.TreeUserId)
       }
+      
