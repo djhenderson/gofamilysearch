@@ -37,15 +37,15 @@ func TestGetCurrentUser(t *testing.T) {
 		TreeUserId : "PXRQ-FMXT",
 	}
 
-	client := &http.Client{}
-	env := &Environment{
-		clientId:    "clientId",
-		environment: "sandbox",
-		templates:   map[string]string{
-			"current-user" : fstesting.Server.URL + "/current-user",
+	c := &Client{
+		AccessToken: "accessToken",
+		HttpClient: &http.Client{},
+		Context: &Context{
+			templates:   map[string]string{
+				"current-user" : fstesting.Server.URL + "/current-user",
+			},
 		},
 	}
-	c := NewContext(env, "accessToken", client)
 	user, err := c.GetCurrentUser()
 	if err != nil {
 		t.Errorf("GetCurrentUser error %s", err.Error())

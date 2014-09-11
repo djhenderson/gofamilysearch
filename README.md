@@ -20,16 +20,20 @@ Here's how you might use the SDK
       )
       
       func main() {
-         // pass in client to allow running on appengine
-         client := &http.Client{};
-         env := gofamilysearch.NewEnvironment("your client id goes here", "sandbox", client)
-         c := gofamilysearch.NewContext(env, "access token for the requesting user goes here", client)
+          // Context can be shared among go-routines
+         ctx := &gofamilysearch.Context{
+            Environment: "sandbox",
+         }
+         // Client is specific to a user
+         c := &gofamilysearch.Client{
+            Context: ctx,
+            AccessToken: "access token for the requesting user goes here",
+            HttpClient: &http.Client{}, // pass in client to allow running on appengine
+         }
       
          user, err := c.GetCurrentUser()
          if err != nil {
             log.Panic(err)
          }
-      
          log.Printf("id=%s personId=%s treeUserId=%s\n", user.Id, user.PersonId, user.TreeUserId)
-      }
-      
+      }      

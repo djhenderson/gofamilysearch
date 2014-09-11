@@ -11,8 +11,12 @@ import (
 	"strings"
 )
 
-func (c *Context) getUrl(key string, params map[string]string) (*url.URL, error) {
-	segments := regexp.MustCompile("[{}]").Split(c.environment.getTemplate(key), -1)
+func (c *Client) getUrl(key string, params map[string]string) (*url.URL, error) {
+	template, err := c.Context.getTemplate(key, c.HttpClient)
+	if err != nil {
+		return nil, err
+	}
+	segments := regexp.MustCompile("[{}]").Split(template, -1)
 	for i, segment := range segments {
 		if i%2 == 1 {
 			segments[i] = params[segment]
@@ -24,7 +28,7 @@ func (c *Context) getUrl(key string, params map[string]string) (*url.URL, error)
 	return u, err
 }
 
-func (c *Context) Get(u url.URL, params map[string]string, headers map[string]string, target interface{}) error {
+func (c *Client) Get(u url.URL, params map[string]string, headers map[string]string, target interface{}) error {
 	helpers.AppendQueryParameters(&u, params)
 	body, err := c.http("GET", u,
 		helpers.Extend(map[string]string{"Accept": "application/x-fs-v1+xml"}, headers))
@@ -34,9 +38,9 @@ func (c *Context) Get(u url.URL, params map[string]string, headers map[string]st
 	return xml.Unmarshal(body, target)
 }
 
-func (c *Context) http(method string, u url.URL, headers map[string]string) ([]byte, error) {
-	if c.accessToken != "" {
-		headers = helpers.Extend(map[string]string{"Authorization": "Bearer " + c.accessToken}, headers)
+func (c *Client) http(method string, u url.URL, headers map[string]string) ([]byte, error) {
+	if c.AccessToken != "" {
+		headers = helpers.Extend(map[string]string{"Authorization": "Bearer " + c.AccessToken}, headers)
 	}
 	req, err := http.NewRequest(method, u.String(), nil)
 	if err != nil {
@@ -45,7 +49,7 @@ func (c *Context) http(method string, u url.URL, headers map[string]string) ([]b
 	for key, value := range headers {
 		req.Header.Set(key, value)
 	}
-	res, err := c.client.Do(req)
+	res, err := c.HttpClient.Do(req)
 	if err != nil {
 		return nil, err
 	}

@@ -30,8 +30,10 @@ func TestReadTemplates(t *testing.T) {
 		"child-relationships-template":    "https://sandbox.familysearch.org/platform/tree/persons/{pid}/child-relationships",
 	}
 	client := &http.Client{}
-	templates := readTemplates(fstesting.Server.URL, client)
-
+	templates, err := readTemplates(fstesting.Server.URL, client)
+	if err != nil {
+		t.Error(err)
+	}
 	if !reflect.DeepEqual(templates, want) {
 		t.Errorf("readTemplates returned %+v, want %+v", templates, want)
 	}

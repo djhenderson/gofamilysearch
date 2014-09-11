@@ -17,7 +17,7 @@ type User struct {
 	PreferredLanguage string `xml:"preferredLanguage"`
 }
 
-func (c *Context) GetCurrentUser() (*User, error) {
+func (c *Client) GetCurrentUser() (*User, error) {
 	u, err := c.getUrl("current-user", nil)
 	if err != nil {
 		return nil, err
