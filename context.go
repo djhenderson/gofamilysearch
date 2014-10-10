@@ -1,13 +1,14 @@
 package gofamilysearch
 
 import (
-	"encoding/xml"
+	"encoding/json"
 	"net/http"
 	"regexp"
 	"strings"
 	"sync"
 	"fmt"
 	"errors"
+	"io/ioutil"
 )
 
 // The Context can be shared among go-routines
@@ -41,23 +42,28 @@ func (c *Context) getTemplate(key string, client *http.Client) (string, error) {
 	return template, err
 }
 
-type atomFeed struct {
-	Link []atomLink `xml:"link"`
+type discoveryResponse struct {
+	Collections []*discoveryCollection `json:"collections"`
 }
-type atomLink struct {
-	Rel      string `xml:"rel,attr"`
-	Href     string `xml:"href,attr"`
-	Template string `xml:"template,attr"`
+type discoveryCollection struct {
+  ID string `json:"id"`
+  Links map[string]discoveryLink `json:"links"`
 }
+
+type discoveryLink struct {
+  Template *string `json:"template"`
+  Href *string `json:"href"`
+}
+
+var templateRegexp = regexp.MustCompile("{\\?[^}]*}")
 
 func readTemplates(host string, client *http.Client) (map[string]string, error) {
 	// read discovery url
-	// NOTE: this endpoint is being deprecated, but the new one is still listed as experimental
-	req, err := http.NewRequest("GET", host+"/.well-known/app-meta", nil)
+	req, err := http.NewRequest("GET", host+"/.well-known/collections/tree", nil)
 	if err != nil {
 		return nil, err
 	}
-	req.Header.Set("Accept", "application/atom+xml")
+	req.Header.Set("Accept", "application/x-fs-v1+json")
 	res, err := client.Do(req)
 	if err != nil {
 		return nil, err
@@ -66,23 +72,38 @@ func readTemplates(host string, client *http.Client) (map[string]string, error) 
 	if res.StatusCode != 200 {
 		return nil, fmt.Errorf("Discovery status code %d", res.StatusCode)
 	}
-	var discoveryResponse atomFeed
-	if err = xml.NewDecoder(res.Body).Decode(&discoveryResponse); err != nil {
+
+	body, err := ioutil.ReadAll(res.Body)
+	if err != nil {
+		return nil, err
+	}
+
+	response := &discoveryResponse{}
+	if err = json.Unmarshal(body, response); err != nil {
 		return nil, err
 	}
 
 	templates := make(map[string]string)
-	re := regexp.MustCompile("{\\?[^}]*}")
-	for _, link := range discoveryResponse.Link {
-		value := link.Href
-		if len(value) == 0 {
-			// we will add query parameters later
-			value = re.ReplaceAllString(link.Template, "")
+	fsftCollection := func([]*discoveryCollection) *discoveryCollection  {
+		for _, coll := range response.Collections {
+			if coll.ID == "FSFT" {
+				return coll
+			}
+		}
+		return nil
+	}(response.Collections)
+
+	for k, v := range fsftCollection.Links {
+		var value string
+		if v.Href != nil {
+			value = *v.Href
+		} else {
+			value = templateRegexp.ReplaceAllString(*v.Template, "")
 		}
 		if strings.Index(value, "/") == 0 {
 			value = host + value
 		}
-		templates[link.Rel] = value
+		templates[k] = value
 	}
 	return templates, nil
 }

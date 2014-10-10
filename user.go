@@ -1,20 +1,22 @@
 package gofamilysearch
 
+import "fmt"
+
 type userResponse struct {
-	User User `xml:"user"`
+	Users []*User `json:"users"`
 }
 
 type User struct {
-	Id                string `xml:"id,attr"`
-	PersonId          string `xml:"personId"`
-	TreeUserId        string `xml:"treeUserId"`
-	ContactName       string `xml:"contactName"`
-	DisplayName       string `xml:"displayName"`
-	GivenName         string `xml:"givenName"`
-	FamilyName        string `xml:"familyName"`
-	Gender            string `xml:"gender"`
-	Email             string `xml:"email"`
-	PreferredLanguage string `xml:"preferredLanguage"`
+	Id                string `json:"id"`
+	PersonId          string `json:"personId"`
+	TreeUserId        string `json:"treeUserId"`
+	ContactName       string `json:"contactName"`
+	DisplayName       string `json:"displayName"`
+	GivenName         string `json:"givenName"`
+	FamilyName        string `json:"familyName"`
+	Gender            string `json:"gender"`
+	Email             string `json:"email"`
+	PreferredLanguage string `json:"preferredLanguage"`
 }
 
 func (c *Client) GetCurrentUser() (*User, error) {
@@ -22,7 +24,13 @@ func (c *Client) GetCurrentUser() (*User, error) {
 	if err != nil {
 		return nil, err
 	}
-	userResponse := new(userResponse)
-	err = c.Get(*u, nil, nil, userResponse)
-	return &userResponse.User, err
+	userResponse := &userResponse{}
+	err = c.Get(u, nil, nil, userResponse)
+	if err != nil {
+		return nil, err
+	}
+	if len(userResponse.Users) != 1 {
+		return nil, fmt.Errorf("User not found in response")
+	}
+	return userResponse.Users[0], nil
 }

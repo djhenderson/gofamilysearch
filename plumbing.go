@@ -1,7 +1,7 @@
 package gofamilysearch
 
 import (
-	"encoding/xml"
+	"encoding/json"
 	"fmt"
 	"github.com/rootsdev/gofamilysearch/helpers"
 	"io/ioutil"
@@ -11,12 +11,14 @@ import (
 	"strings"
 )
 
+var urlTemplateRegexp = regexp.MustCompile("[{}]")
+
 func (c *Client) getUrl(key string, params map[string]string) (*url.URL, error) {
 	template, err := c.Context.getTemplate(key, c.HttpClient)
 	if err != nil {
 		return nil, err
 	}
-	segments := regexp.MustCompile("[{}]").Split(template, -1)
+	segments := urlTemplateRegexp.Split(template, -1)
 	for i, segment := range segments {
 		if i%2 == 1 {
 			segments[i] = params[segment]
@@ -28,17 +30,16 @@ func (c *Client) getUrl(key string, params map[string]string) (*url.URL, error) 
 	return u, err
 }
 
-func (c *Client) Get(u url.URL, params map[string]string, headers map[string]string, target interface{}) error {
-	helpers.AppendQueryParameters(&u, params)
-	body, err := c.http("GET", u,
-		helpers.Extend(map[string]string{"Accept": "application/x-fs-v1+xml"}, headers))
+func (c *Client) Get(u *url.URL, params map[string]string, headers map[string]string, target interface{}) error {
+	helpers.AppendQueryParameters(u, params)
+	body, err := c.http("GET", u, helpers.Extend(map[string]string{"Accept": "application/x-fs-v1+json"}, headers))
 	if err != nil {
 		return err
 	}
-	return xml.Unmarshal(body, target)
+	return json.Unmarshal(body, target)
 }
 
-func (c *Client) http(method string, u url.URL, headers map[string]string) ([]byte, error) {
+func (c *Client) http(method string, u *url.URL, headers map[string]string) ([]byte, error) {
 	if c.AccessToken != "" {
 		headers = helpers.Extend(map[string]string{"Authorization": "Bearer " + c.AccessToken}, headers)
 	}

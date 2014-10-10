@@ -12,15 +12,25 @@ func TestReadTemplates(t *testing.T) {
 	fstesting.Setup()
 	defer fstesting.Teardown()
 
-	fstesting.Mux.HandleFunc("/.well-known/app-meta", func(w http.ResponseWriter, r *http.Request) {
+	fstesting.Mux.HandleFunc("/.well-known/collections/tree", func(w http.ResponseWriter, r *http.Request) {
 		fstesting.TestMethod(t, r, "GET")
 		fmt.Fprintf(w, `
-<?xml version="1.0" ?>
-<atom:feed xmlns:atom="http://www.w3.org/2005/Atom" xmlns:fs="http://familysearch.org/v1/" xmlns:gx="http://gedcomx.org/v1/">
-  <atom:link rel="agent-template" template="https://sandbox.familysearch.org/platform/users/agents/{uid}{?access_token}" title="Agent" type="application/json,application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml,application/xml,text/html" accept="*/*" allow="GET"></atom:link>
-  <atom:link rel="child-and-parents-relationships" href="/platform/tree/child-and-parents-relationships"></atom:link>
-  <atom:link rel="child-relationships-template" template="https://sandbox.familysearch.org/platform/tree/persons/{pid}/child-relationships{?persons,access_token}" title="Relationships to Children" type="application/json,application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml,application/xml,text/html" accept="*/*" allow="GET"></atom:link>
-</atom:feed>
+{
+  "collections" : [ {
+    "id" : "FSFT",
+    "links" : {
+      "agent-template" : {
+        "template" : "https://sandbox.familysearch.org/platform/users/agents/{uid}{?access_token}"
+      },
+      "child-and-parents-relationships" : {
+        "href" : "/platform/tree/child-and-parents-relationships"
+      },
+      "child-relationships-template" : {
+        "template" : "https://sandbox.familysearch.org/platform/tree/persons/{pid}/child-relationships{?persons,access_token}"
+      }
+    }
+  } ]
+}
 		`)
 	})
 
