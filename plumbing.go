@@ -3,7 +3,6 @@ package gofamilysearch
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/rootsdev/gofamilysearch/helpers"
 	"io/ioutil"
 	"net/http"
 	"net/url"
@@ -11,10 +10,14 @@ import (
 	"strings"
 )
 
+var apiServer map[string]string = map[string]string{
+	"sandbox": "https://sandbox.familysearch.org",
+}
+
 var urlTemplateRegexp = regexp.MustCompile("[{}]")
 
-func (c *Client) getUrl(key string, params map[string]string) (*url.URL, error) {
-	template, err := c.Context.getTemplate(key, c.HttpClient)
+func (c *Client) GetUrl(key string, params map[string]string) (*url.URL, error) {
+	template, err := c.getTemplate(key)
 	if err != nil {
 		return nil, err
 	}
@@ -31,17 +34,17 @@ func (c *Client) getUrl(key string, params map[string]string) (*url.URL, error) 
 }
 
 func (c *Client) Get(u *url.URL, params map[string]string, headers map[string]string, target interface{}) error {
-	helpers.AppendQueryParameters(u, params)
-	body, err := c.http("GET", u, helpers.Extend(map[string]string{"Accept": "application/x-fs-v1+json"}, headers))
+	appendQueryParameters(u, params)
+	body, err := c.Http("GET", u, extend(map[string]string{"Accept": "application/x-fs-v1+json"}, headers))
 	if err != nil {
 		return err
 	}
 	return json.Unmarshal(body, target)
 }
 
-func (c *Client) http(method string, u *url.URL, headers map[string]string) ([]byte, error) {
+func (c *Client) Http(method string, u *url.URL, headers map[string]string) ([]byte, error) {
 	if c.AccessToken != "" {
-		headers = helpers.Extend(map[string]string{"Authorization": "Bearer " + c.AccessToken}, headers)
+		headers = extend(map[string]string{"Authorization": "Bearer " + c.AccessToken}, headers)
 	}
 	req, err := http.NewRequest(method, u.String(), nil)
 	if err != nil {
@@ -60,4 +63,80 @@ func (c *Client) http(method string, u *url.URL, headers map[string]string) ([]b
 	}
 	body, err := ioutil.ReadAll(res.Body)
 	return body, err
+}
+
+func (c *Client) getTemplate(key string) (string, error) {
+	var err error
+	if c.Context.templates == nil {
+		c.Context.once.Do(func() {
+			c.Context.templates, err = c.readDiscoveryResource(apiServer[c.Context.Environment])
+		})
+		if c.Context.templates == nil && err == nil {
+			err = fmt.Errorf("templates not read")
+		}
+		if err != nil {
+			return "", err
+		}
+	}
+	template, ok := c.Context.templates[key]
+	if !ok {
+		err = fmt.Errorf("key %s not found", key)
+	}
+	return template, err
+}
+
+type discoveryResponse struct {
+	Collections []*discoveryCollection `json:"collections"`
+}
+type discoveryCollection struct {
+	ID    string                   `json:"id"`
+	Links map[string]discoveryLink `json:"links"`
+}
+
+type discoveryLink struct {
+	Template *string `json:"template"`
+	Href     *string `json:"href"`
+}
+
+func (c *Client) readDiscoveryResource(host string) (map[string]string, error) {
+	// read discovery url
+	u, err := url.Parse(host+"/platform/collections/tree")
+	if err != nil {
+		return nil, err
+	}
+	response := &discoveryResponse{}
+	err = c.Get(u, nil, nil, response)
+	if err != nil {
+		return nil, err
+	}
+
+	return generateTemplates(host, response)
+}
+
+var templateRegexp = regexp.MustCompile("{\\?[^}]*}")
+
+func generateTemplates(host string, response *discoveryResponse) (map[string]string, error) {
+	templates := make(map[string]string)
+	fsftCollection := func([]*discoveryCollection) *discoveryCollection {
+		for _, coll := range response.Collections {
+			if coll.ID == "FSFT" {
+				return coll
+			}
+		}
+		return nil
+	}(response.Collections)
+
+	for k, v := range fsftCollection.Links {
+		var value string
+		if v.Href != nil {
+			value = *v.Href
+		} else {
+			value = templateRegexp.ReplaceAllString(*v.Template, "")
+		}
+		if strings.Index(value, "/") == 0 {
+			value = host + value
+		}
+		templates[k] = value
+	}
+	return templates, nil
 }

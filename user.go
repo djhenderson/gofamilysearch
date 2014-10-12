@@ -20,7 +20,7 @@ type User struct {
 }
 
 func (c *Client) GetCurrentUser() (*User, error) {
-	u, err := c.getUrl("current-user", nil)
+	u, err := c.GetUrl("current-user", nil)
 	if err != nil {
 		return nil, err
 	}
