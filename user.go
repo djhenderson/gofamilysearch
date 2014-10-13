@@ -6,10 +6,11 @@ type userResponse struct {
 	Users []*User `json:"users"`
 }
 
+// User contains information about a user (not to be confused with an Agent)
 type User struct {
-	Id                string `json:"id"`
-	PersonId          string `json:"personId"`
-	TreeUserId        string `json:"treeUserId"`
+	ID                string `json:"id"`
+	PersonID          string `json:"personId"`
+	TreeUserID        string `json:"treeUserId"`
 	ContactName       string `json:"contactName"`
 	DisplayName       string `json:"displayName"`
 	GivenName         string `json:"givenName"`
@@ -19,8 +20,9 @@ type User struct {
 	PreferredLanguage string `json:"preferredLanguage"`
 }
 
+// GetCurrentUser https://familysearch.org/developers/docs/api/users/Current_User_resource
 func (c *Client) GetCurrentUser() (*User, error) {
-	u, err := c.GetUrl("current-user", nil)
+	u, err := c.GetURL("current-user", nil)
 	if err != nil {
 		return nil, err
 	}
@@ -30,7 +32,7 @@ func (c *Client) GetCurrentUser() (*User, error) {
 		return nil, err
 	}
 	if len(userResponse.Users) != 1 {
-		return nil, fmt.Errorf("User not found in response")
+		return nil, fmt.Errorf("Invalid response")
 	}
 	return userResponse.Users[0], nil
 }

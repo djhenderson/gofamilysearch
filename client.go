@@ -7,5 +7,5 @@ import "net/http"
 type Client struct {
 	Context     *Context
 	AccessToken string
-	HttpClient  *http.Client
+	HTTPClient  *http.Client
 }

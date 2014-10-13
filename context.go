@@ -1,8 +1,6 @@
 package gofamilysearch
 
-import (
-	"sync"
-)
+import "sync"
 
 // The Context can be shared among go-routines
 type Context struct {
@@ -10,4 +8,3 @@ type Context struct {
 	once        sync.Once
 	templates   map[string]string
 }
-

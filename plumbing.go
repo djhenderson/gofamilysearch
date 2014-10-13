@@ -10,13 +10,14 @@ import (
 	"strings"
 )
 
-var apiServer map[string]string = map[string]string{
+var apiServer = map[string]string{
 	"sandbox": "https://sandbox.familysearch.org",
 }
 
 var urlTemplateRegexp = regexp.MustCompile("[{}]")
 
-func (c *Client) GetUrl(key string, params map[string]string) (*url.URL, error) {
+// GetURL constructs the url for the key and params from the discovery resource
+func (c *Client) GetURL(key string, params map[string]string) (*url.URL, error) {
 	template, err := c.getTemplate(key)
 	if err != nil {
 		return nil, err
@@ -33,16 +34,18 @@ func (c *Client) GetUrl(key string, params map[string]string) (*url.URL, error) 
 	return u, err
 }
 
+// Get fetches the contents of the URL into the target
 func (c *Client) Get(u *url.URL, params map[string]string, headers map[string]string, target interface{}) error {
 	appendQueryParameters(u, params)
-	body, err := c.Http("GET", u, extend(map[string]string{"Accept": "application/x-fs-v1+json"}, headers))
+	body, err := c.HTTP("GET", u, extend(map[string]string{"Accept": "application/x-fs-v1+json"}, headers))
 	if err != nil {
 		return err
 	}
 	return json.Unmarshal(body, target)
 }
 
-func (c *Client) Http(method string, u *url.URL, headers map[string]string) ([]byte, error) {
+// HTTP is the low-level call
+func (c *Client) HTTP(method string, u *url.URL, headers map[string]string) ([]byte, error) {
 	if c.AccessToken != "" {
 		headers = extend(map[string]string{"Authorization": "Bearer " + c.AccessToken}, headers)
 	}
@@ -53,7 +56,7 @@ func (c *Client) Http(method string, u *url.URL, headers map[string]string) ([]b
 	for key, value := range headers {
 		req.Header.Set(key, value)
 	}
-	res, err := c.HttpClient.Do(req)
+	res, err := c.HTTPClient.Do(req)
 	if err != nil {
 		return nil, err
 	}
@@ -89,18 +92,18 @@ type discoveryResponse struct {
 	Collections []*discoveryCollection `json:"collections"`
 }
 type discoveryCollection struct {
-	ID    string                   `json:"id"`
-	Links map[string]discoveryLink `json:"links"`
+	ID    string                    `json:"id"`
+	Links map[string]*discoveryLink `json:"links"`
 }
 
 type discoveryLink struct {
-	Template *string `json:"template"`
-	Href     *string `json:"href"`
+	Template string `json:"template"`
+	Href     string `json:"href"`
 }
 
 func (c *Client) readDiscoveryResource(host string) (map[string]string, error) {
 	// read discovery url
-	u, err := url.Parse(host+"/platform/collections/tree")
+	u, err := url.Parse(host + "/platform/collections/tree")
 	if err != nil {
 		return nil, err
 	}
@@ -128,10 +131,10 @@ func generateTemplates(host string, response *discoveryResponse) (map[string]str
 
 	for k, v := range fsftCollection.Links {
 		var value string
-		if v.Href != nil {
-			value = *v.Href
+		if v.Href != "" {
+			value = v.Href
 		} else {
-			value = templateRegexp.ReplaceAllString(*v.Template, "")
+			value = templateRegexp.ReplaceAllString(v.Template, "")
 		}
 		if strings.Index(value, "/") == 0 {
 			value = host + value

@@ -1,12 +1,12 @@
 package gofamilysearch
 
 import (
+	"encoding/json"
 	"fmt"
 	"net/http"
 	"net/http/httptest"
 	"strings"
 	"testing"
-	"encoding/json"
 )
 
 var (
@@ -99,7 +99,7 @@ func testClient() *Client {
 
 	return &Client{
 		AccessToken: "accessToken",
-		HttpClient:  &http.Client{},
+		HTTPClient:  &http.Client{},
 		Context: &Context{
 			templates: templates,
 		},
