@@ -28,12 +28,12 @@ Here's how you might use the SDK
          c := &gofamilysearch.Client{
             Context: ctx,
             AccessToken: "access token for the requesting user goes here",
-            HttpClient: &http.Client{}, // pass in client to allow running on appengine
+            HTTPClient: &http.Client{}, // pass in client to allow running normally or on appengine
          }
       
          user, err := c.GetCurrentUser()
          if err != nil {
             log.Panic(err)
          }
-         log.Printf("id=%s personId=%s treeUserId=%s\n", user.Id, user.PersonId, user.TreeUserId)
+         log.Printf("ID=%s personID=%s treeUserID=%s\n", user.ID, user.PersonID, user.TreeUserID)
       }      
