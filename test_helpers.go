@@ -76,7 +76,7 @@ func testRespond(t *testing.T, method string, url string, queryParams map[string
 }
 
 func testClient() *Client {
-	contents, err := readFile("test_responses/platform_collections_tree.json")
+	contents, err := readFile("test_responses/_well-known_app-meta.json")
 	if err != nil {
 		panic(err)
 	}

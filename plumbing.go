@@ -100,10 +100,6 @@ func (c *Client) getTemplate(key string) (string, error) {
 }
 
 type discoveryResponse struct {
-	Collections []*discoveryCollection `json:"collections"`
-}
-type discoveryCollection struct {
-	ID    string                    `json:"id"`
 	Links map[string]*discoveryLink `json:"links"`
 }
 
@@ -114,7 +110,7 @@ type discoveryLink struct {
 
 func (c *Client) readDiscoveryResource(host string) (map[string]string, error) {
 	// read discovery url
-	u, err := url.Parse(host + "/platform/collections/tree")
+	u, err := url.Parse(host + "/.well-known/app-meta")
 	if err != nil {
 		return nil, err
 	}
@@ -131,16 +127,7 @@ var templateRegexp = regexp.MustCompile("{\\?[^}]*}")
 
 func generateTemplates(host string, response *discoveryResponse) (map[string]string, error) {
 	templates := make(map[string]string)
-	fsftCollection := func([]*discoveryCollection) *discoveryCollection {
-		for _, coll := range response.Collections {
-			if coll.ID == "FSFT" {
-				return coll
-			}
-		}
-		return nil
-	}(response.Collections)
-
-	for k, v := range fsftCollection.Links {
+	for k, v := range response.Links {
 		var value string
 		if v.Href != "" {
 			value = v.Href

@@ -1,0 +1,570 @@
+{
+  "links" : {
+    "person-change-summary-template" : {
+      "template" : "https://sandbox.familysearch.org/platform/tree/persons/{pid}/change-summary{?access_token}",
+      "type" : "application/atom+xml,application/json,application/x-gedcomx-atom+json,application/xml,text/html",
+      "accept" : "*/*",
+      "allow" : "GET",
+      "title" : "Person Change Summary"
+    },
+    "memory-personas-template" : {
+      "template" : "https://sandbox.familysearch.org/platform/memories/memories/{mid}/personas{?access_token}",
+      "type" : "application/json,application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml,application/xml,text/html",
+      "accept" : "application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml",
+      "allow" : "GET,POST",
+      "title" : "Memory Personas"
+    },
+    "person-notes-template" : {
+      "template" : "https://sandbox.familysearch.org/platform/tree/persons/{pid}/notes{?access_token}",
+      "type" : "application/json,application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml,application/xml,text/html",
+      "accept" : "application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml",
+      "allow" : "GET,POST",
+      "title" : "Person Notes"
+    },
+    "couple-relationship-note-template" : {
+      "template" : "https://sandbox.familysearch.org/platform/tree/couple-relationships/{crid}/notes/{nid}{?access_token}",
+      "type" : "application/json,application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml,application/xml,text/html",
+      "accept" : "application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml",
+      "allow" : "GET,POST,DELETE",
+      "title" : "Couple Relationship Note"
+    },
+    "person-restore-template" : {
+      "template" : "https://sandbox.familysearch.org/platform/tree/persons/{pid}/restore{?access_token}",
+      "type" : "application/json,application/x-fs-v1+json,application/x-fs-v1+xml,application/xml,text/html",
+      "accept" : "application/x-fs-v1+json,application/x-fs-v1+xml",
+      "allow" : "POST",
+      "title" : "Person Restore"
+    },
+    "couple-relationship-source-reference-template" : {
+      "template" : "https://sandbox.familysearch.org/platform/tree/couple-relationships/{crid}/source-references/{srid}{?access_token}",
+      "type" : "application/json,application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml,application/xml,text/html",
+      "accept" : "application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml",
+      "allow" : "DELETE",
+      "title" : "Couple Relationship Source Reference"
+    },
+    "source-description-template" : {
+      "template" : "https://sandbox.familysearch.org/platform/sources/descriptions/{sdid}{?access_token}",
+      "type" : "application/json,application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml,application/xml,text/html",
+      "accept" : "application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml",
+      "allow" : "HEAD,GET,POST,DELETE",
+      "title" : "Source Description"
+    },
+    "child-and-parents-relationship-template" : {
+      "template" : "https://sandbox.familysearch.org/platform/tree/child-and-parents-relationships/{caprid}{?persons,access_token}",
+      "type" : "application/json,application/x-fs-v1+json,application/x-fs-v1+xml,application/xml,text/html",
+      "accept" : "application/x-fs-v1+json,application/x-fs-v1+xml",
+      "allow" : "HEAD,GET,POST,DELETE",
+      "title" : "Child-and-Parents Relationship"
+    },
+    "discussions" : {
+      "href" : "https://sandbox.familysearch.org/platform/discussions/discussions"
+    },
+    "child-and-parents-relationship-conclusion-template" : {
+      "template" : "https://sandbox.familysearch.org/platform/tree/child-and-parents-relationships/{caprid}/{role}/conclusions/{cid}{?access_token}",
+      "type" : "application/json,application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml,application/xml,text/html",
+      "accept" : "application/x-fs-v1+json,application/x-fs-v1+xml",
+      "allow" : "DELETE",
+      "title" : "Child-and-Parents Relationship Conclusion"
+    },
+    "couple-relationship-conclusion-template" : {
+      "template" : "https://sandbox.familysearch.org/platform/tree/couple-relationships/{crid}/conclusions/{cid}{?access_token}",
+      "type" : "application/json,application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml,application/xml,text/html",
+      "accept" : "application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml",
+      "allow" : "DELETE",
+      "title" : "Couple Relationship Conclusion"
+    },
+    "spouse-relationships-template" : {
+      "template" : "https://sandbox.familysearch.org/platform/tree/persons/{pid}/spouse-relationships{?persons,access_token}",
+      "type" : "application/json,application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml,application/xml,text/html",
+      "accept" : "application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml",
+      "allow" : "GET",
+      "title" : "Person Relationships to Spouses"
+    },
+    "person-discussion-references-template" : {
+      "template" : "https://sandbox.familysearch.org/platform/tree/persons/{pid}/discussion-references{?access_token}",
+      "type" : "application/json,application/x-fs-v1+json,application/x-fs-v1+xml,application/xml,text/html",
+      "accept" : "application/x-fs-v1+json,application/x-fs-v1+xml",
+      "allow" : "GET,POST",
+      "title" : "Person Discussion References"
+    },
+    "ancestry-query" : {
+      "template" : "https://sandbox.familysearch.org/platform/tree/ancestry{?spouse,personDetails,generations,descendants,marriageDetails,person,access_token}",
+      "type" : "application/json,application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml,application/xml,text/html",
+      "accept" : "*/*",
+      "allow" : "GET",
+      "title" : "Ancestry"
+    },
+    "memory-persona-template" : {
+      "template" : "https://sandbox.familysearch.org/platform/memories/memories/{mid}/personas/{pid}{?access_token}",
+      "type" : "application/json,application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml,application/xml,text/html",
+      "accept" : "application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml",
+      "allow" : "HEAD,GET,POST,DELETE",
+      "title" : "Memories Persona"
+    },
+    "user-collections" : {
+      "href" : "https://sandbox.familysearch.org/platform/sources/collections"
+    },
+    "current-user" : {
+      "href" : "https://sandbox.familysearch.org/platform/users/current"
+    },
+    "couple-relationship-sources-query-template" : {
+      "template" : "https://sandbox.familysearch.org/platform/tree/couple-relationships/{crid}/sources{?access_token}",
+      "type" : "application/json,application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml,application/xml,text/html",
+      "accept" : "application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml",
+      "allow" : "GET",
+      "title" : "Couple Relationship Sources Query"
+    },
+    "child-and-parents-relationship-sources-template" : {
+      "template" : "https://sandbox.familysearch.org/platform/tree/child-and-parents-relationships/{caprid}/sources{?access_token}",
+      "type" : "application/json,application/x-fs-v1+json,application/x-fs-v1+xml,application/xml,text/html",
+      "accept" : "application/x-fs-v1+json,application/x-fs-v1+xml",
+      "allow" : "GET",
+      "title" : "Child-and-Parents Relationship Sources Query"
+    },
+    "discussion-template" : {
+      "template" : "https://sandbox.familysearch.org/platform/discussions/discussions/{did}{?access_token}",
+      "type" : "application/json,application/x-fs-v1+json,application/x-fs-v1+xml,application/xml,text/html",
+      "accept" : "application/x-fs-v1+json,application/x-fs-v1+xml",
+      "allow" : "HEAD,GET,POST,DELETE",
+      "title" : "Discussion"
+    },
+    "memory-comments-template" : {
+      "template" : "https://sandbox.familysearch.org/platform/memories/memories/{mid}/comments{?access_token}",
+      "type" : "application/json,application/x-fs-v1+json,application/x-fs-v1+xml,application/xml,text/html",
+      "accept" : "application/x-fs-v1+json,application/x-fs-v1+xml",
+      "allow" : "GET,POST",
+      "title" : "Memory Comments"
+    },
+    "person-portrait-template" : {
+      "template" : "https://sandbox.familysearch.org/platform/tree/persons/{pid}/portrait{?default,access_token}",
+      "type" : "*/*",
+      "accept" : "*/*",
+      "allow" : "GET",
+      "title" : "Person Memories Portrait"
+    },
+    "memory-template" : {
+      "template" : "https://sandbox.familysearch.org/platform/memories/memories/{mid}{?access_token}",
+      "type" : "application/json,application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml,application/xml,text/html",
+      "accept" : "application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml",
+      "allow" : "HEAD,GET,POST,DELETE",
+      "title" : "Memory"
+    },
+    "discussion-comments-template" : {
+      "template" : "https://sandbox.familysearch.org/platform/discussions/discussions/{did}/comments{?access_token}",
+      "type" : "application/json,application/x-fs-v1+json,application/x-fs-v1+xml,application/xml,text/html",
+      "accept" : "application/x-fs-v1+json,application/x-fs-v1+xml",
+      "allow" : "GET,POST",
+      "title" : "Comments"
+    },
+    "person-source-reference-template" : {
+      "template" : "https://sandbox.familysearch.org/platform/tree/persons/{pid}/source-references/{srid}{?access_token}",
+      "type" : "application/json,application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml,application/xml,text/html",
+      "accept" : "application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml",
+      "allow" : "DELETE",
+      "title" : "Person Source Reference"
+    },
+    "couple-relationship-source-references-template" : {
+      "template" : "https://sandbox.familysearch.org/platform/tree/couple-relationships/{crid}/source-references{?access_token}",
+      "type" : "application/json,application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml,application/xml,text/html",
+      "accept" : "application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml",
+      "allow" : "GET,POST",
+      "title" : "Couple Relationship Source References"
+    },
+    "source-references-query" : {
+      "template" : "https://sandbox.familysearch.org/platform/tree/source-references{?source,access_token}",
+      "type" : "application/json,application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml,application/xml,text/html",
+      "accept" : "*/*",
+      "allow" : "GET",
+      "title" : "Source References Query"
+    },
+    "child-and-parents-relationship-source-references-template" : {
+      "template" : "https://sandbox.familysearch.org/platform/tree/child-and-parents-relationships/{caprid}/source-references{?access_token}",
+      "type" : "application/json,application/x-fs-v1+json,application/x-fs-v1+xml,application/xml,text/html",
+      "accept" : "application/x-fs-v1+json,application/x-fs-v1+xml",
+      "allow" : "GET,POST",
+      "title" : "Child-and-Parents Relationship Source References"
+    },
+    "person-matches-template" : {
+      "template" : "https://sandbox.familysearch.org/platform/tree/persons/{pid}/matches{?count,status,includeNotAMatchDeclarations,confidence,collection,access_token}",
+      "type" : "application/atom+xml,application/json,application/x-gedcomx-atom+json,application/xml,text/html",
+      "accept" : "application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml",
+      "allow" : "GET,POST",
+      "title" : "Person Matches"
+    },
+    "person-matches-query" : {
+      "template" : "https://sandbox.familysearch.org/platform/tree/matches{?count,q,candidateId,access_token}",
+      "type" : "application/atom+xml,application/json,application/x-gedcomx-atom+json,application/xml,text/html",
+      "accept" : "*/*",
+      "allow" : "GET",
+      "title" : "Person Matches Query"
+    },
+    "parent-relationships-template" : {
+      "template" : "https://sandbox.familysearch.org/platform/tree/persons/{pid}/parent-relationships{?persons,access_token}",
+      "type" : "application/json,application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml,application/xml,text/html",
+      "accept" : "*/*",
+      "allow" : "GET",
+      "title" : "Relationships to Parents"
+    },
+    "parents-template" : {
+      "template" : "https://sandbox.familysearch.org/platform/tree/persons/{pid}/parents{?access_token}",
+      "type" : "application/json,application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml,application/xml,text/html",
+      "accept" : "*/*",
+      "allow" : "GET",
+      "title" : "Parents of a Person"
+    },
+    "child-and-parents-relationships" : {
+      "href" : "https://sandbox.familysearch.org/platform/tree/child-and-parents-relationships"
+    },
+    "person-template" : {
+      "template" : "https://sandbox.familysearch.org/platform/tree/persons/{pid}{?access_token}",
+      "type" : "application/json,application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml,application/xml,text/html",
+      "accept" : "application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml",
+      "allow" : "HEAD,GET,POST,DELETE",
+      "title" : "Person"
+    },
+    "user-collections-source-descriptions-for-user-template" : {
+      "template" : "https://sandbox.familysearch.org/platform/sources/{uid}/collections/descriptions{?count,start,access_token}",
+      "type" : "application/json,application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml,application/xml,text/html",
+      "accept" : "application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml",
+      "allow" : "GET,DELETE",
+      "title" : "User-Defined Collections Source Descriptions for a User"
+    },
+    "user-memories-query" : {
+      "template" : "https://sandbox.familysearch.org/platform/memories/users/{cisUserId}/memories{?count,start,access_token}",
+      "type" : "application/json,application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml,application/xml,text/html",
+      "accept" : "application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml",
+      "allow" : "GET,POST",
+      "title" : "User Memories Query"
+    },
+    "authorities" : {
+      "href" : "https://integration.familysearch.org/authorities",
+      "title" : "Authorities Endpoint"
+    },
+    "reservation" : {
+      "href" : "https://integration.familysearch.org/reservation",
+      "title" : "Reservation Endpoint"
+    },
+    "person-changes-template" : {
+      "template" : "https://sandbox.familysearch.org/platform/tree/persons/{pid}/changes{?count,from,access_token}",
+      "type" : "application/atom+xml,application/json,application/x-gedcomx-atom+json,application/xml,text/html",
+      "accept" : "*/*",
+      "allow" : "HEAD,GET",
+      "title" : "Person Change History"
+    },
+    "memories" : {
+      "href" : "https://sandbox.familysearch.org/platform/memories/memories"
+    },
+    "user-collection-template" : {
+      "template" : "https://sandbox.familysearch.org/platform/sources/collections/{udcid}{?access_token}",
+      "type" : "application/json,application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml,application/xml,text/html",
+      "accept" : "application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml",
+      "allow" : "GET,POST,DELETE",
+      "title" : "User-Defined Collection"
+    },
+    "children-template" : {
+      "template" : "https://sandbox.familysearch.org/platform/tree/persons/{pid}/children{?access_token}",
+      "type" : "application/json,application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml,application/xml,text/html",
+      "accept" : "*/*",
+      "allow" : "GET",
+      "title" : "Children of a Person"
+    },
+    "fs-identity-v2-login" : {
+      "href" : "https://integration.familysearch.org/identity/v2/login",
+      "title" : "FamilySearch Identity V2 Login"
+    },
+    "preferred-spouse-relationship-template" : {
+      "template" : "https://sandbox.familysearch.org/platform/tree/users/{uid}/preferred-spouse-relationships/{pid}{?access_token}",
+      "type" : "application/json,application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml,application/xml,text/html",
+      "accept" : "application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml",
+      "allow" : "HEAD,GET,PUT,DELETE",
+      "title" : "Preferred Spouse Relationship"
+    },
+    "descendancy-query" : {
+      "template" : "https://sandbox.familysearch.org/platform/tree/descendancy{?spouse,personDetails,generations,marriageDetails,person,access_token}",
+      "type" : "application/json,application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml,application/xml,text/html",
+      "accept" : "*/*",
+      "allow" : "GET",
+      "title" : "Descendancy"
+    },
+    "couple-relationship-notes-template" : {
+      "template" : "https://sandbox.familysearch.org/platform/tree/couple-relationships/{crid}/notes{?access_token}",
+      "type" : "application/json,application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml,application/xml,text/html",
+      "accept" : "application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml",
+      "allow" : "GET,POST",
+      "title" : "Couple Relationship Notes"
+    },
+    "memory-comment-template" : {
+      "template" : "https://sandbox.familysearch.org/platform/memories/memories/{mid}/comments/{cmid}{?access_token}",
+      "type" : "*/*",
+      "accept" : "*/*",
+      "allow" : "DELETE",
+      "title" : "Memories Comment"
+    },
+    "child-and-parents-relationship-restore-template" : {
+      "template" : "https://sandbox.familysearch.org/platform/tree/child-and-parents-relationships/{caprid}/restore{?access_token}",
+      "type" : "application/json,application/x-fs-v1+json,application/x-fs-v1+xml,application/xml,text/html",
+      "accept" : "application/x-fs-v1+json,application/x-fs-v1+xml",
+      "allow" : "POST",
+      "title" : "Child-and-Parents Relationship Restore"
+    },
+    "fs-parent-relationships-template" : {
+      "template" : "https://sandbox.familysearch.org/platform/tree/persons/{pid}/parent-relationships{?persons,access_token}",
+      "type" : "application/json,application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml,application/xml,text/html",
+      "accept" : "*/*",
+      "allow" : "GET",
+      "title" : "Relationships to Parents"
+    },
+    "http://oauth.net/core/2.0/endpoint/token" : {
+      "href" : "https://integration.familysearch.org/cis-web/oauth2/v3/token"
+    },
+    "http://oauth.net/core/2.0/endpoint/authorize" : {
+      "href" : "https://integration.familysearch.org/cis-web/oauth2/v3/authorization"
+    },
+    "person-merge-template" : {
+      "template" : "https://sandbox.familysearch.org/platform/tree/persons/{pid}/merges/{dpid}{?filter,access_token}",
+      "type" : "application/json,application/x-fs-v1+json,application/x-fs-v1+xml,application/xml,text/html",
+      "accept" : "application/x-fs-v1+json,application/x-fs-v1+xml",
+      "allow" : "OPTIONS,GET,POST",
+      "title" : "Person Merge"
+    },
+    "person-source-references-template" : {
+      "template" : "https://sandbox.familysearch.org/platform/tree/persons/{pid}/source-references{?access_token}",
+      "type" : "application/json,application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml,application/xml,text/html",
+      "accept" : "application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml",
+      "allow" : "GET,POST",
+      "title" : "Person Source References"
+    },
+    "redirect" : {
+      "href" : "https://sandbox.familysearch.org/platform/redirect"
+    },
+    "discussion-comment-template" : {
+      "template" : "https://sandbox.familysearch.org/platform/discussions/discussions/{did}/comments/{cmid}{?access_token}",
+      "type" : "application/json,application/x-fs-v1+json,application/x-fs-v1+xml,application/xml,text/html",
+      "accept" : "application/x-fs-v1+json,application/x-fs-v1+xml",
+      "allow" : "DELETE",
+      "title" : "Comment"
+    },
+    "relationships" : {
+      "href" : "https://sandbox.familysearch.org/platform/tree/relationships"
+    },
+    "preferred-portrait-template" : {
+      "template" : "https://sandbox.familysearch.org/platform/tree/users/{uid}/preferred-portraits/{pid}"
+    },
+    "person-with-relationships-query" : {
+      "template" : "https://sandbox.familysearch.org/platform/tree/persons-with-relationships{?persons,person,access_token}",
+      "type" : "application/json,application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml,application/xml,text/html",
+      "accept" : "*/*",
+      "allow" : "GET,POST,DELETE",
+      "title" : "Person With Relationships"
+    },
+    "person-memories-query" : {
+      "template" : "https://sandbox.familysearch.org/platform/tree/persons/{pid}/memories{?title,type,count,start,description,filename,type,access_token}",
+      "type" : "application/json,application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml,application/xml,text/html",
+      "accept" : "*/*",
+      "allow" : "GET,POST",
+      "title" : "Person Memories Query"
+    },
+    "child-and-parents-relationship-note-template" : {
+      "template" : "https://sandbox.familysearch.org/platform/tree/child-and-parents-relationships/{caprid}/notes/{nid}{?access_token}",
+      "type" : "application/json,application/x-fs-v1+json,application/x-fs-v1+xml,application/xml,text/html",
+      "accept" : "application/x-fs-v1+json,application/x-fs-v1+xml",
+      "allow" : "GET,POST,DELETE",
+      "title" : "Child-and-Parents Relationship Note"
+    },
+    "change-restore-template" : {
+      "template" : "https://sandbox.familysearch.org/platform/tree/changes/{chid}/restore{?access_token}",
+      "type" : "application/json,application/x-fs-v1+json,application/x-fs-v1+xml,application/xml,text/html",
+      "accept" : "application/x-fs-v1+json,application/x-fs-v1+xml",
+      "allow" : "POST",
+      "title" : "Restore Change"
+    },
+    "preferred-parent-relationship-template" : {
+      "template" : "https://sandbox.familysearch.org/platform/tree/users/{uid}/preferred-parent-relationships/{pid}{?access_token}",
+      "type" : "application/json,application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml,application/xml,text/html",
+      "accept" : "application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml",
+      "allow" : "HEAD,GET,PUT,DELETE",
+      "title" : "Preferred Parent Relationship"
+    },
+    "spouses-template" : {
+      "template" : "https://sandbox.familysearch.org/platform/tree/persons/{pid}/spouses{?access_token}",
+      "type" : "application/json,application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml,application/xml,text/html",
+      "accept" : "application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml",
+      "allow" : "GET",
+      "title" : "Spouses of a Person"
+    },
+    "person-note-template" : {
+      "template" : "https://sandbox.familysearch.org/platform/tree/persons/{pid}/notes/{nid}{?access_token}",
+      "type" : "application/json,application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml,application/xml,text/html",
+      "accept" : "application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml",
+      "allow" : "GET,POST,DELETE",
+      "title" : "Person Note"
+    },
+    "child-and-parents-relationship-changes-template" : {
+      "template" : "https://sandbox.familysearch.org/platform/tree/child-and-parents-relationships/{caprid}/changes{?count,from,access_token}",
+      "type" : "application/atom+xml,application/json,application/x-gedcomx-atom+json,application/xml,text/html",
+      "accept" : "*/*",
+      "allow" : "HEAD,GET",
+      "title" : "Child-and-Parents Relationship Change History"
+    },
+    "child-and-parents-relationship-notes-template" : {
+      "template" : "https://sandbox.familysearch.org/platform/tree/child-and-parents-relationships/{caprid}/notes{?access_token}",
+      "type" : "application/json,application/x-fs-v1+json,application/x-fs-v1+xml,application/xml,text/html",
+      "accept" : "application/x-fs-v1+json,application/x-fs-v1+xml",
+      "allow" : "GET,POST",
+      "title" : "Child-and-Parents Relationship Notes"
+    },
+    "registration" : {
+      "href" : "https://integration.familysearch.org/cis-web/pages/registration/registration.html",
+      "title" : "User Registration"
+    },
+    "pending-modifications" : {
+      "href" : "https://sandbox.familysearch.org/platform/pending-modifications"
+    },
+    "persons" : {
+      "href" : "https://sandbox.familysearch.org/platform/tree/persons"
+    },
+    "person-search" : {
+      "template" : "https://sandbox.familysearch.org/platform/tree/search{?count,start,q,context,access_token}",
+      "type" : "application/atom+xml,application/json,application/x-gedcomx-atom+json,application/xml,text/html",
+      "accept" : "*/*",
+      "allow" : "GET",
+      "title" : "Person Search"
+    },
+    "fs-identity-v2-permission" : {
+      "href" : "https://integration.familysearch.org/identity/v2/permission",
+      "title" : "FamilySearch Identity V2 Permission"
+    },
+    "couple-relationship-restore-template" : {
+      "template" : "https://sandbox.familysearch.org/platform/tree/couple-relationships/{crid}/restore{?access_token}",
+      "type" : "application/json,application/x-fs-v1+json,application/x-fs-v1+xml,application/xml,text/html",
+      "accept" : "application/x-fs-v1+json,application/x-fs-v1+xml",
+      "allow" : "POST",
+      "title" : "Couple Relationship Restore"
+    },
+    "memory-artifact-reference-template" : {
+      "template" : "https://sandbox.familysearch.org/platform/memories/memories/{mid}/personas/{pid}/artifact-references/{arid}"
+    },
+    "child-relationships-template" : {
+      "template" : "https://sandbox.familysearch.org/platform/tree/persons/{pid}/child-relationships{?persons,access_token}",
+      "type" : "application/json,application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml,application/xml,text/html",
+      "accept" : "*/*",
+      "allow" : "GET",
+      "title" : "Relationships to Children"
+    },
+    "couple-relationship-changes-template" : {
+      "template" : "https://sandbox.familysearch.org/platform/tree/couple-relationships/{crid}/changes{?count,from,access_token}",
+      "type" : "application/atom+xml,application/json,application/x-gedcomx-atom+json,application/xml,text/html",
+      "accept" : "*/*",
+      "allow" : "HEAD,GET",
+      "title" : "Couple Relationship Change History"
+    },
+    "agent-template" : {
+      "template" : "https://sandbox.familysearch.org/platform/users/agents/{uid}{?access_token}",
+      "type" : "application/json,application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml,application/xml,text/html",
+      "accept" : "*/*",
+      "allow" : "GET",
+      "title" : "Agent"
+    },
+    "child-and-parents-relationship-parent-template" : {
+      "template" : "https://sandbox.familysearch.org/platform/tree/child-and-parents-relationships/{caprid}/{role}{?access_token}",
+      "type" : "application/json,application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml,application/xml,text/html",
+      "accept" : "application/x-fs-v1+json,application/x-fs-v1+xml",
+      "allow" : "DELETE",
+      "title" : "Child-and-Parents Relationship Parent"
+    },
+    "fs-identity-v2-logout" : {
+      "href" : "https://integration.familysearch.org/identity/v2/logout",
+      "title" : "FamilySearch Identity V2 Logout"
+    },
+    "person-sources-query-template" : {
+      "template" : "https://sandbox.familysearch.org/platform/tree/persons/{pid}/sources{?access_token}",
+      "type" : "application/json,application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml,application/xml,text/html",
+      "accept" : "application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml",
+      "allow" : "GET",
+      "title" : "Person Sources Query"
+    },
+    "fs-child-relationships-template" : {
+      "template" : "https://sandbox.familysearch.org/platform/tree/persons/{pid}/child-relationships{?persons,access_token}",
+      "type" : "application/json,application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml,application/xml,text/html",
+      "accept" : "*/*",
+      "allow" : "GET",
+      "title" : "Relationships to Children"
+    },
+    "parent-child-relationship-template" : {
+      "template" : "https://sandbox.familysearch.org/platform/tree/child-and-parents-relationships/{caprid}{?persons,access_token}",
+      "type" : "application/json,application/x-fs-v1+json,application/x-fs-v1+xml,application/xml,text/html",
+      "accept" : "application/x-fs-v1+json,application/x-fs-v1+xml",
+      "allow" : "HEAD,GET,POST,DELETE",
+      "title" : "Child-and-Parents Relationship"
+    },
+    "person-discussion-reference-template" : {
+      "template" : "https://sandbox.familysearch.org/platform/tree/persons/{pid}/discussion-references/{drid}{?access_token}",
+      "type" : "application/json,application/x-fs-v1+json,application/x-fs-v1+xml,application/xml,text/html",
+      "accept" : "application/x-fs-v1+json,application/x-fs-v1+xml",
+      "allow" : "DELETE",
+      "title" : "Person Discussion Reference"
+    },
+    "person-memory-persona-references-template" : {
+      "template" : "https://sandbox.familysearch.org/platform/tree/persons/{pid}/memory-references{?access_token}",
+      "type" : "application/json,application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml,application/xml,text/html",
+      "accept" : "application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml",
+      "allow" : "GET,POST",
+      "title" : "Person Memory References"
+    },
+    "person-conclusion-template" : {
+      "template" : "https://sandbox.familysearch.org/platform/tree/persons/{pid}/conclusions/{cid}{?access_token}",
+      "type" : "application/json,application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml,application/xml,text/html",
+      "accept" : "application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml",
+      "allow" : "DELETE",
+      "title" : "Person Conclusion"
+    },
+    "child-and-parents-relationship-source-reference-template" : {
+      "template" : "https://sandbox.familysearch.org/platform/tree/child-and-parents-relationships/{caprid}/source-references/{srid}{?access_token}",
+      "type" : "application/json,application/x-fs-v1+json,application/x-fs-v1+xml,application/xml,text/html",
+      "accept" : "application/x-fs-v1+json,application/x-fs-v1+xml",
+      "allow" : "DELETE",
+      "title" : "Child-and-Parents Relationship Source Reference"
+    },
+    "person-memory-persona-reference-template" : {
+      "template" : "https://sandbox.familysearch.org/platform/tree/persons/{pid}/memory-references/{erid}{?access_token}",
+      "type" : "application/json,application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml,application/xml,text/html",
+      "accept" : "application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml",
+      "allow" : "DELETE",
+      "title" : "Person Memory Reference"
+    },
+    "couple-relationships" : {
+      "href" : "https://sandbox.familysearch.org/platform/tree/couple-relationships"
+    },
+    "user-collections-for-user-template" : {
+      "template" : "https://sandbox.familysearch.org/platform/sources/{uid}/collections{?access_token}",
+      "type" : "application/json,application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml,application/xml,text/html",
+      "accept" : "application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml",
+      "allow" : "GET",
+      "title" : "User-Defined Collections for a User"
+    },
+    "source-descriptions" : {
+      "href" : "https://sandbox.familysearch.org/platform/sources/descriptions"
+    },
+    "user-collection-source-descriptions-template" : {
+      "template" : "https://sandbox.familysearch.org/platform/sources/collections/{udcid}/descriptions{?count,start,access_token}",
+      "type" : "application/json,application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml,application/xml,text/html",
+      "accept" : "application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml",
+      "allow" : "GET,POST",
+      "title" : "User-Defined Collection Source Descriptions"
+    },
+    "current-user-person" : {
+      "href" : "https://sandbox.familysearch.org/platform/tree/current-person"
+    },
+    "fs-identity-v2-session" : {
+      "href" : "https://integration.familysearch.org/identity/v2/session",
+      "title" : "FamilySearch Identity V2 Session"
+    },
+    "couple-relationship-template" : {
+      "template" : "https://sandbox.familysearch.org/platform/tree/couple-relationships/{crid}{?persons,access_token}",
+      "type" : "application/json,application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml,application/xml,text/html",
+      "accept" : "application/x-fs-v1+json,application/x-fs-v1+xml,application/x-gedcomx-v1+json,application/x-gedcomx-v1+xml",
+      "allow" : "HEAD,GET,POST,DELETE",
+      "title" : "Couple Relationship"
+    }
+  }
+}

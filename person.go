@@ -136,7 +136,7 @@ type Place struct {
 
 // GetPersonWithRelationships https://familysearch.org/developers/docs/api/tree/Person_With_Relationships_resource
 func (c *Client) GetPersonWithRelationships(pid string) (*PersonWithRelationships, error) {
-	u, err := c.GetURL("person-with-relationships", nil)
+	u, err := c.GetURL("person-with-relationships-query", nil)
 	if err != nil {
 		return nil, err
 	}
