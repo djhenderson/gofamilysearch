@@ -8,6 +8,7 @@ import (
 	"net/url"
 	"regexp"
 	"strings"
+	"time"
 )
 
 var apiServer = map[string]string{
@@ -56,16 +57,26 @@ func (c *Client) HTTP(method string, u *url.URL, headers map[string]string) ([]b
 	for key, value := range headers {
 		req.Header.Set(key, value)
 	}
-	res, err := c.HTTPClient.Do(req)
-	if err != nil {
-		return nil, err
+	retries := 3
+	for {
+		res, err := c.HTTPClient.Do(req)
+		if err != nil {
+			return nil, err
+		}
+		defer res.Body.Close()
+
+		if res.StatusCode >= 200 && res.StatusCode <= 299 {
+			return ioutil.ReadAll(res.Body)
+		} else if res.StatusCode >= 300 && res.StatusCode <= 399 {
+			return []byte(res.Header.Get("Location")), nil
+		} else if res.StatusCode == 429 { // throttling response
+			time.Sleep(500)
+		} else if res.StatusCode >= 500 && method == "GET" && retries > 0 { // possibly-transient error
+			retries--
+		} else { // error
+			return nil, fmt.Errorf("Status code %d", res.StatusCode)
+		}
 	}
-	defer res.Body.Close()
-	if res.StatusCode != 200 {
-		return nil, fmt.Errorf("Status code %d", res.StatusCode)
-	}
-	body, err := ioutil.ReadAll(res.Body)
-	return body, err
 }
 
 func (c *Client) getTemplate(key string) (string, error) {

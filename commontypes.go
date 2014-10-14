@@ -3,7 +3,7 @@ package gofamilysearch
 // Attribution contains information about a modification
 type Attribution struct {
 	Modified      int         `json:"modified"`
-	ChangeMessage string      `json:"changeMessage`
+	ChangeMessage string      `json:"changeMessage"`
 	Contributor   ResourceRef `json:"contributor"`
 }
 
