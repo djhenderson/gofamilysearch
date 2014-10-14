@@ -27,8 +27,7 @@ func (c *Client) GetCurrentUser() (*User, error) {
 		return nil, err
 	}
 	userResponse := &userResponse{}
-	err = c.Get(u, nil, nil, userResponse)
-	if err != nil {
+	if err = c.Get(u, nil, nil, userResponse); err != nil {
 		return nil, err
 	}
 	if len(userResponse.Users) != 1 {

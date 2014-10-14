@@ -10,7 +10,7 @@ func TestReadDiscoveryResource(t *testing.T) {
 	defer testTeardown()
 
 	Convey("ReadDiscoveryResource", t, func() {
-		testRespond(t, "GET", "/.well-known/app-meta", nil, "_well-known_app-meta.json")
+		testRespond(t, "GET", "/.well-known/app-meta", nil, "")
 		templates, err := testClient().readDiscoveryResource(testServer.URL)
 		So(err, ShouldBeNil)
 		want := map[string]string{

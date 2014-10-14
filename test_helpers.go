@@ -7,6 +7,7 @@ import (
 	"net/http/httptest"
 	"strings"
 	"testing"
+	"regexp"
 )
 
 var (
@@ -63,7 +64,12 @@ func testHeader(t *testing.T, r *http.Request, header string, want string) {
 	}
 }
 
+var charsToTranslate = regexp.MustCompile("[./]")
+
 func testRespond(t *testing.T, method string, url string, queryParams map[string]string, filename string) {
+	if filename == "" {
+		filename = charsToTranslate.ReplaceAllString(url[1:], "_")+".json"
+	}
 	testMux.HandleFunc(url, func(w http.ResponseWriter, r *http.Request) {
 		testMethod(t, r, method)
 		testQueryParameters(t, r, queryParams)

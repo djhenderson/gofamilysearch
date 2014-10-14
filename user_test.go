@@ -10,7 +10,7 @@ func TestGetCurrentUser(t *testing.T) {
 	defer testTeardown()
 
 	Convey("GetCurrentUser", t, func() {
-		testRespond(t, "GET", "/platform/users/current", nil, "platform_users_current.json")
+		testRespond(t, "GET", "/platform/users/current", nil, "")
 		user, err := testClient().GetCurrentUser()
 		So(err, ShouldBeNil)
 		want := &User{
