@@ -20,10 +20,10 @@ type noteContainer struct {
 
 // Note contains information about a note
 type Note struct {
-	ID                string `json:"id"`
-	Subject           string `json:"subject"`
-	Text              string `json:"text"`
-	Attribution       Attribution `json:"attribution"`
+	ID          string      `json:"id"`
+	Subject     string      `json:"subject"`
+	Text        string      `json:"text"`
+	Attribution Attribution `json:"attribution"`
 }
 
 // GetPersonNotes https://familysearch.org/developers/docs/api/tree/Person_Notes_resource

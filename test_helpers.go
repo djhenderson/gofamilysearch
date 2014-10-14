@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"net/http"
 	"net/http/httptest"
+	"regexp"
 	"strings"
 	"testing"
-	"regexp"
 )
 
 var (
@@ -68,7 +68,7 @@ var charsToTranslate = regexp.MustCompile("[./]")
 
 func testRespond(t *testing.T, method string, url string, queryParams map[string]string, filename string) {
 	if filename == "" {
-		filename = charsToTranslate.ReplaceAllString(url[1:], "_")+".json"
+		filename = charsToTranslate.ReplaceAllString(url[1:], "_") + ".json"
 	}
 	testMux.HandleFunc(url, func(w http.ResponseWriter, r *http.Request) {
 		testMethod(t, r, method)

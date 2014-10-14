@@ -16,18 +16,18 @@ func TestGetPersonNotes(t *testing.T) {
 		want := []*Note{
 			&Note{ID: "1804317705",
 				Subject: "note 0",
-				Text: "Sample note text",
+				Text:    "Sample note text",
 				Attribution: Attribution{
 					Contributor: ResourceRef{
-						Resource: "https://sandbox.familysearch.org/platform/users/agents/MMD8-3NT",
+						Resource:   "https://sandbox.familysearch.org/platform/users/agents/MMD8-3NT",
 						ResourceID: "MMD8-3NT"},
 					Modified: 1403312322000}},
 			&Note{ID: "1805241226",
 				Subject: "note 1",
-				Text: "text",
+				Text:    "text",
 				Attribution: Attribution{
 					Contributor: ResourceRef{
-						Resource: "https://sandbox.familysearch.org/platform/users/agents/MMD8-3NT",
+						Resource:   "https://sandbox.familysearch.org/platform/users/agents/MMD8-3NT",
 						ResourceID: "MMD8-3NT"},
 					Modified: 1403312322000}},
 		}
@@ -46,18 +46,18 @@ func TestGetCoupleNotes(t *testing.T) {
 		want := []*Note{
 			&Note{ID: "1804317705",
 				Subject: "note 0",
-				Text: "text",
+				Text:    "text",
 				Attribution: Attribution{
 					Contributor: ResourceRef{
-						Resource: "https://sandbox.familysearch.org/platform/users/agents/MMD8-3NT",
+						Resource:   "https://sandbox.familysearch.org/platform/users/agents/MMD8-3NT",
 						ResourceID: "MMD8-3NT"},
 					Modified: 1403312322000}},
 			&Note{ID: "1805241226",
 				Subject: "note 1",
-				Text: "text",
+				Text:    "text",
 				Attribution: Attribution{
 					Contributor: ResourceRef{
-						Resource: "https://sandbox.familysearch.org/platform/users/agents/MMD8-3NT",
+						Resource:   "https://sandbox.familysearch.org/platform/users/agents/MMD8-3NT",
 						ResourceID: "MMD8-3NT"},
 					Modified: 1403312322000}},
 		}
@@ -76,22 +76,21 @@ func TestGetChildAndParentsNotes(t *testing.T) {
 		want := []*Note{
 			&Note{ID: "1804317705",
 				Subject: "note 0",
-				Text: "text",
+				Text:    "text",
 				Attribution: Attribution{
 					Contributor: ResourceRef{
-						Resource: "https://sandbox.familysearch.org/platform/users/agents/MMD8-3NT",
+						Resource:   "https://sandbox.familysearch.org/platform/users/agents/MMD8-3NT",
 						ResourceID: "MMD8-3NT"},
 					Modified: 1403312322000}},
 			&Note{ID: "1805241226",
 				Subject: "note 1",
-				Text: "text",
+				Text:    "text",
 				Attribution: Attribution{
 					Contributor: ResourceRef{
-						Resource: "https://sandbox.familysearch.org/platform/users/agents/MMD8-3NT",
+						Resource:   "https://sandbox.familysearch.org/platform/users/agents/MMD8-3NT",
 						ResourceID: "MMD8-3NT"},
 					Modified: 1403312322000}},
 		}
 		So(notes, ShouldResemble, want)
 	})
 }
-
