@@ -1,0 +1,49 @@
+{
+  "results" : 1,
+  "links" : {
+    "person" : {
+      "href" : "https://beta.familysearch.org/platform/tree/persons/KF5C-9TX/matches?count=100&confidence=2&collection=https://familysearch.org/platform/collections/records"
+    },
+    "self" : {
+      "href" : "https://beta.familysearch.org/platform/tree/persons/KF5C-9TX/matches?count=100&confidence=2&collection=https://familysearch.org/platform/collections/records"
+    },
+    "collection" : {
+      "href" : "https://beta.familysearch.org/platform/collections/tree"
+    }
+  },
+  "entries" : [ {
+    "content" : {
+      "gedcomx" : {
+        "sourceDescriptions" : [ {
+          "titles" : [ {
+            "value" : "United States Census, 1910"
+          } ],
+          "resourceType" : "http://gedcomx.org/Collection",
+          "identifiers" : {
+            "http://gedcomx.org/Primary" : [ "https://familysearch.org/platform/records/collections/1727033" ]
+          }
+        } ]
+      }
+    },
+    "id" : "https://familysearch.org/ark:/61903/1:1:MPXD-MZC",
+    "score" : 3.6129,
+    "confidence" : 5,
+    "links" : {
+      "source-linker" : {
+        "href" : "https://beta.familysearch.org/platform/redirect?person=KF5C-9TX&context=sourceLinker&hintId=https://familysearch.org/ark:/61903/1:1:MPXD-MZC"
+      },
+      "person" : {
+        "href" : "https://beta.familysearch.org/platform/tree/persons/KF5C-9TX"
+      },
+      "record-hints" : {
+        "href" : "https://beta.familysearch.org/platform/redirect?person=KF5C-9TX&context=recordHints"
+      }
+    },
+    "published" : 1405999060485,
+    "title" : "United States Census, 1910",
+    "matchInfo" : [ {
+      "collection" : "https://familysearch.org/platform/collections/records",
+      "status" : "http://familysearch.org/v1/Pending"
+    } ]
+  } ]
+}
