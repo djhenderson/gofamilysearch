@@ -18,8 +18,8 @@ type sourceRefsContainer struct {
 
 // Sources contains SourceRefs and SourceDescriptions attached to a person, couple, or child-and-parents relationship
 type Sources struct {
-	SourceRefs         []*SourceRef         `json:"sources"`
-	SourceDescriptions []*SourceDescription `json:"sourceDescriptions"`
+	Refs         []*SourceRef         `json:"sources"`
+	Descriptions []*SourceDescription `json:"sourceDescriptions"`
 }
 
 // GetSourceDescription returns the SourceDescription for the specified SourceRef.Description
@@ -27,7 +27,7 @@ func (sources *Sources) GetSourceDescription(description string) *SourceDescript
 	if strings.HasPrefix(description, "#") {
 		description = description[1:]
 	}
-	for _, sd := range sources.SourceDescriptions {
+	for _, sd := range sources.Descriptions {
 		if sd.ID == description {
 			return sd
 		}
@@ -72,8 +72,8 @@ func (c *Client) GetPersonSources(pid string) (*Sources, error) {
 		return nil, fmt.Errorf("Invalid response")
 	}
 	return &Sources{
-		SourceRefs:         sourcesResponse.Persons[0].Sources,
-		SourceDescriptions: sourcesResponse.SourceDescriptions,
+		Refs:         sourcesResponse.Persons[0].Sources,
+		Descriptions: sourcesResponse.SourceDescriptions,
 	}, nil
 }
 
@@ -91,8 +91,8 @@ func (c *Client) GetCoupleSources(crid string) (*Sources, error) {
 		return nil, fmt.Errorf("Invalid response")
 	}
 	return &Sources{
-		SourceRefs:         sourcesResponse.Relationships[0].Sources,
-		SourceDescriptions: sourcesResponse.SourceDescriptions,
+		Refs:         sourcesResponse.Relationships[0].Sources,
+		Descriptions: sourcesResponse.SourceDescriptions,
 	}, nil
 }
 
@@ -110,7 +110,7 @@ func (c *Client) GetChildAndParentsSources(caprid string) (*Sources, error) {
 		return nil, fmt.Errorf("Invalid response")
 	}
 	return &Sources{
-		SourceRefs:         sourcesResponse.ChildAndParentsRelationships[0].Sources,
-		SourceDescriptions: sourcesResponse.SourceDescriptions,
+		Refs:         sourcesResponse.ChildAndParentsRelationships[0].Sources,
+		Descriptions: sourcesResponse.SourceDescriptions,
 	}, nil
 }

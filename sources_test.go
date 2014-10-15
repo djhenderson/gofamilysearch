@@ -14,7 +14,7 @@ func TestGetPersonSources(t *testing.T) {
 		sources, err := testClient().GetPersonSources("PPPP-PPP")
 		So(err, ShouldBeNil)
 		want := &Sources{
-			SourceRefs: []*SourceRef{
+			Refs: []*SourceRef{
 				&SourceRef{
 					ID: "abcde",
 					Attribution: Attribution{
@@ -49,7 +49,7 @@ func TestGetPersonSources(t *testing.T) {
 					Description: "#SSSS-SS2",
 				},
 			},
-			SourceDescriptions: []*SourceDescription{
+			Descriptions: []*SourceDescription{
 				&SourceDescription{
 					ID: "SSSS-SS1",
 					Citations: []*FSValue{
@@ -125,7 +125,7 @@ func TestGetCoupleSources(t *testing.T) {
 		sources, err := testClient().GetCoupleSources("12345")
 		So(err, ShouldBeNil)
 		want := &Sources{
-			SourceRefs: []*SourceRef{
+			Refs: []*SourceRef{
 				&SourceRef{
 					ID: "abcde",
 					Attribution: Attribution{
@@ -160,7 +160,7 @@ func TestGetCoupleSources(t *testing.T) {
 					Description: "#SSSS-SS2",
 				},
 			},
-			SourceDescriptions: []*SourceDescription{
+			Descriptions: []*SourceDescription{
 				&SourceDescription{
 					ID: "SSSS-SS1",
 					Citations: []*FSValue{
@@ -228,7 +228,7 @@ func TestGetChildAndParentsSources(t *testing.T) {
 		sources, err := testClient().GetChildAndParentsSources("PPPX-PP0")
 		So(err, ShouldBeNil)
 		want := &Sources{
-			SourceRefs: []*SourceRef{
+			Refs: []*SourceRef{
 				&SourceRef{
 					ID: "fghij",
 					Attribution: Attribution{
@@ -263,7 +263,7 @@ func TestGetChildAndParentsSources(t *testing.T) {
 					},
 				},
 			},
-			SourceDescriptions: []*SourceDescription{
+			Descriptions: []*SourceDescription{
 				&SourceDescription{
 					ID: "SSSS-SS2",
 					Citations: []*FSValue{
