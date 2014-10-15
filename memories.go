@@ -5,8 +5,6 @@ import (
 	"strconv"
 )
 
-//import "fmt"
-
 type memoriesResponse struct {
 	SourceDescriptions []*Memory `json:"sourceDescriptions"`
 }
