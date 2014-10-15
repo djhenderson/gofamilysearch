@@ -139,5 +139,9 @@ func generateTemplates(host string, response *discoveryResponse) (map[string]str
 		}
 		templates[k] = value
 	}
+
+	// add missing templates
+	templates["ordinances"] = host + "/platform/ordinances/ordinances"
+
 	return templates, nil
 }
