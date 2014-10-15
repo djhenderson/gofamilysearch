@@ -52,19 +52,19 @@ func TestGetPersonSources(t *testing.T) {
 			SourceDescriptions: []*SourceDescription{
 				&SourceDescription{
 					ID: "SSSS-SS1",
-					Citations: []*SourceCitation{
-						&SourceCitation{
+					Citations: []*FSValue{
+						&FSValue{
 							Value: "\"United States Census, 1900.\" database and digital images, FamilySearch (https://familysearch.org/: accessed 17 Mar 2012), Ethel Hollivet, 1900; citing United States Census Office, Washington, D.C., 1900 Population Census Schedules, Los Angeles, California, population schedule, Los Angeles Ward 6, Enumeration District 58, p. 20B, dwelling 470, family 501, FHL microfilm 1,240,090; citing NARA microfilm publication T623, roll 90.",
 						},
 					},
 					About: "https://familysearch.org/pal:/MM9.1.1/M9PJ-2JJ",
-					Titles: []*SourceTitle{
-						&SourceTitle{
+					Titles: []*FSValue{
+						&FSValue{
 							Value: "1900 US Census, Ethel Hollivet",
 						},
 					},
-					Notes: []*SourceNote{
-						&SourceNote{
+					Notes: []*FSText{
+						&FSText{
 							Text: "Ethel Hollivet (line 75) with husband Albert Hollivet (line 74); also in the dwelling: step-father Joseph E Watkins (line 72), mother Lina Watkins (line 73), and grandmother -- Lina's mother -- Mary Sasnett (line 76).  Albert's mother and brother also appear on this page -- Emma Hollivet (line 68), and Eddie (line 69).",
 						},
 					},
@@ -78,19 +78,19 @@ func TestGetPersonSources(t *testing.T) {
 				},
 				&SourceDescription{
 					ID: "SSSS-SS2",
-					Citations: []*SourceCitation{
-						&SourceCitation{
+					Citations: []*FSValue{
+						&FSValue{
 							Value: "\"United States Census, 1900.\" database and digital images, FamilySearch (https://familysearch.org/: accessed 17 Mar 2012), Ethel Hollivet, 1900; citing United States Census Office, Washington, D.C., 1900 Population Census Schedules, Los Angeles, California, population schedule, Los Angeles Ward 6, Enumeration District 58, p. 20B, dwelling 470, family 501, FHL microfilm 1,240,090; citing NARA microfilm publication T623, roll 90.",
 						},
 					},
 					About: "https://familysearch.org/pal:/MM9.1.1/M9PJ-2JJ",
-					Titles: []*SourceTitle{
-						&SourceTitle{
+					Titles: []*FSValue{
+						&FSValue{
 							Value: "1900 US Census, Ethel Hollivet",
 						},
 					},
-					Notes: []*SourceNote{
-						&SourceNote{
+					Notes: []*FSText{
+						&FSText{
 							Text: "Ethel Hollivet (line 75) with husband Albert Hollivet (line 74); also in the dwelling: step-father Joseph E Watkins (line 72), mother Lina Watkins (line 73), and grandmother -- Lina's mother -- Mary Sasnett (line 76).  Albert's mother and brother also appear on this page -- Emma Hollivet (line 68), and Eddie (line 69).",
 						},
 					},
@@ -163,19 +163,19 @@ func TestGetCoupleSources(t *testing.T) {
 			SourceDescriptions: []*SourceDescription{
 				&SourceDescription{
 					ID: "SSSS-SS1",
-					Citations: []*SourceCitation{
-						&SourceCitation{
+					Citations: []*FSValue{
+						&FSValue{
 							Value: "\"United States Census, 1900.\" database and digital images, FamilySearch (https://familysearch.org/: accessed 17 Mar 2012), Ethel Hollivet, 1900; citing United States Census Office, Washington, D.C., 1900 Population Census Schedules, Los Angeles, California, population schedule, Los Angeles Ward 6, Enumeration District 58, p. 20B, dwelling 470, family 501, FHL microfilm 1,240,090; citing NARA microfilm publication T623, roll 90.",
 						},
 					},
 					About: "https://familysearch.org/pal:/MM9.1.1/M9PJ-2JJ",
-					Titles: []*SourceTitle{
-						&SourceTitle{
+					Titles: []*FSValue{
+						&FSValue{
 							Value: "1900 US Census, Ethel Hollivet",
 						},
 					},
-					Notes: []*SourceNote{
-						&SourceNote{
+					Notes: []*FSText{
+						&FSText{
 							Text: "Ethel Hollivet (line 75) with husband Albert Hollivet (line 74); also in the dwelling: step-father Joseph E Watkins (line 72), mother Lina Watkins (line 73), and grandmother -- Lina's mother -- Mary Sasnett (line 76).  Albert's mother and brother also appear on this page -- Emma Hollivet (line 68), and Eddie (line 69).",
 						},
 					},
@@ -189,19 +189,19 @@ func TestGetCoupleSources(t *testing.T) {
 				},
 				&SourceDescription{
 					ID: "SSSS-SS2",
-					Citations: []*SourceCitation{
-						&SourceCitation{
+					Citations: []*FSValue{
+						&FSValue{
 							Value: "\"United States Census, 1900.\" database and digital images, FamilySearch (https://familysearch.org/: accessed 17 Mar 2012), Ethel Hollivet, 1900; citing United States Census Office, Washington, D.C., 1900 Population Census Schedules, Los Angeles, California, population schedule, Los Angeles Ward 6, Enumeration District 58, p. 20B, dwelling 470, family 501, FHL microfilm 1,240,090; citing NARA microfilm publication T623, roll 90.",
 						},
 					},
 					About: "https://familysearch.org/pal:/MM9.1.1/M9PJ-2JJ",
-					Titles: []*SourceTitle{
-						&SourceTitle{
+					Titles: []*FSValue{
+						&FSValue{
 							Value: "1900 US Census, Ethel Hollivet",
 						},
 					},
-					Notes: []*SourceNote{
-						&SourceNote{
+					Notes: []*FSText{
+						&FSText{
 							Text: "Ethel Hollivet (line 75) with husband Albert Hollivet (line 74); also in the dwelling: step-father Joseph E Watkins (line 72), mother Lina Watkins (line 73), and grandmother -- Lina's mother -- Mary Sasnett (line 76).  Albert's mother and brother also appear on this page -- Emma Hollivet (line 68), and Eddie (line 69).",
 						},
 					},
@@ -266,19 +266,19 @@ func TestGetChildAndParentsSources(t *testing.T) {
 			SourceDescriptions: []*SourceDescription{
 				&SourceDescription{
 					ID: "SSSS-SS2",
-					Citations: []*SourceCitation{
-						&SourceCitation{
+					Citations: []*FSValue{
+						&FSValue{
 							Value: "\"United States Census, 1900.\" database and digital images, FamilySearch (https://familysearch.org/: accessed 17 Mar 2012), Ethel Hollivet, 1900; citing United States Census Office, Washington, D.C., 1900 Population Census Schedules, Los Angeles, California, population schedule, Los Angeles Ward 6, Enumeration District 58, p. 20B, dwelling 470, family 501, FHL microfilm 1,240,090; citing NARA microfilm publication T623, roll 90.",
 						},
 					},
 					About: "https://familysearch.org/pal:/MM9.1.1/M9PJ-2JJ",
-					Titles: []*SourceTitle{
-						&SourceTitle{
+					Titles: []*FSValue{
+						&FSValue{
 							Value: "1900 US Census, Ethel Hollivet",
 						},
 					},
-					Notes: []*SourceNote{
-						&SourceNote{
+					Notes: []*FSText{
+						&FSText{
 							Text: "Ethel Hollivet (line 75) with husband Albert Hollivet (line 74); also in the dwelling: step-father Joseph E Watkins (line 72), mother Lina Watkins (line 73), and grandmother -- Lina's mother -- Mary Sasnett (line 76).  Albert's mother and brother also appear on this page -- Emma Hollivet (line 68), and Eddie (line 69).",
 						},
 					},
@@ -292,19 +292,19 @@ func TestGetChildAndParentsSources(t *testing.T) {
 				},
 				&SourceDescription{
 					ID: "SSSS-SS1",
-					Citations: []*SourceCitation{
-						&SourceCitation{
+					Citations: []*FSValue{
+						&FSValue{
 							Value: "\"United States Census, 1900.\" database and digital images, FamilySearch (https://familysearch.org/: accessed 17 Mar 2012), Ethel Hollivet, 1900; citing United States Census Office, Washington, D.C., 1900 Population Census Schedules, Los Angeles, California, population schedule, Los Angeles Ward 6, Enumeration District 58, p. 20B, dwelling 470, family 501, FHL microfilm 1,240,090; citing NARA microfilm publication T623, roll 90.",
 						},
 					},
 					About: "https://familysearch.org/pal:/MM9.1.1/M9PJ-2JJ",
-					Titles: []*SourceTitle{
-						&SourceTitle{
+					Titles: []*FSValue{
+						&FSValue{
 							Value: "1900 US Census, Ethel Hollivet",
 						},
 					},
-					Notes: []*SourceNote{
-						&SourceNote{
+					Notes: []*FSText{
+						&FSText{
 							Text: "Ethel Hollivet (line 75) with husband Albert Hollivet (line 74); also in the dwelling: step-father Joseph E Watkins (line 72), mother Lina Watkins (line 73), and grandmother -- Lina's mother -- Mary Sasnett (line 76).  Albert's mother and brother also appear on this page -- Emma Hollivet (line 68), and Eddie (line 69).",
 						},
 					},

@@ -37,27 +37,12 @@ func (sources *Sources) GetSourceDescription(description string) *SourceDescript
 
 // SourceDescription contains information about a source description
 type SourceDescription struct {
-	ID          string            `json:"id"`
-	About       string            `json:"about"`
-	Attribution Attribution       `json:"attribution"`
-	Citations   []*SourceCitation `json:"citations"`
-	Titles      []*SourceTitle    `json:"titles"`
-	Notes       []*SourceNote     `json:"notes"`
-}
-
-// SourceCitation contains a source citation
-type SourceCitation struct {
-	Value string `json:"value"`
-}
-
-// SourceTitle contains a source title
-type SourceTitle struct {
-	Value string `json:"value"`
-}
-
-// SourceNote contains a source note
-type SourceNote struct {
-	Text string `json:"text"`
+	ID          string      `json:"id"`
+	About       string      `json:"about"`
+	Attribution Attribution `json:"attribution"`
+	Citations   []*FSValue  `json:"citations"`
+	Titles      []*FSValue  `json:"titles"`
+	Notes       []*FSText   `json:"notes"`
 }
 
 // SourceRef contains a reference to a SourceDescription; Description is the link to the SourceDescription

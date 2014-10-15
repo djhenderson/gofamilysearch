@@ -14,14 +14,6 @@ type discussionResponse struct {
 	Discussions []*Discussion `json:"discussions"`
 }
 
-type discussionCommentsResponse struct {
-	Discussions []*commentContainer `json:"discussions"`
-}
-
-type commentContainer struct {
-	Comments []*Comment `json:"comments"`
-}
-
 // Discussion contains information about a discussion
 type Discussion struct {
 	ID               string      `json:"id"`
@@ -42,15 +34,6 @@ type DiscussionRef struct {
 	Details          string      `json:"details"`
 	Created          int         `json:"created"`
 	Modified         int         `json:"modified"`
-	NumberOfComments int         `json:"numberOfComments"`
-	Contributor      ResourceRef `json:"contributor"`
-}
-
-// Comment contains information about a comment
-type Comment struct {
-	ID               string      `json:"id"`
-	Text             string      `json:"text"`
-	Created          int         `json:"created"`
 	NumberOfComments int         `json:"numberOfComments"`
 	Contributor      ResourceRef `json:"contributor"`
 }
@@ -93,12 +76,12 @@ func (c *Client) GetDiscussionComments(did string) ([]*Comment, error) {
 	if err != nil {
 		return nil, err
 	}
-	discussionCommentsResponse := &discussionCommentsResponse{}
-	if err = c.Get(u, nil, nil, discussionCommentsResponse); err != nil {
+	commentsResponse := &commentsResponse{}
+	if err = c.Get(u, nil, nil, commentsResponse); err != nil {
 		return nil, err
 	}
-	if len(discussionCommentsResponse.Discussions) != 1 {
+	if len(commentsResponse.Discussions) != 1 {
 		return nil, fmt.Errorf("Invalid response")
 	}
-	return discussionCommentsResponse.Discussions[0].Comments, nil
+	return commentsResponse.Discussions[0].Comments, nil
 }

@@ -60,7 +60,7 @@ type Person struct {
 	Attribution Attribution         `json:"attribution"`
 	Facts       []*Fact             `json:"facts"`
 	Names       []*Name             `json:"names"`
-	Links       map[string]*Link    `json:"links"`
+	Links       map[string]*FSHref  `json:"links"`
 }
 
 // PersonDisplay contains various person attributes in ready-to-display format
@@ -122,16 +122,16 @@ type FactQualifier struct {
 
 // Date contains a date
 type Date struct {
-	Original   string             `json:"original"`
-	Formal     string             `json:"formal"`
-	Normalized []*NormalizedValue `json:"normalized"`
+	Original   string     `json:"original"`
+	Formal     string     `json:"formal"`
+	Normalized []*FSValue `json:"normalized"`
 }
 
 // Place contains a place
 type Place struct {
-	Original    string             `json:"original"`
-	Description string             `json:"description"`
-	Normalized  []*NormalizedValue `json:"normalized"`
+	Original    string     `json:"original"`
+	Description string     `json:"description"`
+	Normalized  []*FSValue `json:"normalized"`
 }
 
 // GetPersonWithRelationships https://familysearch.org/developers/docs/api/tree/Person_With_Relationships_resource
