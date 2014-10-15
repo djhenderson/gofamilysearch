@@ -1,64 +1,35 @@
-The following endpoints need to be wrapped:
+The following endpoints need to be wrapped eventually:
 
-"person-changes-template"
 "change-restore-template"
 
-"discussion-template"
-"person-discussion-references-template"
 "person-discussion-reference-template"
-"discussion-comments-template"
 "discussion-comment-template"
 
 "memories"
 "memory-template"
-"memory-personas-template"
 "memory-persona-template"
-"memory-comments-template"
 "memory-comment-template"
-"person-memory-persona-references-template"
 "person-memory-persona-reference-template"
-"person-memories-query"
-"person-portrait-template"
 
-"person-notes-template"
 "person-note-template"
-"couple-relationship-notes-template"
 "couple-relationship-note-template"
-"child-and-parents-relationship-notes-template"
 "child-and-parents-relationship-note-template"
 
 "relationships"
 "child-and-parents-relationship-template"
 "child-and-parents-relationship-parent-template"
 "couple-relationship-template"
-"preferred-parent-relationship-template"
 
 "persons"
 "person-template"
 "person-conclusion-template"
-"spouses-template"
-"parents-template"
-"children-template"
 
-"person-search"
-"person-matches-template"
 "person-matches-query"
 
-"user-collection-template"
-"user-collections-for-user-template"
-"user-collection-source-descriptions-template"
-"user-collections-source-descriptions-for-user-template"
-
 "source-description-template"
-"source-references-query"
 "person-source-references-template"
 "couple-relationship-source-references-template"
 "child-and-parents-relationship-source-references-template"
-"person-sources-query-template"
-"couple-relationship-sources-query-template"
-"child-and-parents-relationship-sources-template"
 "person-source-reference-template"
 "couple-relationship-source-reference-template"
 "child-and-parents-relationship-source-reference-template"
-
-"agent-template"
