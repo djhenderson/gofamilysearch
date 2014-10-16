@@ -150,7 +150,6 @@ func (c *Client) GetPersonWithRelationships(pid string) (*PersonWithRelationship
 	return personWithRelationships, err
 }
 
-
 // GetPersonPortraitURL returns the URL of the person portrait or the empty string
 func (c *Client) GetPersonPortraitURL(pid string) (string, error) {
 	u, err := c.GetURL("person-portrait-template", map[string]string{"pid": pid})
@@ -171,7 +170,7 @@ func (c *Client) GetPersonPortraitURL(pid string) (string, error) {
 	return "", fmt.Errorf("Status code %d", res.StatusCode)
 }
 
-// GetPreferredParentsURL returns the ID of the preferred parent relationship for the specified user.TreeUserID and personID
+// GetPreferredParentsID returns the ID of the preferred parent relationship for the specified user.TreeUserID and personID
 // or the empty string if no parents are preferred
 func (c *Client) GetPreferredParentsID(tuid, pid string) (string, error) {
 	u, err := c.GetURL("preferred-parent-relationship-template", map[string]string{"uid": tuid, "pid": pid})
@@ -188,7 +187,7 @@ func (c *Client) GetPreferredParentsID(tuid, pid string) (string, error) {
 		return "", nil
 	} else if res.StatusCode >= 300 && res.StatusCode <= 399 {
 		url := strings.Split(res.Header.Get("Location"), "?")[0] // remove query if any
-		return url[strings.LastIndex(url,"/")+1:] , nil
+		return url[strings.LastIndex(url, "/")+1:], nil
 	}
 	return "", fmt.Errorf("Status code %d", res.StatusCode)
 }

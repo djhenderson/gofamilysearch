@@ -58,6 +58,7 @@ func (c *Client) Get(u *url.URL, params map[string]string, headers map[string]st
 	return json.Unmarshal(body, target)
 }
 
+// HTTP is a low-level call. It adds a header for the access token and retries in case of throttling or transient read error.
 // It is the caller's responsibility to close the response body
 func (c *Client) HTTP(method string, u *url.URL, headers map[string]string) (*http.Response, error) {
 	if c.AccessToken != "" {
@@ -73,8 +74,8 @@ func (c *Client) HTTP(method string, u *url.URL, headers map[string]string) (*ht
 
 	retries := 3
 	for {
-	 	// Must use the low-level Transport call here instead of Client
- 		// because FS likes to use redirect statuses and we don't want to follow redirects automatically
+		// Must use the low-level Transport call here instead of Client
+		// because FS likes to use redirect statuses and we don't want to follow redirects automatically
 		res, err := c.Transport.RoundTrip(req)
 		if err != nil {
 			return nil, err
@@ -85,7 +86,7 @@ func (c *Client) HTTP(method string, u *url.URL, headers map[string]string) (*ht
 		} else if res.StatusCode >= 500 && method == "GET" && retries > 0 { // possibly-transient error
 			retries--
 		} else {
-		    return res, nil
+			return res, nil
 		}
 	}
 }

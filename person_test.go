@@ -2,8 +2,8 @@ package gofamilysearch
 
 import (
 	. "github.com/smartystreets/goconvey/convey"
-	"testing"
 	"net/http"
+	"testing"
 )
 
 func TestGetPersonWithRelationships(t *testing.T) {

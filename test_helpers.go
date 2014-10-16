@@ -105,7 +105,7 @@ func testClient() *Client {
 
 	return &Client{
 		AccessToken: "accessToken",
-		Transport:  http.DefaultTransport,
+		Transport:   http.DefaultTransport,
 		Context: &Context{
 			templates: templates,
 		},
