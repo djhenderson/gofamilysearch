@@ -1,11 +1,17 @@
-This is an *experimental* SDK for FamilySearch written in go (golang).
-It's pretty minimal right now. 
-I'll be adding to it over time, though I don't intend to make it as complete as the
-[familysearch-javascript-sdk](https://github.com/rootsdev/familysearch-javascript-sdk)
-without help from others.
+This is an *in-progress* SDK for FamilySearch written in go (golang).
+It includes functions for most of the read calls but none of the update calls.
+I plan to eventually add functions for most of the update calls, 
+though I don't intend to include every function like the 
+[familysearch-javascript-sdk](https://github.com/rootsdev/familysearch-javascript-sdk) does - just the ones I use.
+
 This is my first large-ish go project, so it may not be idiomatic go.
 If you notice something that could be improved, please post an issue or a pull request.
-If you'd like to help design/develop, *please do so*!
+
+If you'd like to help develop, *please do so*!
+
+## Documentation
+
+[GoDoc.org](http://godoc.org/github.com/rootsdev/gofamilysearch)
 
 ## Example
 
