@@ -1,0 +1,2486 @@
+{
+  "sourceDescriptions" : [ {
+    "id" : "1727033",
+    "citations" : [ {
+      "value" : "\"United States Census, 1910.\" Index and images. <i>FamilySearch</i>. http://FamilySearch.org : accessed 2014. Citing NARA microfilm publication T624. Washington, D.C.: National Archives and Records Administration, n.d."
+    } ],
+    "about" : "https://familysearch.org/platform/records/collections/1727033",
+    "componentOf" : {
+      "description" : "#1727033_c"
+    },
+    "titles" : [ {
+      "value" : "United States Census, 1910"
+    } ],
+    "resourceType" : "http://gedcomx.org/Collection",
+    "rights" : [ "http://familysearch.org/records/permissionGroup/FamilySearch", "http://familysearch.org/records/permissionGroup/Partner2" ],
+    "descriptions" : [ {
+      "lang" : "en_US",
+      "value" : "Index to the 1910 population census schedules. Indexing is currently in progress and will include the entire census comprising 48 states, two territories (Arizona and New Mexico), Puerto Rico, and Military and Naval (in Philippines, Hospitals, Ships, and Stations). The index is being created by FamilySearch and Ancestry.com."
+    } ],
+    "identifiers" : {
+      "http://gedcomx.org/Primary" : [ "https://familysearch.org/platform/records/collections/1727033" ]
+    },
+    "coverage" : [ {
+      "spatial" : {
+        "original" : "United States of America",
+        "description" : "#place_1"
+      },
+      "temporal" : {
+        "original" : "1910",
+        "formal" : "+1910"
+      },
+      "recordType" : "http://gedcomx.org/Census"
+    } ]
+  }, {
+    "id" : "1727033_c",
+    "about" : "https://familysearch.org/platform/records/collections",
+    "resourceType" : "http://familysearch.org/types/resources/Container",
+    "identifiers" : {
+      "http://gedcomx.org/Primary" : [ "https://familysearch.org/platform/records/collections" ]
+    }
+  } ],
+  "places" : [ {
+    "identifiers" : {
+      "http://gedcomx.org/Primary" : [ "https://api.familysearch.org/authorities/v1/place/1" ]
+    },
+    "names" : [ {
+      "value" : "United States of America"
+    } ]
+  } ],
+  "collections" : [ {
+    "lang" : "en-US",
+    "content" : [ {
+      "resourceType" : "http://gedcomx.org/Record",
+      "count" : 93682083,
+      "completeness" : 0.98
+    }, {
+      "resourceType" : "http://gedcomx.org/Person",
+      "count" : 93682083,
+      "completeness" : 0.98
+    }, {
+      "resourceType" : "http://gedcomx.org/DigitalArtifact",
+      "count" : 2068253,
+      "completeness" : 0.0
+    } ],
+    "title" : "United States Census, 1910",
+    "size" : 95750336
+  } ],
+  "recordDescriptors" : [ {
+    "id" : "rd_MM9.1.9/MMMM-M5N",
+    "fields" : [ {
+      "values" : [ {
+        "labelId" : "PR_NAME",
+        "labels" : [ {
+          "lang" : "en_US",
+          "value" : "Name"
+        }, {
+          "lang" : "default",
+          "value" : "Name"
+        }, {
+          "lang" : "de",
+          "value" : "Name"
+        }, {
+          "lang" : "zh",
+          "value" : "姓名"
+        }, {
+          "lang" : "it",
+          "value" : "Nome"
+        }, {
+          "lang" : "pt",
+          "value" : "Nome"
+        }, {
+          "lang" : "ko",
+          "value" : "성과 이름"
+        }, {
+          "lang" : "fr",
+          "value" : "Nom"
+        }, {
+          "lang" : "ru",
+          "value" : "Имя"
+        }, {
+          "lang" : "es",
+          "value" : "Nombre"
+        }, {
+          "lang" : "ja",
+          "value" : "名前"
+        } ]
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_NAME_TITLE",
+        "labels" : [ {
+          "lang" : "en_US",
+          "value" : "Titles and Terms"
+        }, {
+          "lang" : "default",
+          "value" : "Titles and Terms"
+        }, {
+          "lang" : "de",
+          "value" : "Titel und Namen"
+        }, {
+          "lang" : "zh",
+          "value" : "頭銜或稱謂"
+        }, {
+          "lang" : "it",
+          "value" : "Titoli e termini"
+        }, {
+          "lang" : "pt",
+          "value" : "Títulos e sufixos"
+        }, {
+          "lang" : "ko",
+          "value" : "타이틀 및 작위"
+        }, {
+          "lang" : "fr",
+          "value" : "Titres et termes"
+        }, {
+          "lang" : "ru",
+          "value" : "Титулы и условия"
+        }, {
+          "lang" : "es",
+          "value" : "Títulos y términos"
+        }, {
+          "lang" : "ja",
+          "value" : "タイトルと規約"
+        } ]
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "EVENT_TYPE",
+        "labels" : [ {
+          "lang" : "en_US",
+          "value" : "Event Type"
+        }, {
+          "lang" : "default",
+          "value" : "Event Type"
+        }, {
+          "lang" : "de",
+          "value" : "Ereignistyp"
+        }, {
+          "lang" : "zh",
+          "value" : "事項類型"
+        }, {
+          "lang" : "it",
+          "value" : "Tipologia di evento"
+        }, {
+          "lang" : "pt",
+          "value" : "Tipo de evento"
+        }, {
+          "lang" : "ko",
+          "value" : "사건 발생 유형"
+        }, {
+          "lang" : "fr",
+          "value" : "Type d'événement"
+        }, {
+          "lang" : "ru",
+          "value" : "Тип события"
+        }, {
+          "lang" : "es",
+          "value" : "Tipo de evento"
+        }, {
+          "lang" : "ja",
+          "value" : "イベントの種類"
+        } ]
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "EVENT_YEAR",
+        "labels" : [ {
+          "lang" : "en_US",
+          "value" : "Event Year"
+        }, {
+          "lang" : "default",
+          "value" : "Event Year"
+        }, {
+          "lang" : "de",
+          "value" : "Jahr des Ereignisses"
+        }, {
+          "lang" : "zh",
+          "value" : "事項年份"
+        }, {
+          "lang" : "it",
+          "value" : "Anno dell'evento"
+        }, {
+          "lang" : "pt",
+          "value" : "Ano do evento"
+        }, {
+          "lang" : "ko",
+          "value" : "사건 발생 년도"
+        }, {
+          "lang" : "fr",
+          "value" : "Année de l'événement"
+        }, {
+          "lang" : "ru",
+          "value" : "Год события"
+        }, {
+          "lang" : "es",
+          "value" : "Año del evento"
+        }, {
+          "lang" : "ja",
+          "value" : "イベント年"
+        } ]
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "EVENT_PLACE",
+        "labels" : [ {
+          "lang" : "en_US",
+          "value" : "Event Place"
+        }, {
+          "lang" : "default",
+          "value" : "Event Place"
+        }, {
+          "lang" : "de",
+          "value" : "Ereignisort"
+        }, {
+          "lang" : "zh",
+          "value" : "事項地點"
+        }, {
+          "lang" : "it",
+          "value" : "Luogo dell'evento"
+        }, {
+          "lang" : "pt",
+          "value" : "Local do evento"
+        }, {
+          "lang" : "ko",
+          "value" : "사건 발생 장소"
+        }, {
+          "lang" : "fr",
+          "value" : "Lieu de l'événement"
+        }, {
+          "lang" : "ru",
+          "value" : "Место мероприятия"
+        }, {
+          "lang" : "es",
+          "value" : "Lugar del evento"
+        }, {
+          "lang" : "ja",
+          "value" : "イベント場所"
+        } ]
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "EVENT_DISTRICT",
+        "labels" : [ {
+          "lang" : "en_US",
+          "value" : "District"
+        }, {
+          "lang" : "default",
+          "value" : "District"
+        }, {
+          "lang" : "de",
+          "value" : "Bezirk"
+        }, {
+          "lang" : "zh",
+          "value" : "地區"
+        }, {
+          "lang" : "it",
+          "value" : "Distretto"
+        }, {
+          "lang" : "pt",
+          "value" : "Distrito"
+        }, {
+          "lang" : "ko",
+          "value" : "지구"
+        }, {
+          "lang" : "fr",
+          "value" : "Quartier"
+        }, {
+          "lang" : "ru",
+          "value" : "Район"
+        }, {
+          "lang" : "es",
+          "value" : "Distrito"
+        }, {
+          "lang" : "ja",
+          "value" : "地区"
+        } ]
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_SEX_CODE",
+        "labels" : [ {
+          "lang" : "en_US",
+          "value" : "Gender"
+        }, {
+          "lang" : "default",
+          "value" : "Gender"
+        }, {
+          "lang" : "de",
+          "value" : "Geschlecht"
+        }, {
+          "lang" : "zh",
+          "value" : "性別"
+        }, {
+          "lang" : "it",
+          "value" : "Sesso"
+        }, {
+          "lang" : "pt",
+          "value" : "Sexo"
+        }, {
+          "lang" : "ko",
+          "value" : "성별"
+        }, {
+          "lang" : "fr",
+          "value" : "Sexe"
+        }, {
+          "lang" : "ru",
+          "value" : "Пол"
+        }, {
+          "lang" : "es",
+          "value" : "Sexo"
+        }, {
+          "lang" : "ja",
+          "value" : "性別"
+        } ]
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_AGE",
+        "labels" : [ {
+          "lang" : "en_US",
+          "value" : "Age"
+        }, {
+          "lang" : "default",
+          "value" : "Age"
+        }, {
+          "lang" : "de",
+          "value" : "Alter"
+        }, {
+          "lang" : "zh",
+          "value" : "年齡"
+        }, {
+          "lang" : "it",
+          "value" : "Età"
+        }, {
+          "lang" : "pt",
+          "value" : "Idade"
+        }, {
+          "lang" : "ko",
+          "value" : "나이"
+        }, {
+          "lang" : "fr",
+          "value" : "Âge"
+        }, {
+          "lang" : "ru",
+          "value" : "Возраст"
+        }, {
+          "lang" : "es",
+          "value" : "Edad"
+        }, {
+          "lang" : "ja",
+          "value" : "年令"
+        } ]
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_MARITAL_STATUS",
+        "labels" : [ {
+          "lang" : "en_US",
+          "value" : "Marital Status"
+        }, {
+          "lang" : "default",
+          "value" : "Marital Status"
+        }, {
+          "lang" : "de",
+          "value" : "Familienstand"
+        }, {
+          "lang" : "zh",
+          "value" : "婚姻狀態"
+        }, {
+          "lang" : "it",
+          "value" : "Stato civile"
+        }, {
+          "lang" : "pt",
+          "value" : "Estado civil"
+        }, {
+          "lang" : "ko",
+          "value" : "결혼 상태"
+        }, {
+          "lang" : "fr",
+          "value" : "Statut marital"
+        }, {
+          "lang" : "ru",
+          "value" : "Семейное положение"
+        }, {
+          "lang" : "es",
+          "value" : "Estado civil"
+        }, {
+          "lang" : "ja",
+          "value" : "結婚歴"
+        } ]
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_RACE_OR_COLOR",
+        "labels" : [ {
+          "lang" : "en_US",
+          "value" : "Race"
+        }, {
+          "lang" : "default",
+          "value" : "Race"
+        }, {
+          "lang" : "de",
+          "value" : "Rasse"
+        }, {
+          "lang" : "zh",
+          "value" : "種族"
+        }, {
+          "lang" : "it",
+          "value" : "Etnia"
+        }, {
+          "lang" : "pt",
+          "value" : "Raça"
+        }, {
+          "lang" : "ko",
+          "value" : "인종"
+        }, {
+          "lang" : "fr",
+          "value" : "Race"
+        }, {
+          "lang" : "ru",
+          "value" : "Раса"
+        }, {
+          "lang" : "es",
+          "value" : "Raza"
+        }, {
+          "lang" : "ja",
+          "value" : "人種"
+        } ]
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_RACE_OR_COLOR_ORIG",
+        "labels" : [ {
+          "lang" : "en_US",
+          "value" : "Race (Original)"
+        }, {
+          "lang" : "default",
+          "value" : "Race (Original)"
+        }, {
+          "lang" : "de",
+          "value" : "Rasse (original)"
+        }, {
+          "lang" : "zh",
+          "value" : "種族（原始資料）"
+        }, {
+          "lang" : "it",
+          "value" : "Etnia (originale)"
+        }, {
+          "lang" : "pt",
+          "value" : "Raça (original)"
+        }, {
+          "lang" : "ko",
+          "value" : "인종 (원본)"
+        }, {
+          "lang" : "fr",
+          "value" : "Race (original)"
+        }, {
+          "lang" : "ru",
+          "value" : "Раса (оригинальная)"
+        }, {
+          "lang" : "es",
+          "value" : "Raza (original)"
+        }, {
+          "lang" : "ja",
+          "value" : "人種(オリジナル)"
+        } ]
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_RELATIONSHIP_TO_HEAD",
+        "labels" : [ {
+          "lang" : "en_US",
+          "value" : "Relationship to Head of Household"
+        }, {
+          "lang" : "default",
+          "value" : "Relationship to Head of Household"
+        }, {
+          "lang" : "de",
+          "value" : "Verhältnis zum Haushaltsvorstand"
+        }, {
+          "lang" : "zh",
+          "value" : "與家長的關係"
+        }, {
+          "lang" : "it",
+          "value" : "Grado di parentela con il capofamiglia"
+        }, {
+          "lang" : "pt",
+          "value" : "Relação com o chefe da família"
+        }, {
+          "lang" : "ko",
+          "value" : "세대주와의 관계"
+        }, {
+          "lang" : "fr",
+          "value" : "Lien avec le chef de ménage"
+        }, {
+          "lang" : "ru",
+          "value" : "Отношение к главе домохозяйства"
+        }, {
+          "lang" : "es",
+          "value" : "Relación con el jefe de familia"
+        }, {
+          "lang" : "ja",
+          "value" : "世帯主との関係"
+        } ]
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_RELATIONSHIP_TO_HEAD_ORIG",
+        "labels" : [ {
+          "lang" : "en_US",
+          "value" : "Relationship to Head of Household (Original)"
+        }, {
+          "lang" : "default",
+          "value" : "Relationship to Head of Household (Original)"
+        }, {
+          "lang" : "de",
+          "value" : "Verhältnis zum Haushaltsvorstand (original)"
+        }, {
+          "lang" : "zh",
+          "value" : "與家長的關係（原始資料）"
+        }, {
+          "lang" : "it",
+          "value" : "Grado di parentela con il capofamiglia (originale)"
+        }, {
+          "lang" : "pt",
+          "value" : "Relação com o chefe da família (original)"
+        }, {
+          "lang" : "ko",
+          "value" : "세대주와의 관계 (원본)"
+        }, {
+          "lang" : "fr",
+          "value" : "Lien avec le chef de ménage (original)"
+        }, {
+          "lang" : "ru",
+          "value" : "Отношение к главе домохозяйства (оригинальное)"
+        }, {
+          "lang" : "es",
+          "value" : "Relación con el jefe de familia (original)"
+        }, {
+          "lang" : "ja",
+          "value" : "世帯主との関係（オリジナル）"
+        } ]
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_BIRTH_YEAR_ESTIMATED",
+        "labels" : [ {
+          "lang" : "en_US",
+          "value" : "Birth Year (Estimated)"
+        }, {
+          "lang" : "default",
+          "value" : "Birth Year (Estimated)"
+        }, {
+          "lang" : "de",
+          "value" : "Geburtsjahr (geschätzt)"
+        }, {
+          "lang" : "zh",
+          "value" : "出生年份（估計）"
+        }, {
+          "lang" : "it",
+          "value" : "Anno di nascita (approssimativo)"
+        }, {
+          "lang" : "pt",
+          "value" : "Ano de nascimento (estimado)"
+        }, {
+          "lang" : "ko",
+          "value" : "출생 년도 (예상)"
+        }, {
+          "lang" : "fr",
+          "value" : "Année de naissance (estimée)"
+        }, {
+          "lang" : "ru",
+          "value" : "Год рождения (примерный)"
+        }, {
+          "lang" : "es",
+          "value" : "Año de nacimiento (aproximado)"
+        }, {
+          "lang" : "ja",
+          "value" : "出生年（推定）"
+        } ]
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_BIRTH_PLACE",
+        "labels" : [ {
+          "lang" : "en_US",
+          "value" : "Birthplace"
+        }, {
+          "lang" : "default",
+          "value" : "Birthplace"
+        }, {
+          "lang" : "de",
+          "value" : "Geburtsort"
+        }, {
+          "lang" : "zh",
+          "value" : "出生地"
+        }, {
+          "lang" : "it",
+          "value" : "Luogo di nascita"
+        }, {
+          "lang" : "pt",
+          "value" : "Local de nascimento"
+        }, {
+          "lang" : "ko",
+          "value" : "출생지"
+        }, {
+          "lang" : "fr",
+          "value" : "Lieu de naissance"
+        }, {
+          "lang" : "ru",
+          "value" : "Место рождения"
+        }, {
+          "lang" : "es",
+          "value" : "Lugar de nacimiento"
+        }, {
+          "lang" : "ja",
+          "value" : "出生地"
+        } ]
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_IMMIGRATION_YEAR",
+        "labels" : [ {
+          "lang" : "en_US",
+          "value" : "Immigration Year"
+        }, {
+          "lang" : "default",
+          "value" : "Immigration Year"
+        }, {
+          "lang" : "de",
+          "value" : "Einwanderungsjahr"
+        }, {
+          "lang" : "zh",
+          "value" : "移民年份"
+        }, {
+          "lang" : "it",
+          "value" : "Anno di Immigrazione"
+        }, {
+          "lang" : "pt",
+          "value" : "Ano de imigração"
+        }, {
+          "lang" : "ko",
+          "value" : "이주 년도"
+        }, {
+          "lang" : "fr",
+          "value" : "Année d'immigration"
+        }, {
+          "lang" : "ru",
+          "value" : "Год иммиграции"
+        }, {
+          "lang" : "es",
+          "value" : "Año de la inmigración"
+        }, {
+          "lang" : "ja",
+          "value" : "移民年"
+        } ]
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_FTHR_BIRTH_PLACE",
+        "labels" : [ {
+          "lang" : "en_US",
+          "value" : "Father's Birthplace"
+        }, {
+          "lang" : "default",
+          "value" : "Father's Birthplace"
+        }, {
+          "lang" : "de",
+          "value" : "Geburtsort des Vaters"
+        }, {
+          "lang" : "zh",
+          "value" : "父親出生地"
+        }, {
+          "lang" : "it",
+          "value" : "Luogo di nascita del padre"
+        }, {
+          "lang" : "pt",
+          "value" : "Local de nascimento do pai"
+        }, {
+          "lang" : "ko",
+          "value" : "아버지의 출생지"
+        }, {
+          "lang" : "fr",
+          "value" : "Lieu de naissance du père"
+        }, {
+          "lang" : "ru",
+          "value" : "Место рождения отца"
+        }, {
+          "lang" : "es",
+          "value" : "Lugar de nacimiento del padre"
+        }, {
+          "lang" : "ja",
+          "value" : "父親の出生地"
+        } ]
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_MTHR_BIRTH_PLACE",
+        "labels" : [ {
+          "lang" : "en_US",
+          "value" : "Mother's Birthplace"
+        }, {
+          "lang" : "default",
+          "value" : "Mother's Birthplace"
+        }, {
+          "lang" : "de",
+          "value" : "Geburtsort der Mutter"
+        }, {
+          "lang" : "zh",
+          "value" : "母親出生地"
+        }, {
+          "lang" : "it",
+          "value" : "Luogo di nascita della madre"
+        }, {
+          "lang" : "pt",
+          "value" : "Local de nascimento da mãe"
+        }, {
+          "lang" : "ko",
+          "value" : "어머니의 출생지"
+        }, {
+          "lang" : "fr",
+          "value" : "Lieu de naissance de la mère"
+        }, {
+          "lang" : "ru",
+          "value" : "Место рождения матери"
+        }, {
+          "lang" : "es",
+          "value" : "Lugar de nacimiento de la madre"
+        }, {
+          "lang" : "ja",
+          "value" : "母親出生地"
+        } ]
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "SOURCE_SHEET_NBR_LTR",
+        "labels" : [ {
+          "lang" : "en_US",
+          "value" : "Sheet Number and Letter"
+        }, {
+          "lang" : "default",
+          "value" : "Sheet Number and Letter"
+        }, {
+          "lang" : "de",
+          "value" : "Blatt (Nr. und Buchstaben)"
+        }, {
+          "lang" : "zh",
+          "value" : "圖表號碼與字母"
+        }, {
+          "lang" : "it",
+          "value" : "Numero e lettera del foglio"
+        }, {
+          "lang" : "pt",
+          "value" : "Letra e número da folha"
+        }, {
+          "lang" : "ko",
+          "value" : "시트 번호와 문자"
+        }, {
+          "lang" : "fr",
+          "value" : "Numéro de la feuille et la lettre"
+        }, {
+          "lang" : "ru",
+          "value" : "Номер листа и письма"
+        }, {
+          "lang" : "es",
+          "value" : "Número y letra de hoja"
+        }, {
+          "lang" : "ja",
+          "value" : "シート番号と文字"
+        } ]
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "HOUSEHOLD_ID",
+        "labels" : [ {
+          "lang" : "en_US",
+          "value" : "Household ID"
+        }, {
+          "lang" : "default",
+          "value" : "Household ID"
+        }, {
+          "lang" : "de",
+          "value" : "Haushalt ID"
+        }, {
+          "lang" : "zh",
+          "value" : "家宅辨認號"
+        }, {
+          "lang" : "it",
+          "value" : "Identificativo di famiglia"
+        }, {
+          "lang" : "pt",
+          "value" : "ID da família"
+        }, {
+          "lang" : "ko",
+          "value" : "가장 ID"
+        }, {
+          "lang" : "fr",
+          "value" : "Identifiant du ménage"
+        }, {
+          "lang" : "ru",
+          "value" : "Идентификатор семьи"
+        }, {
+          "lang" : "es",
+          "value" : "Identificador de grupo familiar"
+        }, {
+          "lang" : "ja",
+          "value" : "世帯ID"
+        } ]
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "SOURCE_LINE_NBR",
+        "labels" : [ {
+          "lang" : "en_US",
+          "value" : "Line Number"
+        }, {
+          "lang" : "default",
+          "value" : "Line Number"
+        }, {
+          "lang" : "de",
+          "value" : "Zeilennummer"
+        }, {
+          "lang" : "zh",
+          "value" : "行號"
+        }, {
+          "lang" : "it",
+          "value" : "Numero di riga"
+        }, {
+          "lang" : "pt",
+          "value" : "Número da linha"
+        }, {
+          "lang" : "ko",
+          "value" : "선(나인) 번호"
+        }, {
+          "lang" : "fr",
+          "value" : "Numéro de ligne"
+        }, {
+          "lang" : "ru",
+          "value" : "Номер строки"
+        }, {
+          "lang" : "es",
+          "value" : "Número de línea"
+        }, {
+          "lang" : "ja",
+          "value" : "行番号"
+        } ]
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "EXT_REPOSITORY_NAME",
+        "labels" : [ {
+          "lang" : "en_US",
+          "value" : "Affiliate Name"
+        }, {
+          "lang" : "default",
+          "value" : "Affiliate Name"
+        }, {
+          "lang" : "de",
+          "value" : "Partner-Name"
+        }, {
+          "lang" : "zh",
+          "value" : "聯夥公司名稱"
+        }, {
+          "lang" : "it",
+          "value" : "Nome dell'affiliato"
+        }, {
+          "lang" : "pt",
+          "value" : "Nome da instituição externa"
+        }, {
+          "lang" : "ko",
+          "value" : "제휴 이름"
+        }, {
+          "lang" : "fr",
+          "value" : "Nom de la filiale"
+        }, {
+          "lang" : "ru",
+          "value" : "Affiliate имя"
+        }, {
+          "lang" : "es",
+          "value" : "Nombre de la institución externa"
+        }, {
+          "lang" : "ja",
+          "value" : "名前"
+        } ]
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "EXT_PUB_NBR",
+        "labels" : [ {
+          "lang" : "en_US",
+          "value" : "Affiliate Publication Number"
+        }, {
+          "lang" : "default",
+          "value" : "Affiliate Publication Number"
+        }, {
+          "lang" : "de",
+          "value" : "Partner-Veröffentlichungsnummer"
+        }, {
+          "lang" : "zh",
+          "value" : "聯夥公司出版號碼"
+        }, {
+          "lang" : "it",
+          "value" : "Numero di pubblicazione dell'affiliato"
+        }, {
+          "lang" : "pt",
+          "value" : "Número da publicação fornecido pela instituição externa"
+        }, {
+          "lang" : "ko",
+          "value" : "제휴 공개 번호"
+        }, {
+          "lang" : "fr",
+          "value" : "Numéro de publication de la filiale"
+        }, {
+          "lang" : "ru",
+          "value" : "Affiliate номер публикации"
+        }, {
+          "lang" : "es",
+          "value" : "Número de publicación provisto por la institución externa"
+        }, {
+          "lang" : "ja",
+          "value" : "発行番号"
+        } ]
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "FILM_NUMBER",
+        "labels" : [ {
+          "lang" : "en_US",
+          "value" : "GS Film number"
+        }, {
+          "lang" : "default",
+          "value" : "GS Film number"
+        }, {
+          "lang" : "de",
+          "value" : "GS-Filmnummer"
+        }, {
+          "lang" : "zh",
+          "value" : "GS微卷號碼"
+        }, {
+          "lang" : "it",
+          "value" : "Numero di bobina di FamilySearch"
+        }, {
+          "lang" : "pt",
+          "value" : "Número do filme"
+        }, {
+          "lang" : "ko",
+          "value" : "GS 필름 번호"
+        }, {
+          "lang" : "fr",
+          "value" : "Numéro de film"
+        }, {
+          "lang" : "ru",
+          "value" : "GS номер фильма"
+        }, {
+          "lang" : "es",
+          "value" : "Número de microfilm de FamilySearch"
+        }, {
+          "lang" : "ja",
+          "value" : "ＧＳフィルム番号"
+        } ]
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "DIGITAL_GS_NUMBER",
+        "labels" : [ {
+          "lang" : "en_US",
+          "value" : "Digital Folder Number"
+        }, {
+          "lang" : "default",
+          "value" : "Digital Folder Number"
+        }, {
+          "lang" : "de",
+          "value" : "Digitale Ordnernummer"
+        }, {
+          "lang" : "zh",
+          "value" : "數位檔案夾編號"
+        }, {
+          "lang" : "it",
+          "value" : "Numero della cartella digitale"
+        }, {
+          "lang" : "pt",
+          "value" : "Número da pasta digital"
+        }, {
+          "lang" : "ko",
+          "value" : "디지털 서류철 번호"
+        }, {
+          "lang" : "fr",
+          "value" : "Numéro de dossier numérique"
+        }, {
+          "lang" : "ru",
+          "value" : "Цифровой номер папки"
+        }, {
+          "lang" : "es",
+          "value" : "Número de carpeta digital"
+        }, {
+          "lang" : "ja",
+          "value" : "デジタルフォルダー番号"
+        } ]
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "IMAGE_NBR",
+        "labels" : [ {
+          "lang" : "en_US",
+          "value" : "Image Number"
+        }, {
+          "lang" : "default",
+          "value" : "Image Number"
+        }, {
+          "lang" : "de",
+          "value" : "Aufnahmenummer"
+        }, {
+          "lang" : "zh",
+          "value" : "影像編號"
+        }, {
+          "lang" : "it",
+          "value" : "Numero immagine"
+        }, {
+          "lang" : "pt",
+          "value" : "Número da imagem"
+        }, {
+          "lang" : "ko",
+          "value" : "이미지 번호"
+        }, {
+          "lang" : "fr",
+          "value" : "Numéro de l'image"
+        }, {
+          "lang" : "ru",
+          "value" : "Номер изображения"
+        }, {
+          "lang" : "es",
+          "value" : "Número de imagen"
+        }, {
+          "lang" : "ja",
+          "value" : "画像番号"
+        } ]
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "EVENT_COUNTRY"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "EVENT_COUNTY"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "EVENT_COUNTY_ORIG"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "EVENT_DATE"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "EVENT_DISTRICT_ORIG"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "EVENT_PLACE_LEVEL_1"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "EVENT_PLACE_LEVEL_1_TYPE"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "EVENT_PLACE_LEVEL_2"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "EVENT_PLACE_LEVEL_2_TYPE"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "EVENT_PLACE_LEVEL_3"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "EVENT_PLACE_LEVEL_3_ORIG"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "EVENT_PLACE_LEVEL_3_TYPE"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "EVENT_PLACE_LEVEL_4"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "EVENT_PLACE_LEVEL_4_ORIG"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "EVENT_PLACE_LEVEL_4_TYPE"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "EVENT_PLACE_ORIG"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "EVENT_STATE"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "EVENT_STATE_ORIG"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "EVENT_TOWNSHIP"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "EVENT_TOWNSHIP_ORIG"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "EXT_2_PERSON_ID"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "EXT_2_REPOSITORY_NAME"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "EXT_RECORD_ID"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "FOLDER_IMAGE_SEQ"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "FOLDER"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "FS_BATCH_ID"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "FS_BATCH_LOCALITY"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "FS_COLLECTION_ID"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "FS_EASY_IMAGE_ID"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "FS_PACKET_LTR"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "FS_PPQ_ID"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "FS_RECORD_ID"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "FS_RECORD_NBR"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "FS_UDE_BATCH_NBR"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "IMAGE_ID"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "IMAGE_APID"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "IMAGE_PAL"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_AGE_ORIG"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_ETHNICITY_CSS"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_IMMIGRATION_YEAR_ORIG"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_MARITAL_STATUS_ORIG"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_NAME_GN"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_NAME_GN_ORIG"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_NAME_ORIG"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_NAME_TITLES_PREFIX"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_NAME_TITLES_SUFFIX"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_NAME_SURN"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_NAME_SURN_ORIG"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_NAME_TITLE_ORIG"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_RACE_OR_COLOR_CSS"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_RACE_OR_COLOR_LANG"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_RACE_OR_COLOR_NORM"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_RELATIONSHIP_CODE"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_RELATIONSHIP_TO_HEAD_CSS"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_RELATIONSHIP_TO_HEAD_LANG"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_RELATIONSHIP_TO_HEAD_NORM"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_SEX_CODE_ORIG"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "RECORD_GROUP"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "SORT_KEY"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "SOURCE_SHEET_LTR"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "SOURCE_SHEET_NBR"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "UNIQUE_IDENTIFIER"
+      } ]
+    } ]
+  }, {
+    "id" : "rd_MM9.1.9/MMMM-SPJ",
+    "fields" : [ {
+      "values" : [ {
+        "labelId" : "PR_NAME",
+        "labels" : [ {
+          "lang" : "de",
+          "value" : "Name"
+        }, {
+          "lang" : "en_US",
+          "value" : "Name"
+        }, {
+          "lang" : "es",
+          "value" : "Nombre"
+        }, {
+          "lang" : "fr",
+          "value" : "Nom"
+        }, {
+          "lang" : "it",
+          "value" : "Nome"
+        }, {
+          "lang" : "ja",
+          "value" : "名前"
+        }, {
+          "lang" : "ko",
+          "value" : "성과 이름"
+        }, {
+          "lang" : "pt",
+          "value" : "Nome"
+        }, {
+          "lang" : "ru",
+          "value" : "Имя"
+        }, {
+          "lang" : "zh",
+          "value" : "姓名"
+        } ]
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_NAME_ORIG"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_NAME_TITLE",
+        "labels" : [ {
+          "lang" : "de",
+          "value" : "Titel und Namen"
+        }, {
+          "lang" : "en_US",
+          "value" : "Titles and Terms"
+        }, {
+          "lang" : "es",
+          "value" : "Títulos y términos"
+        }, {
+          "lang" : "fr",
+          "value" : "Titres et termes"
+        }, {
+          "lang" : "it",
+          "value" : "Titoli e termini"
+        }, {
+          "lang" : "ja",
+          "value" : "タイトルと規約"
+        }, {
+          "lang" : "ko",
+          "value" : "타이틀 및 작위"
+        }, {
+          "lang" : "pt",
+          "value" : "Títulos e sufixos"
+        }, {
+          "lang" : "ru",
+          "value" : "Титулы и условия"
+        }, {
+          "lang" : "zh",
+          "value" : "頭銜或稱謂"
+        } ]
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_NAME_TITLE_ORIG"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_NAME_TITLES_PREFIX"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_NAME_GN"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_NAME_SURN"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_NAME_TITLES_SUFFIX"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "EVENT_TYPE",
+        "labels" : [ {
+          "lang" : "de",
+          "value" : "Ereignistyp"
+        }, {
+          "lang" : "en_US",
+          "value" : "Event Type"
+        }, {
+          "lang" : "es",
+          "value" : "Tipo de evento"
+        }, {
+          "lang" : "fr",
+          "value" : "Type d'événement"
+        }, {
+          "lang" : "it",
+          "value" : "Tipologia di evento"
+        }, {
+          "lang" : "ja",
+          "value" : "イベントの種類"
+        }, {
+          "lang" : "ko",
+          "value" : "사건 발생 유형"
+        }, {
+          "lang" : "pt",
+          "value" : "Tipo de evento"
+        }, {
+          "lang" : "ru",
+          "value" : "Тип события"
+        }, {
+          "lang" : "zh",
+          "value" : "事項類型"
+        } ]
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "EVENT_DATE"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "EVENT_YEAR",
+        "labels" : [ {
+          "lang" : "de",
+          "value" : "Jahr des Ereignisses"
+        }, {
+          "lang" : "en_US",
+          "value" : "Event Year"
+        }, {
+          "lang" : "es",
+          "value" : "Año del evento"
+        }, {
+          "lang" : "fr",
+          "value" : "Année de l'événement"
+        }, {
+          "lang" : "it",
+          "value" : "Anno dell'evento"
+        }, {
+          "lang" : "ja",
+          "value" : "イベント年"
+        }, {
+          "lang" : "ko",
+          "value" : "사건 발생 년도"
+        }, {
+          "lang" : "pt",
+          "value" : "Ano do evento"
+        }, {
+          "lang" : "ru",
+          "value" : "Год события"
+        }, {
+          "lang" : "zh",
+          "value" : "事項年份"
+        } ]
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "EVENT_PLACE",
+        "labels" : [ {
+          "lang" : "de",
+          "value" : "Ereignisort"
+        }, {
+          "lang" : "en_US",
+          "value" : "Event Place"
+        }, {
+          "lang" : "es",
+          "value" : "Lugar del evento"
+        }, {
+          "lang" : "fr",
+          "value" : "Lieu de l'événement"
+        }, {
+          "lang" : "it",
+          "value" : "Luogo dell'evento"
+        }, {
+          "lang" : "ja",
+          "value" : "イベント場所"
+        }, {
+          "lang" : "ko",
+          "value" : "사건 발생 장소"
+        }, {
+          "lang" : "pt",
+          "value" : "Local do evento"
+        }, {
+          "lang" : "ru",
+          "value" : "Место мероприятия"
+        }, {
+          "lang" : "zh",
+          "value" : "事項地點"
+        } ]
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "EVENT_PLACE_ORIG"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "EVENT_TOWNSHIP"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "EVENT_COUNTY"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "EVENT_STATE"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "EVENT_DISTRICT",
+        "labels" : [ {
+          "lang" : "de",
+          "value" : "Bezirk"
+        }, {
+          "lang" : "en_US",
+          "value" : "District"
+        }, {
+          "lang" : "es",
+          "value" : "Distrito"
+        }, {
+          "lang" : "fr",
+          "value" : "Quartier"
+        }, {
+          "lang" : "it",
+          "value" : "Distretto"
+        }, {
+          "lang" : "ja",
+          "value" : "地区"
+        }, {
+          "lang" : "ko",
+          "value" : "지구"
+        }, {
+          "lang" : "pt",
+          "value" : "Distrito"
+        }, {
+          "lang" : "ru",
+          "value" : "Район"
+        }, {
+          "lang" : "zh",
+          "value" : "地區"
+        } ]
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_SEX_CODE",
+        "labels" : [ {
+          "lang" : "de",
+          "value" : "Geschlecht"
+        }, {
+          "lang" : "en_US",
+          "value" : "Gender"
+        }, {
+          "lang" : "es",
+          "value" : "Sexo"
+        }, {
+          "lang" : "fr",
+          "value" : "Sexe"
+        }, {
+          "lang" : "it",
+          "value" : "Sesso"
+        }, {
+          "lang" : "ja",
+          "value" : "性別"
+        }, {
+          "lang" : "ko",
+          "value" : "성별"
+        }, {
+          "lang" : "pt",
+          "value" : "Sexo"
+        }, {
+          "lang" : "ru",
+          "value" : "Пол"
+        }, {
+          "lang" : "zh",
+          "value" : "性別"
+        } ]
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_AGE",
+        "labels" : [ {
+          "lang" : "de",
+          "value" : "Alter"
+        }, {
+          "lang" : "en_US",
+          "value" : "Age"
+        }, {
+          "lang" : "es",
+          "value" : "Edad"
+        }, {
+          "lang" : "fr",
+          "value" : "Âge"
+        }, {
+          "lang" : "it",
+          "value" : "Età"
+        }, {
+          "lang" : "ja",
+          "value" : "年令"
+        }, {
+          "lang" : "ko",
+          "value" : "나이"
+        }, {
+          "lang" : "pt",
+          "value" : "Idade"
+        }, {
+          "lang" : "ru",
+          "value" : "Возраст"
+        }, {
+          "lang" : "zh",
+          "value" : "年齡"
+        } ]
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_AGE_ORIG"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_MARITAL_STATUS",
+        "labels" : [ {
+          "lang" : "de",
+          "value" : "Familienstand"
+        }, {
+          "lang" : "en_US",
+          "value" : "Marital Status"
+        }, {
+          "lang" : "es",
+          "value" : "Estado civil"
+        }, {
+          "lang" : "fr",
+          "value" : "Statut marital"
+        }, {
+          "lang" : "it",
+          "value" : "Stato civile"
+        }, {
+          "lang" : "ja",
+          "value" : "結婚歴"
+        }, {
+          "lang" : "ko",
+          "value" : "결혼 상태"
+        }, {
+          "lang" : "pt",
+          "value" : "Estado civil"
+        }, {
+          "lang" : "ru",
+          "value" : "Семейное положение"
+        }, {
+          "lang" : "zh",
+          "value" : "婚姻狀態"
+        } ]
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_MARITAL_STATUS_ORIG"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_RACE_OR_COLOR",
+        "labels" : [ {
+          "lang" : "de",
+          "value" : "Rasse"
+        }, {
+          "lang" : "en_US",
+          "value" : "Race"
+        }, {
+          "lang" : "es",
+          "value" : "Raza"
+        }, {
+          "lang" : "fr",
+          "value" : "Race"
+        }, {
+          "lang" : "it",
+          "value" : "Etnia"
+        }, {
+          "lang" : "ja",
+          "value" : "人種"
+        }, {
+          "lang" : "ko",
+          "value" : "인종"
+        }, {
+          "lang" : "pt",
+          "value" : "Raça"
+        }, {
+          "lang" : "ru",
+          "value" : "Раса"
+        }, {
+          "lang" : "zh",
+          "value" : "種族"
+        } ]
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_RACE_OR_COLOR_ORIG",
+        "labels" : [ {
+          "lang" : "de",
+          "value" : "Rasse (original)"
+        }, {
+          "lang" : "en_US",
+          "value" : "Race (Original)"
+        }, {
+          "lang" : "es",
+          "value" : "Raza (original)"
+        }, {
+          "lang" : "fr",
+          "value" : "Race (original)"
+        }, {
+          "lang" : "it",
+          "value" : "Etnia (originale)"
+        }, {
+          "lang" : "ja",
+          "value" : "人種(オリジナル)"
+        }, {
+          "lang" : "ko",
+          "value" : "인종 (원본)"
+        }, {
+          "lang" : "pt",
+          "value" : "Raça (original)"
+        }, {
+          "lang" : "ru",
+          "value" : "Раса (оригинальная)"
+        }, {
+          "lang" : "zh",
+          "value" : "種族（原始資料）"
+        } ]
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_RELATIONSHIP_TO_HEAD",
+        "labels" : [ {
+          "lang" : "de",
+          "value" : "Verhältnis zum Haushaltsvorstand"
+        }, {
+          "lang" : "en_US",
+          "value" : "Relationship to Head of Household"
+        }, {
+          "lang" : "es",
+          "value" : "Relación con el jefe de familia"
+        }, {
+          "lang" : "fr",
+          "value" : "Lien avec le chef de ménage"
+        }, {
+          "lang" : "it",
+          "value" : "Grado di parentela con il capofamiglia"
+        }, {
+          "lang" : "ja",
+          "value" : "世帯主との関係"
+        }, {
+          "lang" : "ko",
+          "value" : "세대주와의 관계"
+        }, {
+          "lang" : "pt",
+          "value" : "Relação com o chefe da família"
+        }, {
+          "lang" : "ru",
+          "value" : "Отношение к главе домохозяйства"
+        }, {
+          "lang" : "zh",
+          "value" : "與家長的關係"
+        } ]
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_RELATIONSHIP_TO_HEAD_ORIG",
+        "labels" : [ {
+          "lang" : "de",
+          "value" : "Verhältnis zum Haushaltsvorstand (original)"
+        }, {
+          "lang" : "en_US",
+          "value" : "Relationship to Head of Household (Original)"
+        }, {
+          "lang" : "es",
+          "value" : "Relación con el jefe de familia (original)"
+        }, {
+          "lang" : "fr",
+          "value" : "Lien avec le chef de ménage (original)"
+        }, {
+          "lang" : "it",
+          "value" : "Grado di parentela con il capofamiglia (originale)"
+        }, {
+          "lang" : "ja",
+          "value" : "世帯主との関係（オリジナル）"
+        }, {
+          "lang" : "ko",
+          "value" : "세대주와의 관계 (원본)"
+        }, {
+          "lang" : "pt",
+          "value" : "Relação com o chefe da família (original)"
+        }, {
+          "lang" : "ru",
+          "value" : "Отношение к главе домохозяйства (оригинальное)"
+        }, {
+          "lang" : "zh",
+          "value" : "與家長的關係（原始資料）"
+        } ]
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_RELATIONSHIP_TO_HEAD_NORM"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_BIRTH_YEAR_ESTIMATED",
+        "labels" : [ {
+          "lang" : "de",
+          "value" : "Geburtsjahr (geschätzt)"
+        }, {
+          "lang" : "en_US",
+          "value" : "Birth Year (Estimated)"
+        }, {
+          "lang" : "es",
+          "value" : "Año de nacimiento (aproximado)"
+        }, {
+          "lang" : "fr",
+          "value" : "Année de naissance (estimée)"
+        }, {
+          "lang" : "it",
+          "value" : "Anno di nascita (approssimativo)"
+        }, {
+          "lang" : "ja",
+          "value" : "出生年（推定）"
+        }, {
+          "lang" : "ko",
+          "value" : "출생 년도 (예상)"
+        }, {
+          "lang" : "pt",
+          "value" : "Ano de nascimento (estimado)"
+        }, {
+          "lang" : "ru",
+          "value" : "Год рождения (примерный)"
+        }, {
+          "lang" : "zh",
+          "value" : "出生年份（估計）"
+        } ]
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_BIRTH_PLACE",
+        "labels" : [ {
+          "lang" : "de",
+          "value" : "Geburtsort"
+        }, {
+          "lang" : "en_US",
+          "value" : "Birthplace"
+        }, {
+          "lang" : "es",
+          "value" : "Lugar de nacimiento"
+        }, {
+          "lang" : "fr",
+          "value" : "Lieu de naissance"
+        }, {
+          "lang" : "it",
+          "value" : "Luogo di nascita"
+        }, {
+          "lang" : "ja",
+          "value" : "出生地"
+        }, {
+          "lang" : "ko",
+          "value" : "출생지"
+        }, {
+          "lang" : "pt",
+          "value" : "Local de nascimento"
+        }, {
+          "lang" : "ru",
+          "value" : "Место рождения"
+        }, {
+          "lang" : "zh",
+          "value" : "出生地"
+        } ]
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_IMMIGRATION_YEAR",
+        "labels" : [ {
+          "lang" : "de",
+          "value" : "Einwanderungsjahr"
+        }, {
+          "lang" : "en_US",
+          "value" : "Immigration Year"
+        }, {
+          "lang" : "es",
+          "value" : "Año de la inmigración"
+        }, {
+          "lang" : "fr",
+          "value" : "Année d'immigration"
+        }, {
+          "lang" : "it",
+          "value" : "Anno di Immigrazione"
+        }, {
+          "lang" : "ja",
+          "value" : "移民年"
+        }, {
+          "lang" : "ko",
+          "value" : "이주 년도"
+        }, {
+          "lang" : "pt",
+          "value" : "Ano de imigração"
+        }, {
+          "lang" : "ru",
+          "value" : "Год иммиграции"
+        }, {
+          "lang" : "zh",
+          "value" : "移民年份"
+        } ]
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_FTHR_BIRTH_PLACE",
+        "labels" : [ {
+          "lang" : "de",
+          "value" : "Geburtsort des Vaters"
+        }, {
+          "lang" : "en_US",
+          "value" : "Father's Birthplace"
+        }, {
+          "lang" : "es",
+          "value" : "Lugar de nacimiento del padre"
+        }, {
+          "lang" : "fr",
+          "value" : "Lieu de naissance du père"
+        }, {
+          "lang" : "it",
+          "value" : "Luogo di nascita del padre"
+        }, {
+          "lang" : "ja",
+          "value" : "父親の出生地"
+        }, {
+          "lang" : "ko",
+          "value" : "아버지의 출생지"
+        }, {
+          "lang" : "pt",
+          "value" : "Local de nascimento do pai"
+        }, {
+          "lang" : "ru",
+          "value" : "Место рождения отца"
+        }, {
+          "lang" : "zh",
+          "value" : "父親出生地"
+        } ]
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_MTHR_BIRTH_PLACE",
+        "labels" : [ {
+          "lang" : "de",
+          "value" : "Geburtsort der Mutter"
+        }, {
+          "lang" : "en_US",
+          "value" : "Mother's Birthplace"
+        }, {
+          "lang" : "es",
+          "value" : "Lugar de nacimiento de la madre"
+        }, {
+          "lang" : "fr",
+          "value" : "Lieu de naissance de la mère"
+        }, {
+          "lang" : "it",
+          "value" : "Luogo di nascita della madre"
+        }, {
+          "lang" : "ja",
+          "value" : "母親の出生地"
+        }, {
+          "lang" : "ko",
+          "value" : "어머니의 출생지"
+        }, {
+          "lang" : "pt",
+          "value" : "Local de nascimento da mãe"
+        }, {
+          "lang" : "ru",
+          "value" : "Место рождения матери"
+        }, {
+          "lang" : "zh",
+          "value" : "母親出生地"
+        } ]
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "SOURCE_SHEET_LTR"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "SOURCE_SHEET_NBR"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "SOURCE_SHEET_NBR_LTR",
+        "labels" : [ {
+          "lang" : "de",
+          "value" : "Blatt (Nr. und Buchstaben)"
+        }, {
+          "lang" : "en_US",
+          "value" : "Sheet Number and Letter"
+        }, {
+          "lang" : "es",
+          "value" : "Número y letra de hoja"
+        }, {
+          "lang" : "fr",
+          "value" : "Numéro de la feuille et la lettre"
+        }, {
+          "lang" : "it",
+          "value" : "Numero e lettera del foglio"
+        }, {
+          "lang" : "ja",
+          "value" : "シート番号と文字"
+        }, {
+          "lang" : "ko",
+          "value" : "시트 번호와 문자"
+        }, {
+          "lang" : "pt",
+          "value" : "Letra e número da folha"
+        }, {
+          "lang" : "ru",
+          "value" : "Номер листа и письма"
+        }, {
+          "lang" : "zh",
+          "value" : "圖表號碼與字母"
+        } ]
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "HOUSEHOLD_ID",
+        "labels" : [ {
+          "lang" : "de",
+          "value" : "Haushalt ID"
+        }, {
+          "lang" : "en_US",
+          "value" : "Household ID"
+        }, {
+          "lang" : "es",
+          "value" : "Identificador de grupo familiar"
+        }, {
+          "lang" : "fr",
+          "value" : "Identifiant du ménage"
+        }, {
+          "lang" : "it",
+          "value" : "Identificativo di famiglia"
+        }, {
+          "lang" : "ja",
+          "value" : "世帯ID"
+        }, {
+          "lang" : "ko",
+          "value" : "가장 ID"
+        }, {
+          "lang" : "pt",
+          "value" : "ID da família"
+        }, {
+          "lang" : "ru",
+          "value" : "Идентификатор семьи"
+        }, {
+          "lang" : "zh",
+          "value" : "家宅辨認號"
+        } ]
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "EXT_REPOSITORY_NAME",
+        "labels" : [ {
+          "lang" : "de",
+          "value" : "Partner-Name"
+        }, {
+          "lang" : "en_US",
+          "value" : "Affiliate Name"
+        }, {
+          "lang" : "es",
+          "value" : "Nombre de la institución externa"
+        }, {
+          "lang" : "fr",
+          "value" : "Nom de la filiale"
+        }, {
+          "lang" : "it",
+          "value" : "Nome dell'affiliato"
+        }, {
+          "lang" : "ja",
+          "value" : "名前"
+        }, {
+          "lang" : "ko",
+          "value" : "제휴 이름"
+        }, {
+          "lang" : "pt",
+          "value" : "Nome da instituição externa"
+        }, {
+          "lang" : "ru",
+          "value" : "Affiliate имя"
+        }, {
+          "lang" : "zh",
+          "value" : "聯夥公司名稱"
+        } ]
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "EXT_PUB_NBR",
+        "labels" : [ {
+          "lang" : "de",
+          "value" : "Partner-Veröffentlichungsnummer"
+        }, {
+          "lang" : "en_US",
+          "value" : "Affiliate Publication Number"
+        }, {
+          "lang" : "es",
+          "value" : "Número de publicación provisto por la institución externa"
+        }, {
+          "lang" : "fr",
+          "value" : "Numéro de publication de la filiale"
+        }, {
+          "lang" : "it",
+          "value" : "Numero di pubblicazione dell'affiliato"
+        }, {
+          "lang" : "ja",
+          "value" : "発行番号"
+        }, {
+          "lang" : "ko",
+          "value" : "제휴 공개 번호"
+        }, {
+          "lang" : "pt",
+          "value" : "Número da publicação fornecido pela instituição externa"
+        }, {
+          "lang" : "ru",
+          "value" : "Affiliate номер публикации"
+        }, {
+          "lang" : "zh",
+          "value" : "聯夥公司出版號碼"
+        } ]
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "EXT_RECORD_ID"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "EXT_2_REPOSITORY_NAME"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "EVENT_COUNTRY"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "EVENT_COUNTY_ORIG"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "EVENT_DISTRICT_ORIG"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "EVENT_PLACE_LEVEL_1"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "EVENT_PLACE_LEVEL_1_TYPE"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "EVENT_PLACE_LEVEL_2"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "EVENT_PLACE_LEVEL_2_TYPE"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "EVENT_PLACE_LEVEL_3"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "EVENT_PLACE_LEVEL_3_ORIG"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "EVENT_PLACE_LEVEL_3_TYPE"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "EVENT_PLACE_LEVEL_4"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "EVENT_PLACE_LEVEL_4_ORIG"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "EVENT_PLACE_LEVEL_4_TYPE"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "EVENT_STATE_ORIG"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "EVENT_TOWNSHIP_ORIG"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "EXT_2_PERSON_ID"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "FOLDER_IMAGE_SEQ"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "FS_BATCH_ID"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "FS_BATCH_LOCALITY"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "FS_COLLECTION_ID"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "FS_EASY_IMAGE_ID"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "FS_PACKET_LTR"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "FS_PPQ_ID"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "FS_RECORD_ID"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "IMAGE_APID"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "IMAGE_ID"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "IMAGE_PAL"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_ETHNICITY_CSS"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_IMMIGRATION_YEAR_ORIG"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_NAME_GN_ORIG"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_NAME_SURN_ORIG"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_RACE_OR_COLOR_CSS"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_RACE_OR_COLOR_LANG"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_RACE_OR_COLOR_NORM"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_RELATIONSHIP_CODE"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_RELATIONSHIP_TO_HEAD_CSS"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_RELATIONSHIP_TO_HEAD_LANG"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "PR_SEX_CODE_ORIG"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "RECORD_GROUP"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "SORT_KEY"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "UNIQUE_IDENTIFIER"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "FILM_NUMBER",
+        "labels" : [ {
+          "lang" : "de",
+          "value" : "GS-Filmnummer"
+        }, {
+          "lang" : "en_US",
+          "value" : "GS Film Number"
+        }, {
+          "lang" : "es",
+          "value" : "Número de microfilm de FamilySearch"
+        }, {
+          "lang" : "fr",
+          "value" : "Numéro de film"
+        }, {
+          "lang" : "it",
+          "value" : "Numero di bobina di FamilySearch"
+        }, {
+          "lang" : "ja",
+          "value" : "ＧＳフィルム番号"
+        }, {
+          "lang" : "ko",
+          "value" : "GS 필름 번호"
+        }, {
+          "lang" : "pt",
+          "value" : "Número do filme"
+        }, {
+          "lang" : "ru",
+          "value" : "GS номер фильма"
+        }, {
+          "lang" : "zh",
+          "value" : "GS微卷號碼"
+        } ]
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "DIGITAL_GS_NUMBER",
+        "labels" : [ {
+          "lang" : "de",
+          "value" : "Digitale Ordnernummer"
+        }, {
+          "lang" : "en_US",
+          "value" : "Digital Folder Number"
+        }, {
+          "lang" : "es",
+          "value" : "Número de carpeta digital"
+        }, {
+          "lang" : "fr",
+          "value" : "Numéro de dossier numérique"
+        }, {
+          "lang" : "it",
+          "value" : "Numero della cartella digitale"
+        }, {
+          "lang" : "ja",
+          "value" : "デジタルフォルダー番号"
+        }, {
+          "lang" : "ko",
+          "value" : "디지털 서류철 번호"
+        }, {
+          "lang" : "pt",
+          "value" : "Número da pasta digital"
+        }, {
+          "lang" : "ru",
+          "value" : "Цифровой номер папки"
+        }, {
+          "lang" : "zh",
+          "value" : "數位檔案夾編號"
+        } ]
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "FOLDER"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "IMAGE_NBR",
+        "labels" : [ {
+          "lang" : "de",
+          "value" : "Aufnahmenummer"
+        }, {
+          "lang" : "en_US",
+          "value" : "Image Number"
+        }, {
+          "lang" : "es",
+          "value" : "Número de imagen"
+        }, {
+          "lang" : "fr",
+          "value" : "Numéro de l'image"
+        }, {
+          "lang" : "it",
+          "value" : "Numero immagine"
+        }, {
+          "lang" : "ja",
+          "value" : "画像番号"
+        }, {
+          "lang" : "ko",
+          "value" : "이미지 번호"
+        }, {
+          "lang" : "pt",
+          "value" : "Número da imagem"
+        }, {
+          "lang" : "ru",
+          "value" : "Номер изображения"
+        }, {
+          "lang" : "zh",
+          "value" : "影像編號"
+        } ]
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "FS_UDE_BATCH_NBR"
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "FS_RECORD_NBR"
+      } ]
+    } ]
+  }, {
+    "id" : "wd_1727033",
+    "fields" : [ {
+      "values" : [ {
+        "labelId" : "EVENT_STATE",
+        "type" : "http://gedcomx.org/Original",
+        "labels" : [ {
+          "lang" : "default",
+          "value" : "State"
+        }, {
+          "lang" : "en_US",
+          "value" : "State"
+        } ]
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "EVENT_COUNTY",
+        "type" : "http://gedcomx.org/Original",
+        "labels" : [ {
+          "lang" : "default",
+          "value" : "County"
+        }, {
+          "lang" : "en_US",
+          "value" : "County"
+        } ]
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "EVENT_TOWNSHIP",
+        "type" : "http://gedcomx.org/Original",
+        "labels" : [ {
+          "lang" : "default",
+          "value" : "Township"
+        }, {
+          "lang" : "en_US",
+          "value" : "Township"
+        } ]
+      } ]
+    }, {
+      "values" : [ {
+        "labelId" : "EVENT_DISTRICT",
+        "type" : "http://gedcomx.org/Original",
+        "labels" : [ {
+          "lang" : "default",
+          "value" : "District"
+        }, {
+          "lang" : "en_US",
+          "value" : "District"
+        } ]
+      } ]
+    } ]
+  } ],
+  "description" : "#1727033"
+}

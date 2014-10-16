@@ -1,0 +1,4569 @@
+{
+  "description": "#src_p_570564309",
+  "fields": [
+    {
+      "values": [
+        {
+          "text": "000000000_004449624_00295_045_001046930057",
+          "labelId": "SORT_VALUE",
+          "type": "http://gedcomx.org/Original"
+        }
+      ],
+      "type": "http://familysearch.org/types/fields/SortValue"
+    }
+  ],
+  "places": [
+    {
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "https://api.familysearch.org/authorities/v1/place/1"
+        ]
+      },
+      "id": "place_1"
+    }
+  ],
+  "sourceDescriptions": [
+    {
+      "descriptor": {
+        "resource": "https://familysearch.org/platform/records/collections/1727033#rd_MM9.1.9/MMMM-M5N"
+      },
+      "coverage": [
+        {
+          "recordType": "http://gedcomx.org/Census",
+          "temporal": {
+            "formal": "+1910",
+            "original": "1910"
+          },
+          "spatial": {
+            "original": "Prairie Belle, Beadle, South Dakota, United States"
+          }
+        }
+      ],
+      "modified": 1413073490036,
+      "created": 1383765808862,
+      "id": "src_r_1153479342",
+      "citations": [
+        {
+          "value": "\"United States Census, 1910,\" index and images, <i>FamilySearch</i> (https://familysearch.org/ark:/61903/1:2:9JX9-6LD : accessed 15 Oct 2014), Household of John W Spriggs, Prairie Belle, Beadle, South Dakota, United States; citing enumeration district (ED) 12, sheet 4A, family 63, NARA microfilm publication T624, FHL microfilm 1375489."
+        }
+      ],
+      "about": "https://familysearch.org/ark:/61903/1:2:9JX9-6LD",
+      "sources": [
+        {
+          "description": "#src_s1"
+        },
+        {
+          "description": "#src_s2"
+        }
+      ],
+      "componentOf": {
+        "description": "#src_2"
+      },
+      "titles": [
+        {
+          "value": "Household of John W Spriggs, \"United States Census, 1910\"",
+          "lang": "en-US"
+        }
+      ],
+      "resourceType": "http://gedcomx.org/Record",
+      "identifiers": {
+        "http://gedcomx.org/Persistent": [
+          "https://familysearch.org/ark:/61903/1:2:9JX9-6LD"
+        ]
+      }
+    },
+    {
+      "coverage": [
+        {
+          "recordType": "http://gedcomx.org/Census",
+          "spatial": {
+            "description": "#place_1",
+            "original": "United States of America"
+          }
+        }
+      ],
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "https://familysearch.org/platform/records/collections/1727033"
+        ]
+      },
+      "resourceType": "http://gedcomx.org/Collection",
+      "titles": [
+        {
+          "value": "United States Census, 1910",
+          "lang": "en-US"
+        }
+      ],
+      "about": "https://familysearch.org/platform/records/collections/1727033",
+      "id": "src_1"
+    },
+    {
+      "identifiers": {
+        "http://gedcomx.org/Primary": [
+          "https://familysearch.org/platform/records/collections/1727033/records"
+        ]
+      },
+      "resourceType": "http://familysearch.org/types/resources/Container",
+      "titles": [
+        {
+          "value": "United States Census, 1910",
+          "lang": "en-US"
+        }
+      ],
+      "componentOf": {
+        "description": "#src_1"
+      },
+      "about": "https://familysearch.org/platform/records/collections/1727033/records",
+      "id": "src_2"
+    },
+    {
+      "identifiers": {
+        "http://gedcomx.org/Persistent": [
+          "https://familysearch.org/ark:/61903/3:1:S3HT-6LLS-73K?cc=1287"
+        ]
+      },
+      "resourceType": "http://gedcomx.org/DigitalArtifact",
+      "about": "https://familysearch.org/ark:/61903/3:1:S3HT-6LLS-73K?cc=1287",
+      "id": "src_s1"
+    },
+    {
+      "identifiers": {
+        "http://gedcomx.org/Persistent": [
+          "https://familysearch.org/ark:/61903/3:1:S3HT-6LLS-H8R?cc=1287"
+        ]
+      },
+      "resourceType": "http://gedcomx.org/DigitalArtifact",
+      "about": "https://familysearch.org/ark:/61903/3:1:S3HT-6LLS-H8R?cc=1287",
+      "id": "src_s2"
+    },
+    {
+      "titles": [
+        {
+          "value": "John W Spriggs, \"United States Census, 1910\"",
+          "lang": "en"
+        }
+      ],
+      "componentOf": {
+        "description": "src_r_1153479342"
+      },
+      "about": "https://familysearch.org/ark:/61903/1:1:MPXD-MZ4",
+      "citations": [
+        {
+          "value": "\"United States Census, 1910,\" index and images, <i>FamilySearch</i> (https://familysearch.org/ark:/61903/1:1:MPXD-MZ4 : accessed 15 Oct 2014), John W Spriggs, Prairie Belle, Beadle, South Dakota, United States; citing enumeration district (ED) 12, sheet 4A, family 63, NARA microfilm publication T624, FHL microfilm 1375489."
+        }
+      ],
+      "id": "src_p_570564307"
+    },
+    {
+      "titles": [
+        {
+          "value": "Charlotte Spriggs in household of John W Spriggs, \"United States Census, 1910\"",
+          "lang": "en"
+        }
+      ],
+      "componentOf": {
+        "description": "src_r_1153479342"
+      },
+      "about": "https://familysearch.org/ark:/61903/1:1:MPXD-MZH",
+      "citations": [
+        {
+          "value": "\"United States Census, 1910,\" index and images, <i>FamilySearch</i> (https://familysearch.org/ark:/61903/1:1:MPXD-MZH : accessed 15 Oct 2014), Charlotte Spriggs in household of John W Spriggs, Prairie Belle, Beadle, South Dakota, United States; citing enumeration district (ED) 12, sheet 4A, family 63, NARA microfilm publication T624, FHL microfilm 1375489."
+        }
+      ],
+      "id": "src_p_570564308"
+    },
+    {
+      "titles": [
+        {
+          "value": "Rueben S Spriggs in household of John W Spriggs, \"United States Census, 1910\"",
+          "lang": "en"
+        }
+      ],
+      "componentOf": {
+        "description": "src_r_1153479342"
+      },
+      "about": "https://familysearch.org/ark:/61903/1:1:MPXD-MZC",
+      "citations": [
+        {
+          "value": "\"United States Census, 1910,\" index and images, <i>FamilySearch</i> (https://familysearch.org/ark:/61903/1:1:MPXD-MZC : accessed 15 Oct 2014), Rueben S Spriggs in household of John W Spriggs, Prairie Belle, Beadle, South Dakota, United States; citing enumeration district (ED) 12, sheet 4A, family 63, NARA microfilm publication T624, FHL microfilm 1375489."
+        }
+      ],
+      "id": "src_p_570564309"
+    },
+    {
+      "titles": [
+        {
+          "value": "Lillian F Spriggs in household of John W Spriggs, \"United States Census, 1910\"",
+          "lang": "en"
+        }
+      ],
+      "componentOf": {
+        "description": "src_r_1153479342"
+      },
+      "about": "https://familysearch.org/ark:/61903/1:1:MPXD-MZZ",
+      "citations": [
+        {
+          "value": "\"United States Census, 1910,\" index and images, <i>FamilySearch</i> (https://familysearch.org/ark:/61903/1:1:MPXD-MZZ : accessed 15 Oct 2014), Lillian F Spriggs in household of John W Spriggs, Prairie Belle, Beadle, South Dakota, United States; citing enumeration district (ED) 12, sheet 4A, family 63, NARA microfilm publication T624, FHL microfilm 1375489."
+        }
+      ],
+      "id": "src_p_570564310"
+    },
+    {
+      "titles": [
+        {
+          "value": "Leonard W Spriggs in household of John W Spriggs, \"United States Census, 1910\"",
+          "lang": "en"
+        }
+      ],
+      "componentOf": {
+        "description": "src_r_1153479342"
+      },
+      "about": "https://familysearch.org/ark:/61903/1:1:MPXD-MZ8",
+      "citations": [
+        {
+          "value": "\"United States Census, 1910,\" index and images, <i>FamilySearch</i> (https://familysearch.org/ark:/61903/1:1:MPXD-MZ8 : accessed 15 Oct 2014), Leonard W Spriggs in household of John W Spriggs, Prairie Belle, Beadle, South Dakota, United States; citing enumeration district (ED) 12, sheet 4A, family 63, NARA microfilm publication T624, FHL microfilm 1375489."
+        }
+      ],
+      "id": "src_p_570564311"
+    },
+    {
+      "titles": [
+        {
+          "value": "Selvin Christianson in household of John W Spriggs, \"United States Census, 1910\"",
+          "lang": "en"
+        }
+      ],
+      "componentOf": {
+        "description": "src_r_1153479342"
+      },
+      "about": "https://familysearch.org/ark:/61903/1:1:MPXD-MZD",
+      "citations": [
+        {
+          "value": "\"United States Census, 1910,\" index and images, <i>FamilySearch</i> (https://familysearch.org/ark:/61903/1:1:MPXD-MZD : accessed 15 Oct 2014), Selvin Christianson in household of John W Spriggs, Prairie Belle, Beadle, South Dakota, United States; citing enumeration district (ED) 12, sheet 4B, family 63, NARA microfilm publication T624, FHL microfilm 1375489."
+        }
+      ],
+      "id": "src_p_570564312"
+    }
+  ],
+  "relationships": [
+    {
+      "person2": {
+        "resource": "#p_570564308"
+      },
+      "person1": {
+        "resource": "#p_570564307"
+      },
+      "type": "http://gedcomx.org/Couple",
+      "id": "MM9.1.6/SVS9-TW3"
+    },
+    {
+      "person2": {
+        "resource": "#p_570564309"
+      },
+      "person1": {
+        "resource": "#p_570564307"
+      },
+      "type": "http://gedcomx.org/ParentChild",
+      "id": "MM9.1.6/SVS9-TWQ"
+    },
+    {
+      "person2": {
+        "resource": "#p_570564310"
+      },
+      "person1": {
+        "resource": "#p_570564307"
+      },
+      "type": "http://gedcomx.org/ParentChild",
+      "id": "MM9.1.6/SVS9-TW7"
+    },
+    {
+      "person2": {
+        "resource": "#p_570564311"
+      },
+      "person1": {
+        "resource": "#p_570564307"
+      },
+      "type": "http://gedcomx.org/ParentChild",
+      "id": "MM9.1.6/SVS9-TWW"
+    },
+    {
+      "person2": {
+        "resource": "#p_570564309"
+      },
+      "person1": {
+        "resource": "#p_570564308"
+      },
+      "type": "http://gedcomx.org/ParentChild",
+      "id": "MM9.1.6/SVS9-TW4"
+    },
+    {
+      "person2": {
+        "resource": "#p_570564310"
+      },
+      "person1": {
+        "resource": "#p_570564308"
+      },
+      "type": "http://gedcomx.org/ParentChild",
+      "id": "MM9.1.6/SVS9-TWH"
+    },
+    {
+      "person2": {
+        "resource": "#p_570564311"
+      },
+      "person1": {
+        "resource": "#p_570564308"
+      },
+      "type": "http://gedcomx.org/ParentChild",
+      "id": "MM9.1.6/SVS9-TWC"
+    }
+  ],
+  "persons": [
+    {
+      "fields": [
+        {
+          "values": [
+            {
+              "text": "38y",
+              "labelId": "PR_AGE_ORIG",
+              "type": "http://gedcomx.org/Original"
+            },
+            {
+              "text": "38",
+              "labelId": "PR_AGE",
+              "type": "http://gedcomx.org/Interpreted"
+            }
+          ],
+          "type": "http://gedcomx.org/Age"
+        },
+        {
+          "values": [
+            {
+              "text": "White",
+              "labelId": "PR_RACE_OR_COLOR_ORIG",
+              "type": "http://gedcomx.org/Original"
+            },
+            {
+              "text": "White",
+              "labelId": "PR_RACE_OR_COLOR",
+              "type": "http://gedcomx.org/Interpreted"
+            }
+          ],
+          "type": "http://gedcomx.org/Race"
+        }
+      ],
+      "id": "p_570564307",
+      "links": {
+        "persona": {
+          "href": "https://familysearch.org/platform/records/personas/MPXD-MZ4"
+        },
+        "record": {
+          "href": "https://familysearch.org/platform/records/records/9JX9-6LD"
+        }
+      },
+      "extracted": true,
+      "identifiers": {
+        "$": [
+          "https://familysearch.org/platform/externalId/easy/1046930057"
+        ],
+        "http://gedcomx.org/Persistent": [
+          "https://familysearch.org/ark:/61903/1:1:MPXD-MZ4"
+        ]
+      },
+      "principal": true,
+      "gender": {
+        "fields": [
+          {
+            "values": [
+              {
+                "resource": "http://gedcomx.org/Unknown",
+                "text": "Male",
+                "labelId": "PR_SEX_CODE_ORIG",
+                "type": "http://gedcomx.org/Original"
+              },
+              {
+                "resource": "http://gedcomx.org/Male",
+                "text": "Male",
+                "labelId": "PR_SEX_CODE",
+                "type": "http://gedcomx.org/Interpreted"
+              }
+            ],
+            "type": "http://gedcomx.org/Gender"
+          }
+        ],
+        "type": "http://gedcomx.org/Male"
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fields": [
+                {
+                  "values": [
+                    {
+                      "text": "John W/Spriggs",
+                      "labelId": "PR_NAME_ORIG",
+                      "type": "http://gedcomx.org/Original"
+                    },
+                    {
+                      "text": "John W Spriggs",
+                      "labelId": "PR_NAME",
+                      "type": "http://gedcomx.org/Interpreted"
+                    }
+                  ],
+                  "type": "http://gedcomx.org/Name"
+                }
+              ],
+              "parts": [
+                {
+                  "fields": [
+                    {
+                      "values": [
+                        {
+                          "text": "John W",
+                          "labelId": "PR_NAME_GN_ORIG",
+                          "type": "http://gedcomx.org/Original"
+                        },
+                        {
+                          "text": "John W",
+                          "labelId": "PR_NAME_GN",
+                          "type": "http://gedcomx.org/Interpreted"
+                        }
+                      ],
+                      "type": "http://gedcomx.org/Given"
+                    }
+                  ],
+                  "value": "John W",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "fields": [
+                    {
+                      "values": [
+                        {
+                          "text": "Spriggs",
+                          "labelId": "PR_NAME_SURN_ORIG",
+                          "type": "http://gedcomx.org/Original"
+                        },
+                        {
+                          "text": "Spriggs",
+                          "labelId": "PR_NAME_SURN",
+                          "type": "http://gedcomx.org/Interpreted"
+                        }
+                      ],
+                      "type": "http://gedcomx.org/Surname"
+                    }
+                  ],
+                  "value": "Spriggs",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ],
+              "fullText": "John W Spriggs"
+            }
+          ],
+          "type": "http://gedcomx.org/BirthName"
+        }
+      ],
+      "facts": [
+        {
+          "fields": [
+            {
+              "values": [
+                {
+                  "text": "Married",
+                  "labelId": "PR_MARITAL_STATUS_ORIG",
+                  "type": "http://gedcomx.org/Original"
+                },
+                {
+                  "text": "Married",
+                  "labelId": "PR_MARITAL_STATUS",
+                  "type": "http://gedcomx.org/Interpreted"
+                }
+              ],
+              "type": "http://gedcomx.org/MaritalStatus"
+            }
+          ],
+          "value": "Married",
+          "type": "http://gedcomx.org/MaritalStatus"
+        },
+        {
+          "primary": true,
+          "place": {
+            "fields": [
+              {
+                "values": [
+                  {
+                    "text": "Prairie Belle, Beadle, South Dakota, United States",
+                    "labelId": "EVENT_PLACE_ORIG",
+                    "type": "http://gedcomx.org/Original"
+                  },
+                  {
+                    "text": "Prairie Belle, Beadle, South Dakota, United States",
+                    "labelId": "EVENT_PLACE",
+                    "type": "http://gedcomx.org/Interpreted"
+                  }
+                ],
+                "type": "http://gedcomx.org/Place"
+              }
+            ],
+            "original": "Prairie Belle, Beadle, South Dakota, United States"
+          },
+          "date": {
+            "fields": [
+              {
+                "values": [
+                  {
+                    "text": "1910",
+                    "labelId": "EVENT_DATE",
+                    "type": "http://gedcomx.org/Interpreted"
+                  }
+                ],
+                "type": "http://gedcomx.org/Date"
+              },
+              {
+                "values": [
+                  {
+                    "text": "1910",
+                    "labelId": "EVENT_YEAR",
+                    "type": "http://gedcomx.org/Interpreted"
+                  }
+                ],
+                "type": "http://gedcomx.org/Year"
+              }
+            ],
+            "original": "1910"
+          },
+          "type": "http://gedcomx.org/Census"
+        },
+        {
+          "place": {
+            "fields": [
+              {
+                "values": [
+                  {
+                    "text": "Iowa",
+                    "labelId": "PR_BIRTH_PLACE",
+                    "type": "http://gedcomx.org/Interpreted"
+                  }
+                ],
+                "type": "http://gedcomx.org/Place"
+              }
+            ],
+            "original": "Iowa"
+          },
+          "date": {
+            "fields": [
+              {
+                "values": [
+                  {
+                    "text": "1872",
+                    "labelId": "PR_BIRTH_YEAR_ESTIMATED",
+                    "type": "http://gedcomx.org/Interpreted"
+                  }
+                ],
+                "type": "http://gedcomx.org/Year"
+              }
+            ],
+            "original": "1872"
+          },
+          "type": "http://gedcomx.org/Birth"
+        }
+      ]
+    },
+    {
+      "fields": [
+        {
+          "values": [
+            {
+              "text": "33y",
+              "labelId": "PR_AGE_ORIG",
+              "type": "http://gedcomx.org/Original"
+            },
+            {
+              "text": "33",
+              "labelId": "PR_AGE",
+              "type": "http://gedcomx.org/Interpreted"
+            }
+          ],
+          "type": "http://gedcomx.org/Age"
+        },
+        {
+          "values": [
+            {
+              "text": "White",
+              "labelId": "PR_RACE_OR_COLOR_ORIG",
+              "type": "http://gedcomx.org/Original"
+            },
+            {
+              "text": "White",
+              "labelId": "PR_RACE_OR_COLOR",
+              "type": "http://gedcomx.org/Interpreted"
+            }
+          ],
+          "type": "http://gedcomx.org/Race"
+        },
+        {
+          "values": [
+            {
+              "text": "1046930058",
+              "labelId": "UNIQUE_IDENTIFIER",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/UniqueIdentifier"
+        },
+        {
+          "values": [
+            {
+              "text": "/004449624/004449624_00295.jpg",
+              "labelId": "IMAGE_ID",
+              "type": "http://gedcomx.org/Original"
+            },
+            {
+              "text": "dgs:004449624.004449624_00295",
+              "labelId": "IMAGE_ID_NORM",
+              "type": "http://gedcomx.org/Interpreted"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/ImageId"
+        },
+        {
+          "values": [
+            {
+              "text": "63",
+              "labelId": "HOUSEHOLD_ID",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/HouseholdId"
+        },
+        {
+          "values": [
+            {
+              "text": "Wife",
+              "labelId": "PR_RELATIONSHIP_TO_HEAD_ORIG",
+              "type": "http://gedcomx.org/Original"
+            },
+            {
+              "text": "Wife",
+              "labelId": "PR_RELATIONSHIP_TO_HEAD",
+              "type": "http://gedcomx.org/Interpreted"
+            }
+          ],
+          "type": "http://gedcomx.org/RelationshipToHead"
+        },
+        {
+          "values": [
+            {
+              "text": "Norway",
+              "labelId": "PR_FTHR_BIRTH_PLACE",
+              "type": "http://gedcomx.org/Interpreted"
+            }
+          ],
+          "type": "http://gedcomx.org/FatherBirthPlace"
+        },
+        {
+          "values": [
+            {
+              "text": "Norway",
+              "labelId": "PR_MTHR_BIRTH_PLACE",
+              "type": "http://gedcomx.org/Interpreted"
+            }
+          ],
+          "type": "http://gedcomx.org/MotherBirthPlace"
+        },
+        {
+          "values": [
+            {
+              "text": "Wife",
+              "labelId": "PR_RELATIONSHIP_CODE",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/RelationshipToHeadCode"
+        },
+        {
+          "values": [
+            {
+              "text": "Census",
+              "labelId": "EVENT_TYPE",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventType"
+        },
+        {
+          "values": [
+            {
+              "text": "12",
+              "labelId": "EVENT_DISTRICT",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventDistrict"
+        },
+        {
+          "values": [
+            {
+              "text": "4A",
+              "labelId": "SOURCE_SHEET_NBR_LTR",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/SourceSheetNbrLtr"
+        },
+        {
+          "values": [
+            {
+              "text": "The U.S. National Archives and Records Administration (NARA)",
+              "labelId": "EXT_REPOSITORY_NAME",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/ExtRepositoryName"
+        },
+        {
+          "values": [
+            {
+              "text": "M1283",
+              "labelId": "EXT_PUB_NBR",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/ExtPubNbr"
+        },
+        {
+          "values": [
+            {
+              "text": "1375489",
+              "labelId": "FILM_NUMBER",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/FilmNumber"
+        },
+        {
+          "values": [
+            {
+              "text": "004449624",
+              "labelId": "DIGITAL_GS_NUMBER",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/DigitalGsNumber"
+        },
+        {
+          "values": [
+            {
+              "text": "00295",
+              "labelId": "IMAGE_NBR",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/ImageNbr"
+        },
+        {
+          "values": [
+            {
+              "text": "United States",
+              "labelId": "EVENT_COUNTRY",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventCountry"
+        },
+        {
+          "values": [
+            {
+              "text": "Beadle",
+              "labelId": "EVENT_COUNTY",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventCounty"
+        },
+        {
+          "values": [
+            {
+              "text": "Beadle",
+              "labelId": "EVENT_COUNTY_ORIG",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventCountyOrig"
+        },
+        {
+          "values": [
+            {
+              "text": "12",
+              "labelId": "EVENT_DISTRICT_ORIG",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventDistrictOrig"
+        },
+        {
+          "values": [
+            {
+              "text": "Country",
+              "labelId": "EVENT_PLACE_LEVEL_1_TYPE",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventPlaceLevel1Type"
+        },
+        {
+          "values": [
+            {
+              "text": "State",
+              "labelId": "EVENT_PLACE_LEVEL_2_TYPE",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventPlaceLevel2Type"
+        },
+        {
+          "values": [
+            {
+              "text": "County",
+              "labelId": "EVENT_PLACE_LEVEL_3_TYPE",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventPlaceLevel3Type"
+        },
+        {
+          "values": [
+            {
+              "text": "Township",
+              "labelId": "EVENT_PLACE_LEVEL_4_TYPE",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventPlaceLevel4Type"
+        },
+        {
+          "values": [
+            {
+              "text": "South Dakota",
+              "labelId": "EVENT_STATE",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventState"
+        },
+        {
+          "values": [
+            {
+              "text": "South Dakota",
+              "labelId": "EVENT_STATE_ORIG",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventStateOrig"
+        },
+        {
+          "values": [
+            {
+              "text": "Prairie Belle",
+              "labelId": "EVENT_TOWNSHIP",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventTownship"
+        },
+        {
+          "values": [
+            {
+              "text": "Prairie Belle",
+              "labelId": "EVENT_TOWNSHIP_ORIG",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventTownshipOrig"
+        },
+        {
+          "values": [
+            {
+              "text": "165249666",
+              "labelId": "EXT_2_PERSON_ID",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/Ext2PersonId"
+        },
+        {
+          "values": [
+            {
+              "text": "Ancestry.com",
+              "labelId": "EXT_2_REPOSITORY_NAME",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/Ext2RepositoryName"
+        },
+        {
+          "values": [
+            {
+              "text": "295",
+              "labelId": "FOLDER_IMAGE_SEQ",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/FolderImageSeq"
+        },
+        {
+          "values": [
+            {
+              "text": "004449624",
+              "labelId": "FOLDER",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/Folder"
+        },
+        {
+          "values": [
+            {
+              "text": "597260",
+              "labelId": "FS_BATCH_ID",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/FsBatchId"
+        },
+        {
+          "values": [
+            {
+              "text": "South Dakota, United States",
+              "labelId": "FS_BATCH_LOCALITY",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/FsBatchLocality"
+        },
+        {
+          "values": [
+            {
+              "text": "1727033",
+              "labelId": "FS_COLLECTION_ID",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/FsCollectionId"
+        },
+        {
+          "values": [
+            {
+              "text": "004449624_00295",
+              "labelId": "FS_EASY_IMAGE_ID",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/FsEasyImageId"
+        },
+        {
+          "values": [
+            {
+              "text": "A",
+              "labelId": "FS_PACKET_LTR",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/FsPacketLtr"
+        },
+        {
+          "values": [
+            {
+              "text": "09-0391",
+              "labelId": "FS_PPQ_ID",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/FsPpqId"
+        },
+        {
+          "values": [
+            {
+              "text": "004449624_00295_46",
+              "labelId": "FS_RECORD_ID",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/FsRecordId"
+        },
+        {
+          "values": [
+            {
+              "text": "13674",
+              "labelId": "FS_RECORD_NBR",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/FsRecordNbr"
+        },
+        {
+          "values": [
+            {
+              "text": "N03488-7",
+              "labelId": "FS_UDE_BATCH_NBR",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/FsUdeBatchNbr"
+        },
+        {
+          "values": [
+            {
+              "text": "TH-266-12351-58609-19",
+              "labelId": "IMAGE_APID",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/ImageApid"
+        },
+        {
+          "values": [
+            {
+              "text": "https://familysearch.org/ark:/61903/3:1:S3HT-6LLS-73K",
+              "labelId": "IMAGE_ARK",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/ImageArk"
+        },
+        {
+          "values": [
+            {
+              "text": "American",
+              "labelId": "PR_ETHNICITY_CSS",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/PrEthnicityCss"
+        },
+        {
+          "values": [
+            {
+              "text": "White",
+              "labelId": "PR_RACE_OR_COLOR_CSS",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/PrRaceOrColorCss"
+        },
+        {
+          "values": [
+            {
+              "text": "Wife",
+              "labelId": "PR_RELATIONSHIP_TO_HEAD_CSS",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/PrRelationshipToHeadCss"
+        },
+        {
+          "values": [
+            {
+              "text": "South Dakota",
+              "labelId": "RECORD_GROUP",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/RecordGroup"
+        },
+        {
+          "values": [
+            {
+              "text": "A",
+              "labelId": "SOURCE_SHEET_LTR",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/SourceSheetLtr"
+        },
+        {
+          "values": [
+            {
+              "text": "4",
+              "labelId": "SOURCE_SHEET_NBR",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/SourceSheetNbr"
+        },
+        {
+          "values": [
+            {
+              "text": "000000000_004449624_00295_046_001046930058",
+              "labelId": "SORT_KEY",
+              "type": "http://gedcomx.org/Interpreted"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/SortKey"
+        }
+      ],
+      "id": "p_570564308",
+      "links": {
+        "persona": {
+          "href": "https://familysearch.org/platform/records/personas/MPXD-MZH"
+        },
+        "record": {
+          "href": "https://familysearch.org/platform/records/records/9JX9-6LD"
+        }
+      },
+      "extracted": true,
+      "identifiers": {
+        "$": [
+          "https://familysearch.org/platform/externalId/easy/1046930058"
+        ],
+        "http://gedcomx.org/Persistent": [
+          "https://familysearch.org/ark:/61903/1:1:MPXD-MZH"
+        ]
+      },
+      "principal": true,
+      "gender": {
+        "fields": [
+          {
+            "values": [
+              {
+                "resource": "http://gedcomx.org/Unknown",
+                "text": "Female",
+                "labelId": "PR_SEX_CODE_ORIG",
+                "type": "http://gedcomx.org/Original"
+              },
+              {
+                "resource": "http://gedcomx.org/Female",
+                "text": "Female",
+                "labelId": "PR_SEX_CODE",
+                "type": "http://gedcomx.org/Interpreted"
+              }
+            ],
+            "type": "http://gedcomx.org/Gender"
+          }
+        ],
+        "type": "http://gedcomx.org/Female"
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fields": [
+                {
+                  "values": [
+                    {
+                      "text": "Charlotte/Spriggs",
+                      "labelId": "PR_NAME_ORIG",
+                      "type": "http://gedcomx.org/Original"
+                    },
+                    {
+                      "text": "Charlotte Spriggs",
+                      "labelId": "PR_NAME",
+                      "type": "http://gedcomx.org/Interpreted"
+                    }
+                  ],
+                  "type": "http://gedcomx.org/Name"
+                }
+              ],
+              "parts": [
+                {
+                  "fields": [
+                    {
+                      "values": [
+                        {
+                          "text": "Charlotte",
+                          "labelId": "PR_NAME_GN_ORIG",
+                          "type": "http://gedcomx.org/Original"
+                        },
+                        {
+                          "text": "Charlotte",
+                          "labelId": "PR_NAME_GN",
+                          "type": "http://gedcomx.org/Interpreted"
+                        }
+                      ],
+                      "type": "http://gedcomx.org/Given"
+                    }
+                  ],
+                  "value": "Charlotte",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "fields": [
+                    {
+                      "values": [
+                        {
+                          "text": "Spriggs",
+                          "labelId": "PR_NAME_SURN_ORIG",
+                          "type": "http://gedcomx.org/Original"
+                        },
+                        {
+                          "text": "Spriggs",
+                          "labelId": "PR_NAME_SURN",
+                          "type": "http://gedcomx.org/Interpreted"
+                        }
+                      ],
+                      "type": "http://gedcomx.org/Surname"
+                    }
+                  ],
+                  "value": "Spriggs",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ],
+              "fullText": "Charlotte Spriggs"
+            }
+          ],
+          "type": "http://gedcomx.org/BirthName"
+        }
+      ],
+      "facts": [
+        {
+          "fields": [
+            {
+              "values": [
+                {
+                  "text": "Married",
+                  "labelId": "PR_MARITAL_STATUS_ORIG",
+                  "type": "http://gedcomx.org/Original"
+                },
+                {
+                  "text": "Married",
+                  "labelId": "PR_MARITAL_STATUS",
+                  "type": "http://gedcomx.org/Interpreted"
+                }
+              ],
+              "type": "http://gedcomx.org/MaritalStatus"
+            }
+          ],
+          "value": "Married",
+          "type": "http://gedcomx.org/MaritalStatus"
+        },
+        {
+          "primary": true,
+          "place": {
+            "fields": [
+              {
+                "values": [
+                  {
+                    "text": "Prairie Belle, Beadle, South Dakota, United States",
+                    "labelId": "EVENT_PLACE_ORIG",
+                    "type": "http://gedcomx.org/Original"
+                  },
+                  {
+                    "text": "Prairie Belle, Beadle, South Dakota, United States",
+                    "labelId": "EVENT_PLACE",
+                    "type": "http://gedcomx.org/Interpreted"
+                  }
+                ],
+                "type": "http://gedcomx.org/Place"
+              },
+              {
+                "values": [
+                  {
+                    "text": "Prairie Belle",
+                    "labelId": "EVENT_PLACE_LEVEL_4_ORIG",
+                    "type": "http://gedcomx.org/Original"
+                  },
+                  {
+                    "text": "Prairie Belle",
+                    "labelId": "EVENT_PLACE_LEVEL_4",
+                    "type": "http://gedcomx.org/Interpreted"
+                  }
+                ],
+                "type": "http://gedcomx.org/Township"
+              },
+              {
+                "values": [
+                  {
+                    "text": "Beadle",
+                    "labelId": "EVENT_PLACE_LEVEL_3_ORIG",
+                    "type": "http://gedcomx.org/Original"
+                  },
+                  {
+                    "text": "Beadle",
+                    "labelId": "EVENT_PLACE_LEVEL_3",
+                    "type": "http://gedcomx.org/Interpreted"
+                  }
+                ],
+                "type": "http://gedcomx.org/County"
+              },
+              {
+                "values": [
+                  {
+                    "text": "South Dakota",
+                    "labelId": "EVENT_PLACE_LEVEL_2",
+                    "type": "http://gedcomx.org/Interpreted"
+                  }
+                ],
+                "type": "http://gedcomx.org/State"
+              },
+              {
+                "values": [
+                  {
+                    "text": "United States",
+                    "labelId": "EVENT_PLACE_LEVEL_1",
+                    "type": "http://gedcomx.org/Interpreted"
+                  }
+                ],
+                "type": "http://gedcomx.org/Country"
+              }
+            ],
+            "original": "Prairie Belle, Beadle, South Dakota, United States"
+          },
+          "date": {
+            "fields": [
+              {
+                "values": [
+                  {
+                    "text": "1910",
+                    "labelId": "EVENT_DATE",
+                    "type": "http://gedcomx.org/Interpreted"
+                  }
+                ],
+                "type": "http://gedcomx.org/Date"
+              },
+              {
+                "values": [
+                  {
+                    "text": "1910",
+                    "labelId": "EVENT_YEAR",
+                    "type": "http://gedcomx.org/Interpreted"
+                  }
+                ],
+                "type": "http://gedcomx.org/Year"
+              }
+            ],
+            "original": "1910"
+          },
+          "type": "http://gedcomx.org/Census"
+        },
+        {
+          "place": {
+            "fields": [
+              {
+                "values": [
+                  {
+                    "text": "Norway",
+                    "labelId": "PR_BIRTH_PLACE",
+                    "type": "http://gedcomx.org/Interpreted"
+                  }
+                ],
+                "type": "http://gedcomx.org/Place"
+              }
+            ],
+            "original": "Norway"
+          },
+          "date": {
+            "fields": [
+              {
+                "values": [
+                  {
+                    "text": "1877",
+                    "labelId": "PR_BIRTH_YEAR_ESTIMATED",
+                    "type": "http://gedcomx.org/Interpreted"
+                  }
+                ],
+                "type": "http://gedcomx.org/Year"
+              }
+            ],
+            "original": "1877"
+          },
+          "type": "http://gedcomx.org/Birth"
+        }
+      ]
+    },
+    {
+      "fields": [
+        {
+          "values": [
+            {
+              "text": "11y",
+              "labelId": "PR_AGE_ORIG",
+              "type": "http://gedcomx.org/Original"
+            },
+            {
+              "text": "11",
+              "labelId": "PR_AGE",
+              "type": "http://gedcomx.org/Interpreted"
+            }
+          ],
+          "type": "http://gedcomx.org/Age"
+        },
+        {
+          "values": [
+            {
+              "text": "White",
+              "labelId": "PR_RACE_OR_COLOR_ORIG",
+              "type": "http://gedcomx.org/Original"
+            },
+            {
+              "text": "White",
+              "labelId": "PR_RACE_OR_COLOR",
+              "type": "http://gedcomx.org/Interpreted"
+            }
+          ],
+          "type": "http://gedcomx.org/Race"
+        },
+        {
+          "values": [
+            {
+              "text": "1046930059",
+              "labelId": "UNIQUE_IDENTIFIER",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/UniqueIdentifier"
+        },
+        {
+          "values": [
+            {
+              "text": "/004449624/004449624_00295.jpg",
+              "labelId": "IMAGE_ID",
+              "type": "http://gedcomx.org/Original"
+            },
+            {
+              "text": "dgs:004449624.004449624_00295",
+              "labelId": "IMAGE_ID_NORM",
+              "type": "http://gedcomx.org/Interpreted"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/ImageId"
+        },
+        {
+          "values": [
+            {
+              "text": "63",
+              "labelId": "HOUSEHOLD_ID",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/HouseholdId"
+        },
+        {
+          "values": [
+            {
+              "text": "Son",
+              "labelId": "PR_RELATIONSHIP_TO_HEAD_ORIG",
+              "type": "http://gedcomx.org/Original"
+            },
+            {
+              "text": "Son",
+              "labelId": "PR_RELATIONSHIP_TO_HEAD",
+              "type": "http://gedcomx.org/Interpreted"
+            }
+          ],
+          "type": "http://gedcomx.org/RelationshipToHead"
+        },
+        {
+          "values": [
+            {
+              "text": "Iowa",
+              "labelId": "PR_FTHR_BIRTH_PLACE",
+              "type": "http://gedcomx.org/Interpreted"
+            }
+          ],
+          "type": "http://gedcomx.org/FatherBirthPlace"
+        },
+        {
+          "values": [
+            {
+              "text": "Norway",
+              "labelId": "PR_MTHR_BIRTH_PLACE",
+              "type": "http://gedcomx.org/Interpreted"
+            }
+          ],
+          "type": "http://gedcomx.org/MotherBirthPlace"
+        },
+        {
+          "values": [
+            {
+              "text": "Son",
+              "labelId": "PR_RELATIONSHIP_CODE",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/RelationshipToHeadCode"
+        },
+        {
+          "values": [
+            {
+              "text": "Census",
+              "labelId": "EVENT_TYPE",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventType"
+        },
+        {
+          "values": [
+            {
+              "text": "12",
+              "labelId": "EVENT_DISTRICT",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventDistrict"
+        },
+        {
+          "values": [
+            {
+              "text": "4A",
+              "labelId": "SOURCE_SHEET_NBR_LTR",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/SourceSheetNbrLtr"
+        },
+        {
+          "values": [
+            {
+              "text": "The U.S. National Archives and Records Administration (NARA)",
+              "labelId": "EXT_REPOSITORY_NAME",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/ExtRepositoryName"
+        },
+        {
+          "values": [
+            {
+              "text": "M1283",
+              "labelId": "EXT_PUB_NBR",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/ExtPubNbr"
+        },
+        {
+          "values": [
+            {
+              "text": "1375489",
+              "labelId": "FILM_NUMBER",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/FilmNumber"
+        },
+        {
+          "values": [
+            {
+              "text": "004449624",
+              "labelId": "DIGITAL_GS_NUMBER",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/DigitalGsNumber"
+        },
+        {
+          "values": [
+            {
+              "text": "00295",
+              "labelId": "IMAGE_NBR",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/ImageNbr"
+        },
+        {
+          "values": [
+            {
+              "text": "United States",
+              "labelId": "EVENT_COUNTRY",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventCountry"
+        },
+        {
+          "values": [
+            {
+              "text": "Beadle",
+              "labelId": "EVENT_COUNTY",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventCounty"
+        },
+        {
+          "values": [
+            {
+              "text": "Beadle",
+              "labelId": "EVENT_COUNTY_ORIG",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventCountyOrig"
+        },
+        {
+          "values": [
+            {
+              "text": "12",
+              "labelId": "EVENT_DISTRICT_ORIG",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventDistrictOrig"
+        },
+        {
+          "values": [
+            {
+              "text": "Country",
+              "labelId": "EVENT_PLACE_LEVEL_1_TYPE",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventPlaceLevel1Type"
+        },
+        {
+          "values": [
+            {
+              "text": "State",
+              "labelId": "EVENT_PLACE_LEVEL_2_TYPE",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventPlaceLevel2Type"
+        },
+        {
+          "values": [
+            {
+              "text": "County",
+              "labelId": "EVENT_PLACE_LEVEL_3_TYPE",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventPlaceLevel3Type"
+        },
+        {
+          "values": [
+            {
+              "text": "Township",
+              "labelId": "EVENT_PLACE_LEVEL_4_TYPE",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventPlaceLevel4Type"
+        },
+        {
+          "values": [
+            {
+              "text": "South Dakota",
+              "labelId": "EVENT_STATE",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventState"
+        },
+        {
+          "values": [
+            {
+              "text": "South Dakota",
+              "labelId": "EVENT_STATE_ORIG",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventStateOrig"
+        },
+        {
+          "values": [
+            {
+              "text": "Prairie Belle",
+              "labelId": "EVENT_TOWNSHIP",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventTownship"
+        },
+        {
+          "values": [
+            {
+              "text": "Prairie Belle",
+              "labelId": "EVENT_TOWNSHIP_ORIG",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventTownshipOrig"
+        },
+        {
+          "values": [
+            {
+              "text": "165249667",
+              "labelId": "EXT_2_PERSON_ID",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/Ext2PersonId"
+        },
+        {
+          "values": [
+            {
+              "text": "Ancestry.com",
+              "labelId": "EXT_2_REPOSITORY_NAME",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/Ext2RepositoryName"
+        },
+        {
+          "values": [
+            {
+              "text": "295",
+              "labelId": "FOLDER_IMAGE_SEQ",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/FolderImageSeq"
+        },
+        {
+          "values": [
+            {
+              "text": "004449624",
+              "labelId": "FOLDER",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/Folder"
+        },
+        {
+          "values": [
+            {
+              "text": "597260",
+              "labelId": "FS_BATCH_ID",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/FsBatchId"
+        },
+        {
+          "values": [
+            {
+              "text": "South Dakota, United States",
+              "labelId": "FS_BATCH_LOCALITY",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/FsBatchLocality"
+        },
+        {
+          "values": [
+            {
+              "text": "1727033",
+              "labelId": "FS_COLLECTION_ID",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/FsCollectionId"
+        },
+        {
+          "values": [
+            {
+              "text": "004449624_00295",
+              "labelId": "FS_EASY_IMAGE_ID",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/FsEasyImageId"
+        },
+        {
+          "values": [
+            {
+              "text": "A",
+              "labelId": "FS_PACKET_LTR",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/FsPacketLtr"
+        },
+        {
+          "values": [
+            {
+              "text": "09-0391",
+              "labelId": "FS_PPQ_ID",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/FsPpqId"
+        },
+        {
+          "values": [
+            {
+              "text": "004449624_00295_47",
+              "labelId": "FS_RECORD_ID",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/FsRecordId"
+        },
+        {
+          "values": [
+            {
+              "text": "13675",
+              "labelId": "FS_RECORD_NBR",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/FsRecordNbr"
+        },
+        {
+          "values": [
+            {
+              "text": "N03488-7",
+              "labelId": "FS_UDE_BATCH_NBR",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/FsUdeBatchNbr"
+        },
+        {
+          "values": [
+            {
+              "text": "TH-266-12351-58609-19",
+              "labelId": "IMAGE_APID",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/ImageApid"
+        },
+        {
+          "values": [
+            {
+              "text": "https://familysearch.org/ark:/61903/3:1:S3HT-6LLS-73K",
+              "labelId": "IMAGE_ARK",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/ImageArk"
+        },
+        {
+          "values": [
+            {
+              "text": "American",
+              "labelId": "PR_ETHNICITY_CSS",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/PrEthnicityCss"
+        },
+        {
+          "values": [
+            {
+              "text": "White",
+              "labelId": "PR_RACE_OR_COLOR_CSS",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/PrRaceOrColorCss"
+        },
+        {
+          "values": [
+            {
+              "text": "Son",
+              "labelId": "PR_RELATIONSHIP_TO_HEAD_CSS",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/PrRelationshipToHeadCss"
+        },
+        {
+          "values": [
+            {
+              "text": "South Dakota",
+              "labelId": "RECORD_GROUP",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/RecordGroup"
+        },
+        {
+          "values": [
+            {
+              "text": "A",
+              "labelId": "SOURCE_SHEET_LTR",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/SourceSheetLtr"
+        },
+        {
+          "values": [
+            {
+              "text": "4",
+              "labelId": "SOURCE_SHEET_NBR",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/SourceSheetNbr"
+        },
+        {
+          "values": [
+            {
+              "text": "000000000_004449624_00295_047_001046930059",
+              "labelId": "SORT_KEY",
+              "type": "http://gedcomx.org/Interpreted"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/SortKey"
+        }
+      ],
+      "id": "p_570564309",
+      "links": {
+        "persona": {
+          "href": "https://familysearch.org/platform/records/personas/MPXD-MZC"
+        },
+        "record": {
+          "href": "https://familysearch.org/platform/records/records/9JX9-6LD"
+        }
+      },
+      "extracted": true,
+      "identifiers": {
+        "$": [
+          "https://familysearch.org/platform/externalId/easy/1046930059"
+        ],
+        "http://gedcomx.org/Persistent": [
+          "https://familysearch.org/ark:/61903/1:1:MPXD-MZC"
+        ]
+      },
+      "principal": true,
+      "gender": {
+        "fields": [
+          {
+            "values": [
+              {
+                "resource": "http://gedcomx.org/Unknown",
+                "text": "Male",
+                "labelId": "PR_SEX_CODE_ORIG",
+                "type": "http://gedcomx.org/Original"
+              },
+              {
+                "resource": "http://gedcomx.org/Male",
+                "text": "Male",
+                "labelId": "PR_SEX_CODE",
+                "type": "http://gedcomx.org/Interpreted"
+              }
+            ],
+            "type": "http://gedcomx.org/Gender"
+          }
+        ],
+        "type": "http://gedcomx.org/Male"
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fields": [
+                {
+                  "values": [
+                    {
+                      "text": "Rueben S/Spriggs",
+                      "labelId": "PR_NAME_ORIG",
+                      "type": "http://gedcomx.org/Original"
+                    },
+                    {
+                      "text": "Rueben S Spriggs",
+                      "labelId": "PR_NAME",
+                      "type": "http://gedcomx.org/Interpreted"
+                    }
+                  ],
+                  "type": "http://gedcomx.org/Name"
+                }
+              ],
+              "parts": [
+                {
+                  "fields": [
+                    {
+                      "values": [
+                        {
+                          "text": "Rueben S",
+                          "labelId": "PR_NAME_GN_ORIG",
+                          "type": "http://gedcomx.org/Original"
+                        },
+                        {
+                          "text": "Rueben S",
+                          "labelId": "PR_NAME_GN",
+                          "type": "http://gedcomx.org/Interpreted"
+                        }
+                      ],
+                      "type": "http://gedcomx.org/Given"
+                    }
+                  ],
+                  "value": "Rueben S",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "fields": [
+                    {
+                      "values": [
+                        {
+                          "text": "Spriggs",
+                          "labelId": "PR_NAME_SURN_ORIG",
+                          "type": "http://gedcomx.org/Original"
+                        },
+                        {
+                          "text": "Spriggs",
+                          "labelId": "PR_NAME_SURN",
+                          "type": "http://gedcomx.org/Interpreted"
+                        }
+                      ],
+                      "type": "http://gedcomx.org/Surname"
+                    }
+                  ],
+                  "value": "Spriggs",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ],
+              "fullText": "Rueben S Spriggs"
+            }
+          ],
+          "type": "http://gedcomx.org/BirthName"
+        }
+      ],
+      "facts": [
+        {
+          "fields": [
+            {
+              "values": [
+                {
+                  "text": "Single",
+                  "labelId": "PR_MARITAL_STATUS_ORIG",
+                  "type": "http://gedcomx.org/Original"
+                },
+                {
+                  "text": "Single",
+                  "labelId": "PR_MARITAL_STATUS",
+                  "type": "http://gedcomx.org/Interpreted"
+                }
+              ],
+              "type": "http://gedcomx.org/MaritalStatus"
+            }
+          ],
+          "value": "Single",
+          "type": "http://gedcomx.org/MaritalStatus"
+        },
+        {
+          "primary": true,
+          "place": {
+            "fields": [
+              {
+                "values": [
+                  {
+                    "text": "Prairie Belle, Beadle, South Dakota, United States",
+                    "labelId": "EVENT_PLACE_ORIG",
+                    "type": "http://gedcomx.org/Original"
+                  },
+                  {
+                    "text": "Prairie Belle, Beadle, South Dakota, United States",
+                    "labelId": "EVENT_PLACE",
+                    "type": "http://gedcomx.org/Interpreted"
+                  }
+                ],
+                "type": "http://gedcomx.org/Place"
+              },
+              {
+                "values": [
+                  {
+                    "text": "Prairie Belle",
+                    "labelId": "EVENT_PLACE_LEVEL_4_ORIG",
+                    "type": "http://gedcomx.org/Original"
+                  },
+                  {
+                    "text": "Prairie Belle",
+                    "labelId": "EVENT_PLACE_LEVEL_4",
+                    "type": "http://gedcomx.org/Interpreted"
+                  }
+                ],
+                "type": "http://gedcomx.org/Township"
+              },
+              {
+                "values": [
+                  {
+                    "text": "Beadle",
+                    "labelId": "EVENT_PLACE_LEVEL_3_ORIG",
+                    "type": "http://gedcomx.org/Original"
+                  },
+                  {
+                    "text": "Beadle",
+                    "labelId": "EVENT_PLACE_LEVEL_3",
+                    "type": "http://gedcomx.org/Interpreted"
+                  }
+                ],
+                "type": "http://gedcomx.org/County"
+              },
+              {
+                "values": [
+                  {
+                    "text": "South Dakota",
+                    "labelId": "EVENT_PLACE_LEVEL_2",
+                    "type": "http://gedcomx.org/Interpreted"
+                  }
+                ],
+                "type": "http://gedcomx.org/State"
+              },
+              {
+                "values": [
+                  {
+                    "text": "United States",
+                    "labelId": "EVENT_PLACE_LEVEL_1",
+                    "type": "http://gedcomx.org/Interpreted"
+                  }
+                ],
+                "type": "http://gedcomx.org/Country"
+              }
+            ],
+            "original": "Prairie Belle, Beadle, South Dakota, United States"
+          },
+          "date": {
+            "fields": [
+              {
+                "values": [
+                  {
+                    "text": "1910",
+                    "labelId": "EVENT_DATE",
+                    "type": "http://gedcomx.org/Interpreted"
+                  }
+                ],
+                "type": "http://gedcomx.org/Date"
+              },
+              {
+                "values": [
+                  {
+                    "text": "1910",
+                    "labelId": "EVENT_YEAR",
+                    "type": "http://gedcomx.org/Interpreted"
+                  }
+                ],
+                "type": "http://gedcomx.org/Year"
+              }
+            ],
+            "original": "1910"
+          },
+          "type": "http://gedcomx.org/Census"
+        },
+        {
+          "place": {
+            "fields": [
+              {
+                "values": [
+                  {
+                    "text": "North Dakota",
+                    "labelId": "PR_BIRTH_PLACE",
+                    "type": "http://gedcomx.org/Interpreted"
+                  }
+                ],
+                "type": "http://gedcomx.org/Place"
+              }
+            ],
+            "original": "North Dakota"
+          },
+          "date": {
+            "fields": [
+              {
+                "values": [
+                  {
+                    "text": "1899",
+                    "labelId": "PR_BIRTH_YEAR_ESTIMATED",
+                    "type": "http://gedcomx.org/Interpreted"
+                  }
+                ],
+                "type": "http://gedcomx.org/Year"
+              }
+            ],
+            "original": "1899"
+          },
+          "type": "http://gedcomx.org/Birth"
+        }
+      ]
+    },
+    {
+      "fields": [
+        {
+          "values": [
+            {
+              "text": "10y",
+              "labelId": "PR_AGE_ORIG",
+              "type": "http://gedcomx.org/Original"
+            },
+            {
+              "text": "10",
+              "labelId": "PR_AGE",
+              "type": "http://gedcomx.org/Interpreted"
+            }
+          ],
+          "type": "http://gedcomx.org/Age"
+        },
+        {
+          "values": [
+            {
+              "text": "White",
+              "labelId": "PR_RACE_OR_COLOR_ORIG",
+              "type": "http://gedcomx.org/Original"
+            },
+            {
+              "text": "White",
+              "labelId": "PR_RACE_OR_COLOR",
+              "type": "http://gedcomx.org/Interpreted"
+            }
+          ],
+          "type": "http://gedcomx.org/Race"
+        },
+        {
+          "values": [
+            {
+              "text": "1046930060",
+              "labelId": "UNIQUE_IDENTIFIER",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/UniqueIdentifier"
+        },
+        {
+          "values": [
+            {
+              "text": "/004449624/004449624_00295.jpg",
+              "labelId": "IMAGE_ID",
+              "type": "http://gedcomx.org/Original"
+            },
+            {
+              "text": "dgs:004449624.004449624_00295",
+              "labelId": "IMAGE_ID_NORM",
+              "type": "http://gedcomx.org/Interpreted"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/ImageId"
+        },
+        {
+          "values": [
+            {
+              "text": "63",
+              "labelId": "HOUSEHOLD_ID",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/HouseholdId"
+        },
+        {
+          "values": [
+            {
+              "text": "Daughter",
+              "labelId": "PR_RELATIONSHIP_TO_HEAD_ORIG",
+              "type": "http://gedcomx.org/Original"
+            },
+            {
+              "text": "Daughter",
+              "labelId": "PR_RELATIONSHIP_TO_HEAD",
+              "type": "http://gedcomx.org/Interpreted"
+            }
+          ],
+          "type": "http://gedcomx.org/RelationshipToHead"
+        },
+        {
+          "values": [
+            {
+              "text": "Iowa",
+              "labelId": "PR_FTHR_BIRTH_PLACE",
+              "type": "http://gedcomx.org/Interpreted"
+            }
+          ],
+          "type": "http://gedcomx.org/FatherBirthPlace"
+        },
+        {
+          "values": [
+            {
+              "text": "Norway",
+              "labelId": "PR_MTHR_BIRTH_PLACE",
+              "type": "http://gedcomx.org/Interpreted"
+            }
+          ],
+          "type": "http://gedcomx.org/MotherBirthPlace"
+        },
+        {
+          "values": [
+            {
+              "text": "Daughter",
+              "labelId": "PR_RELATIONSHIP_CODE",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/RelationshipToHeadCode"
+        },
+        {
+          "values": [
+            {
+              "text": "Census",
+              "labelId": "EVENT_TYPE",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventType"
+        },
+        {
+          "values": [
+            {
+              "text": "12",
+              "labelId": "EVENT_DISTRICT",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventDistrict"
+        },
+        {
+          "values": [
+            {
+              "text": "4A",
+              "labelId": "SOURCE_SHEET_NBR_LTR",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/SourceSheetNbrLtr"
+        },
+        {
+          "values": [
+            {
+              "text": "The U.S. National Archives and Records Administration (NARA)",
+              "labelId": "EXT_REPOSITORY_NAME",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/ExtRepositoryName"
+        },
+        {
+          "values": [
+            {
+              "text": "M1283",
+              "labelId": "EXT_PUB_NBR",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/ExtPubNbr"
+        },
+        {
+          "values": [
+            {
+              "text": "1375489",
+              "labelId": "FILM_NUMBER",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/FilmNumber"
+        },
+        {
+          "values": [
+            {
+              "text": "004449624",
+              "labelId": "DIGITAL_GS_NUMBER",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/DigitalGsNumber"
+        },
+        {
+          "values": [
+            {
+              "text": "00295",
+              "labelId": "IMAGE_NBR",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/ImageNbr"
+        },
+        {
+          "values": [
+            {
+              "text": "United States",
+              "labelId": "EVENT_COUNTRY",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventCountry"
+        },
+        {
+          "values": [
+            {
+              "text": "Beadle",
+              "labelId": "EVENT_COUNTY",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventCounty"
+        },
+        {
+          "values": [
+            {
+              "text": "Beadle",
+              "labelId": "EVENT_COUNTY_ORIG",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventCountyOrig"
+        },
+        {
+          "values": [
+            {
+              "text": "12",
+              "labelId": "EVENT_DISTRICT_ORIG",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventDistrictOrig"
+        },
+        {
+          "values": [
+            {
+              "text": "Country",
+              "labelId": "EVENT_PLACE_LEVEL_1_TYPE",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventPlaceLevel1Type"
+        },
+        {
+          "values": [
+            {
+              "text": "State",
+              "labelId": "EVENT_PLACE_LEVEL_2_TYPE",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventPlaceLevel2Type"
+        },
+        {
+          "values": [
+            {
+              "text": "County",
+              "labelId": "EVENT_PLACE_LEVEL_3_TYPE",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventPlaceLevel3Type"
+        },
+        {
+          "values": [
+            {
+              "text": "Township",
+              "labelId": "EVENT_PLACE_LEVEL_4_TYPE",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventPlaceLevel4Type"
+        },
+        {
+          "values": [
+            {
+              "text": "South Dakota",
+              "labelId": "EVENT_STATE",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventState"
+        },
+        {
+          "values": [
+            {
+              "text": "South Dakota",
+              "labelId": "EVENT_STATE_ORIG",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventStateOrig"
+        },
+        {
+          "values": [
+            {
+              "text": "Prairie Belle",
+              "labelId": "EVENT_TOWNSHIP",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventTownship"
+        },
+        {
+          "values": [
+            {
+              "text": "Prairie Belle",
+              "labelId": "EVENT_TOWNSHIP_ORIG",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventTownshipOrig"
+        },
+        {
+          "values": [
+            {
+              "text": "165249668",
+              "labelId": "EXT_2_PERSON_ID",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/Ext2PersonId"
+        },
+        {
+          "values": [
+            {
+              "text": "Ancestry.com",
+              "labelId": "EXT_2_REPOSITORY_NAME",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/Ext2RepositoryName"
+        },
+        {
+          "values": [
+            {
+              "text": "295",
+              "labelId": "FOLDER_IMAGE_SEQ",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/FolderImageSeq"
+        },
+        {
+          "values": [
+            {
+              "text": "004449624",
+              "labelId": "FOLDER",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/Folder"
+        },
+        {
+          "values": [
+            {
+              "text": "597260",
+              "labelId": "FS_BATCH_ID",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/FsBatchId"
+        },
+        {
+          "values": [
+            {
+              "text": "South Dakota, United States",
+              "labelId": "FS_BATCH_LOCALITY",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/FsBatchLocality"
+        },
+        {
+          "values": [
+            {
+              "text": "1727033",
+              "labelId": "FS_COLLECTION_ID",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/FsCollectionId"
+        },
+        {
+          "values": [
+            {
+              "text": "004449624_00295",
+              "labelId": "FS_EASY_IMAGE_ID",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/FsEasyImageId"
+        },
+        {
+          "values": [
+            {
+              "text": "A",
+              "labelId": "FS_PACKET_LTR",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/FsPacketLtr"
+        },
+        {
+          "values": [
+            {
+              "text": "09-0391",
+              "labelId": "FS_PPQ_ID",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/FsPpqId"
+        },
+        {
+          "values": [
+            {
+              "text": "004449624_00295_48",
+              "labelId": "FS_RECORD_ID",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/FsRecordId"
+        },
+        {
+          "values": [
+            {
+              "text": "13676",
+              "labelId": "FS_RECORD_NBR",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/FsRecordNbr"
+        },
+        {
+          "values": [
+            {
+              "text": "N03488-7",
+              "labelId": "FS_UDE_BATCH_NBR",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/FsUdeBatchNbr"
+        },
+        {
+          "values": [
+            {
+              "text": "TH-266-12351-58609-19",
+              "labelId": "IMAGE_APID",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/ImageApid"
+        },
+        {
+          "values": [
+            {
+              "text": "https://familysearch.org/ark:/61903/3:1:S3HT-6LLS-73K",
+              "labelId": "IMAGE_ARK",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/ImageArk"
+        },
+        {
+          "values": [
+            {
+              "text": "American",
+              "labelId": "PR_ETHNICITY_CSS",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/PrEthnicityCss"
+        },
+        {
+          "values": [
+            {
+              "text": "White",
+              "labelId": "PR_RACE_OR_COLOR_CSS",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/PrRaceOrColorCss"
+        },
+        {
+          "values": [
+            {
+              "text": "Daughter",
+              "labelId": "PR_RELATIONSHIP_TO_HEAD_CSS",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/PrRelationshipToHeadCss"
+        },
+        {
+          "values": [
+            {
+              "text": "South Dakota",
+              "labelId": "RECORD_GROUP",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/RecordGroup"
+        },
+        {
+          "values": [
+            {
+              "text": "A",
+              "labelId": "SOURCE_SHEET_LTR",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/SourceSheetLtr"
+        },
+        {
+          "values": [
+            {
+              "text": "4",
+              "labelId": "SOURCE_SHEET_NBR",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/SourceSheetNbr"
+        },
+        {
+          "values": [
+            {
+              "text": "000000000_004449624_00295_048_001046930060",
+              "labelId": "SORT_KEY",
+              "type": "http://gedcomx.org/Interpreted"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/SortKey"
+        }
+      ],
+      "id": "p_570564310",
+      "links": {
+        "persona": {
+          "href": "https://familysearch.org/platform/records/personas/MPXD-MZZ"
+        },
+        "record": {
+          "href": "https://familysearch.org/platform/records/records/9JX9-6LD"
+        }
+      },
+      "extracted": true,
+      "identifiers": {
+        "$": [
+          "https://familysearch.org/platform/externalId/easy/1046930060"
+        ],
+        "http://gedcomx.org/Persistent": [
+          "https://familysearch.org/ark:/61903/1:1:MPXD-MZZ"
+        ]
+      },
+      "principal": true,
+      "gender": {
+        "fields": [
+          {
+            "values": [
+              {
+                "resource": "http://gedcomx.org/Unknown",
+                "text": "Female",
+                "labelId": "PR_SEX_CODE_ORIG",
+                "type": "http://gedcomx.org/Original"
+              },
+              {
+                "resource": "http://gedcomx.org/Female",
+                "text": "Female",
+                "labelId": "PR_SEX_CODE",
+                "type": "http://gedcomx.org/Interpreted"
+              }
+            ],
+            "type": "http://gedcomx.org/Gender"
+          }
+        ],
+        "type": "http://gedcomx.org/Female"
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fields": [
+                {
+                  "values": [
+                    {
+                      "text": "Lillian F/Spriggs",
+                      "labelId": "PR_NAME_ORIG",
+                      "type": "http://gedcomx.org/Original"
+                    },
+                    {
+                      "text": "Lillian F Spriggs",
+                      "labelId": "PR_NAME",
+                      "type": "http://gedcomx.org/Interpreted"
+                    }
+                  ],
+                  "type": "http://gedcomx.org/Name"
+                }
+              ],
+              "parts": [
+                {
+                  "fields": [
+                    {
+                      "values": [
+                        {
+                          "text": "Lillian F",
+                          "labelId": "PR_NAME_GN_ORIG",
+                          "type": "http://gedcomx.org/Original"
+                        },
+                        {
+                          "text": "Lillian F",
+                          "labelId": "PR_NAME_GN",
+                          "type": "http://gedcomx.org/Interpreted"
+                        }
+                      ],
+                      "type": "http://gedcomx.org/Given"
+                    }
+                  ],
+                  "value": "Lillian F",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "fields": [
+                    {
+                      "values": [
+                        {
+                          "text": "Spriggs",
+                          "labelId": "PR_NAME_SURN_ORIG",
+                          "type": "http://gedcomx.org/Original"
+                        },
+                        {
+                          "text": "Spriggs",
+                          "labelId": "PR_NAME_SURN",
+                          "type": "http://gedcomx.org/Interpreted"
+                        }
+                      ],
+                      "type": "http://gedcomx.org/Surname"
+                    }
+                  ],
+                  "value": "Spriggs",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ],
+              "fullText": "Lillian F Spriggs"
+            }
+          ],
+          "type": "http://gedcomx.org/BirthName"
+        }
+      ],
+      "facts": [
+        {
+          "fields": [
+            {
+              "values": [
+                {
+                  "text": "Single",
+                  "labelId": "PR_MARITAL_STATUS_ORIG",
+                  "type": "http://gedcomx.org/Original"
+                },
+                {
+                  "text": "Single",
+                  "labelId": "PR_MARITAL_STATUS",
+                  "type": "http://gedcomx.org/Interpreted"
+                }
+              ],
+              "type": "http://gedcomx.org/MaritalStatus"
+            }
+          ],
+          "value": "Single",
+          "type": "http://gedcomx.org/MaritalStatus"
+        },
+        {
+          "primary": true,
+          "place": {
+            "fields": [
+              {
+                "values": [
+                  {
+                    "text": "Prairie Belle, Beadle, South Dakota, United States",
+                    "labelId": "EVENT_PLACE_ORIG",
+                    "type": "http://gedcomx.org/Original"
+                  },
+                  {
+                    "text": "Prairie Belle, Beadle, South Dakota, United States",
+                    "labelId": "EVENT_PLACE",
+                    "type": "http://gedcomx.org/Interpreted"
+                  }
+                ],
+                "type": "http://gedcomx.org/Place"
+              },
+              {
+                "values": [
+                  {
+                    "text": "Prairie Belle",
+                    "labelId": "EVENT_PLACE_LEVEL_4_ORIG",
+                    "type": "http://gedcomx.org/Original"
+                  },
+                  {
+                    "text": "Prairie Belle",
+                    "labelId": "EVENT_PLACE_LEVEL_4",
+                    "type": "http://gedcomx.org/Interpreted"
+                  }
+                ],
+                "type": "http://gedcomx.org/Township"
+              },
+              {
+                "values": [
+                  {
+                    "text": "Beadle",
+                    "labelId": "EVENT_PLACE_LEVEL_3_ORIG",
+                    "type": "http://gedcomx.org/Original"
+                  },
+                  {
+                    "text": "Beadle",
+                    "labelId": "EVENT_PLACE_LEVEL_3",
+                    "type": "http://gedcomx.org/Interpreted"
+                  }
+                ],
+                "type": "http://gedcomx.org/County"
+              },
+              {
+                "values": [
+                  {
+                    "text": "South Dakota",
+                    "labelId": "EVENT_PLACE_LEVEL_2",
+                    "type": "http://gedcomx.org/Interpreted"
+                  }
+                ],
+                "type": "http://gedcomx.org/State"
+              },
+              {
+                "values": [
+                  {
+                    "text": "United States",
+                    "labelId": "EVENT_PLACE_LEVEL_1",
+                    "type": "http://gedcomx.org/Interpreted"
+                  }
+                ],
+                "type": "http://gedcomx.org/Country"
+              }
+            ],
+            "original": "Prairie Belle, Beadle, South Dakota, United States"
+          },
+          "date": {
+            "fields": [
+              {
+                "values": [
+                  {
+                    "text": "1910",
+                    "labelId": "EVENT_DATE",
+                    "type": "http://gedcomx.org/Interpreted"
+                  }
+                ],
+                "type": "http://gedcomx.org/Date"
+              },
+              {
+                "values": [
+                  {
+                    "text": "1910",
+                    "labelId": "EVENT_YEAR",
+                    "type": "http://gedcomx.org/Interpreted"
+                  }
+                ],
+                "type": "http://gedcomx.org/Year"
+              }
+            ],
+            "original": "1910"
+          },
+          "type": "http://gedcomx.org/Census"
+        },
+        {
+          "place": {
+            "fields": [
+              {
+                "values": [
+                  {
+                    "text": "Iowa",
+                    "labelId": "PR_BIRTH_PLACE",
+                    "type": "http://gedcomx.org/Interpreted"
+                  }
+                ],
+                "type": "http://gedcomx.org/Place"
+              }
+            ],
+            "original": "Iowa"
+          },
+          "date": {
+            "fields": [
+              {
+                "values": [
+                  {
+                    "text": "1900",
+                    "labelId": "PR_BIRTH_YEAR_ESTIMATED",
+                    "type": "http://gedcomx.org/Interpreted"
+                  }
+                ],
+                "type": "http://gedcomx.org/Year"
+              }
+            ],
+            "original": "1900"
+          },
+          "type": "http://gedcomx.org/Birth"
+        }
+      ]
+    },
+    {
+      "fields": [
+        {
+          "values": [
+            {
+              "text": "3y",
+              "labelId": "PR_AGE_ORIG",
+              "type": "http://gedcomx.org/Original"
+            },
+            {
+              "text": "3",
+              "labelId": "PR_AGE",
+              "type": "http://gedcomx.org/Interpreted"
+            }
+          ],
+          "type": "http://gedcomx.org/Age"
+        },
+        {
+          "values": [
+            {
+              "text": "White",
+              "labelId": "PR_RACE_OR_COLOR_ORIG",
+              "type": "http://gedcomx.org/Original"
+            },
+            {
+              "text": "White",
+              "labelId": "PR_RACE_OR_COLOR",
+              "type": "http://gedcomx.org/Interpreted"
+            }
+          ],
+          "type": "http://gedcomx.org/Race"
+        },
+        {
+          "values": [
+            {
+              "text": "1046930061",
+              "labelId": "UNIQUE_IDENTIFIER",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/UniqueIdentifier"
+        },
+        {
+          "values": [
+            {
+              "text": "/004449624/004449624_00295.jpg",
+              "labelId": "IMAGE_ID",
+              "type": "http://gedcomx.org/Original"
+            },
+            {
+              "text": "dgs:004449624.004449624_00295",
+              "labelId": "IMAGE_ID_NORM",
+              "type": "http://gedcomx.org/Interpreted"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/ImageId"
+        },
+        {
+          "values": [
+            {
+              "text": "63",
+              "labelId": "HOUSEHOLD_ID",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/HouseholdId"
+        },
+        {
+          "values": [
+            {
+              "text": "Son",
+              "labelId": "PR_RELATIONSHIP_TO_HEAD_ORIG",
+              "type": "http://gedcomx.org/Original"
+            },
+            {
+              "text": "Son",
+              "labelId": "PR_RELATIONSHIP_TO_HEAD",
+              "type": "http://gedcomx.org/Interpreted"
+            }
+          ],
+          "type": "http://gedcomx.org/RelationshipToHead"
+        },
+        {
+          "values": [
+            {
+              "text": "Iowa",
+              "labelId": "PR_FTHR_BIRTH_PLACE",
+              "type": "http://gedcomx.org/Interpreted"
+            }
+          ],
+          "type": "http://gedcomx.org/FatherBirthPlace"
+        },
+        {
+          "values": [
+            {
+              "text": "Norway",
+              "labelId": "PR_MTHR_BIRTH_PLACE",
+              "type": "http://gedcomx.org/Interpreted"
+            }
+          ],
+          "type": "http://gedcomx.org/MotherBirthPlace"
+        },
+        {
+          "values": [
+            {
+              "text": "Son",
+              "labelId": "PR_RELATIONSHIP_CODE",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/RelationshipToHeadCode"
+        },
+        {
+          "values": [
+            {
+              "text": "Census",
+              "labelId": "EVENT_TYPE",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventType"
+        },
+        {
+          "values": [
+            {
+              "text": "12",
+              "labelId": "EVENT_DISTRICT",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventDistrict"
+        },
+        {
+          "values": [
+            {
+              "text": "4A",
+              "labelId": "SOURCE_SHEET_NBR_LTR",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/SourceSheetNbrLtr"
+        },
+        {
+          "values": [
+            {
+              "text": "The U.S. National Archives and Records Administration (NARA)",
+              "labelId": "EXT_REPOSITORY_NAME",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/ExtRepositoryName"
+        },
+        {
+          "values": [
+            {
+              "text": "M1283",
+              "labelId": "EXT_PUB_NBR",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/ExtPubNbr"
+        },
+        {
+          "values": [
+            {
+              "text": "1375489",
+              "labelId": "FILM_NUMBER",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/FilmNumber"
+        },
+        {
+          "values": [
+            {
+              "text": "004449624",
+              "labelId": "DIGITAL_GS_NUMBER",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/DigitalGsNumber"
+        },
+        {
+          "values": [
+            {
+              "text": "00295",
+              "labelId": "IMAGE_NBR",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/ImageNbr"
+        },
+        {
+          "values": [
+            {
+              "text": "United States",
+              "labelId": "EVENT_COUNTRY",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventCountry"
+        },
+        {
+          "values": [
+            {
+              "text": "Beadle",
+              "labelId": "EVENT_COUNTY",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventCounty"
+        },
+        {
+          "values": [
+            {
+              "text": "Beadle",
+              "labelId": "EVENT_COUNTY_ORIG",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventCountyOrig"
+        },
+        {
+          "values": [
+            {
+              "text": "12",
+              "labelId": "EVENT_DISTRICT_ORIG",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventDistrictOrig"
+        },
+        {
+          "values": [
+            {
+              "text": "Country",
+              "labelId": "EVENT_PLACE_LEVEL_1_TYPE",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventPlaceLevel1Type"
+        },
+        {
+          "values": [
+            {
+              "text": "State",
+              "labelId": "EVENT_PLACE_LEVEL_2_TYPE",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventPlaceLevel2Type"
+        },
+        {
+          "values": [
+            {
+              "text": "County",
+              "labelId": "EVENT_PLACE_LEVEL_3_TYPE",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventPlaceLevel3Type"
+        },
+        {
+          "values": [
+            {
+              "text": "Township",
+              "labelId": "EVENT_PLACE_LEVEL_4_TYPE",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventPlaceLevel4Type"
+        },
+        {
+          "values": [
+            {
+              "text": "South Dakota",
+              "labelId": "EVENT_STATE",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventState"
+        },
+        {
+          "values": [
+            {
+              "text": "South Dakota",
+              "labelId": "EVENT_STATE_ORIG",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventStateOrig"
+        },
+        {
+          "values": [
+            {
+              "text": "Prairie Belle",
+              "labelId": "EVENT_TOWNSHIP",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventTownship"
+        },
+        {
+          "values": [
+            {
+              "text": "Prairie Belle",
+              "labelId": "EVENT_TOWNSHIP_ORIG",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventTownshipOrig"
+        },
+        {
+          "values": [
+            {
+              "text": "165249669",
+              "labelId": "EXT_2_PERSON_ID",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/Ext2PersonId"
+        },
+        {
+          "values": [
+            {
+              "text": "Ancestry.com",
+              "labelId": "EXT_2_REPOSITORY_NAME",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/Ext2RepositoryName"
+        },
+        {
+          "values": [
+            {
+              "text": "295",
+              "labelId": "FOLDER_IMAGE_SEQ",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/FolderImageSeq"
+        },
+        {
+          "values": [
+            {
+              "text": "004449624",
+              "labelId": "FOLDER",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/Folder"
+        },
+        {
+          "values": [
+            {
+              "text": "597260",
+              "labelId": "FS_BATCH_ID",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/FsBatchId"
+        },
+        {
+          "values": [
+            {
+              "text": "South Dakota, United States",
+              "labelId": "FS_BATCH_LOCALITY",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/FsBatchLocality"
+        },
+        {
+          "values": [
+            {
+              "text": "1727033",
+              "labelId": "FS_COLLECTION_ID",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/FsCollectionId"
+        },
+        {
+          "values": [
+            {
+              "text": "004449624_00295",
+              "labelId": "FS_EASY_IMAGE_ID",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/FsEasyImageId"
+        },
+        {
+          "values": [
+            {
+              "text": "A",
+              "labelId": "FS_PACKET_LTR",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/FsPacketLtr"
+        },
+        {
+          "values": [
+            {
+              "text": "09-0391",
+              "labelId": "FS_PPQ_ID",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/FsPpqId"
+        },
+        {
+          "values": [
+            {
+              "text": "004449624_00295_49",
+              "labelId": "FS_RECORD_ID",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/FsRecordId"
+        },
+        {
+          "values": [
+            {
+              "text": "13677",
+              "labelId": "FS_RECORD_NBR",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/FsRecordNbr"
+        },
+        {
+          "values": [
+            {
+              "text": "N03488-7",
+              "labelId": "FS_UDE_BATCH_NBR",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/FsUdeBatchNbr"
+        },
+        {
+          "values": [
+            {
+              "text": "TH-266-12351-58609-19",
+              "labelId": "IMAGE_APID",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/ImageApid"
+        },
+        {
+          "values": [
+            {
+              "text": "https://familysearch.org/ark:/61903/3:1:S3HT-6LLS-73K",
+              "labelId": "IMAGE_ARK",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/ImageArk"
+        },
+        {
+          "values": [
+            {
+              "text": "American",
+              "labelId": "PR_ETHNICITY_CSS",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/PrEthnicityCss"
+        },
+        {
+          "values": [
+            {
+              "text": "White",
+              "labelId": "PR_RACE_OR_COLOR_CSS",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/PrRaceOrColorCss"
+        },
+        {
+          "values": [
+            {
+              "text": "Son",
+              "labelId": "PR_RELATIONSHIP_TO_HEAD_CSS",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/PrRelationshipToHeadCss"
+        },
+        {
+          "values": [
+            {
+              "text": "South Dakota",
+              "labelId": "RECORD_GROUP",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/RecordGroup"
+        },
+        {
+          "values": [
+            {
+              "text": "A",
+              "labelId": "SOURCE_SHEET_LTR",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/SourceSheetLtr"
+        },
+        {
+          "values": [
+            {
+              "text": "4",
+              "labelId": "SOURCE_SHEET_NBR",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/SourceSheetNbr"
+        },
+        {
+          "values": [
+            {
+              "text": "000000000_004449624_00295_049_001046930061",
+              "labelId": "SORT_KEY",
+              "type": "http://gedcomx.org/Interpreted"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/SortKey"
+        }
+      ],
+      "id": "p_570564311",
+      "links": {
+        "persona": {
+          "href": "https://familysearch.org/platform/records/personas/MPXD-MZ8"
+        },
+        "record": {
+          "href": "https://familysearch.org/platform/records/records/9JX9-6LD"
+        }
+      },
+      "extracted": true,
+      "identifiers": {
+        "$": [
+          "https://familysearch.org/platform/externalId/easy/1046930061"
+        ],
+        "http://gedcomx.org/Persistent": [
+          "https://familysearch.org/ark:/61903/1:1:MPXD-MZ8"
+        ]
+      },
+      "principal": true,
+      "gender": {
+        "fields": [
+          {
+            "values": [
+              {
+                "resource": "http://gedcomx.org/Unknown",
+                "text": "Male",
+                "labelId": "PR_SEX_CODE_ORIG",
+                "type": "http://gedcomx.org/Original"
+              },
+              {
+                "resource": "http://gedcomx.org/Male",
+                "text": "Male",
+                "labelId": "PR_SEX_CODE",
+                "type": "http://gedcomx.org/Interpreted"
+              }
+            ],
+            "type": "http://gedcomx.org/Gender"
+          }
+        ],
+        "type": "http://gedcomx.org/Male"
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fields": [
+                {
+                  "values": [
+                    {
+                      "text": "Leonard W/Spriggs",
+                      "labelId": "PR_NAME_ORIG",
+                      "type": "http://gedcomx.org/Original"
+                    },
+                    {
+                      "text": "Leonard W Spriggs",
+                      "labelId": "PR_NAME",
+                      "type": "http://gedcomx.org/Interpreted"
+                    }
+                  ],
+                  "type": "http://gedcomx.org/Name"
+                }
+              ],
+              "parts": [
+                {
+                  "fields": [
+                    {
+                      "values": [
+                        {
+                          "text": "Leonard W",
+                          "labelId": "PR_NAME_GN_ORIG",
+                          "type": "http://gedcomx.org/Original"
+                        },
+                        {
+                          "text": "Leonard W",
+                          "labelId": "PR_NAME_GN",
+                          "type": "http://gedcomx.org/Interpreted"
+                        }
+                      ],
+                      "type": "http://gedcomx.org/Given"
+                    }
+                  ],
+                  "value": "Leonard W",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "fields": [
+                    {
+                      "values": [
+                        {
+                          "text": "Spriggs",
+                          "labelId": "PR_NAME_SURN_ORIG",
+                          "type": "http://gedcomx.org/Original"
+                        },
+                        {
+                          "text": "Spriggs",
+                          "labelId": "PR_NAME_SURN",
+                          "type": "http://gedcomx.org/Interpreted"
+                        }
+                      ],
+                      "type": "http://gedcomx.org/Surname"
+                    }
+                  ],
+                  "value": "Spriggs",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ],
+              "fullText": "Leonard W Spriggs"
+            }
+          ],
+          "type": "http://gedcomx.org/BirthName"
+        }
+      ],
+      "facts": [
+        {
+          "fields": [
+            {
+              "values": [
+                {
+                  "text": "Single",
+                  "labelId": "PR_MARITAL_STATUS_ORIG",
+                  "type": "http://gedcomx.org/Original"
+                },
+                {
+                  "text": "Single",
+                  "labelId": "PR_MARITAL_STATUS",
+                  "type": "http://gedcomx.org/Interpreted"
+                }
+              ],
+              "type": "http://gedcomx.org/MaritalStatus"
+            }
+          ],
+          "value": "Single",
+          "type": "http://gedcomx.org/MaritalStatus"
+        },
+        {
+          "primary": true,
+          "place": {
+            "fields": [
+              {
+                "values": [
+                  {
+                    "text": "Prairie Belle, Beadle, South Dakota, United States",
+                    "labelId": "EVENT_PLACE_ORIG",
+                    "type": "http://gedcomx.org/Original"
+                  },
+                  {
+                    "text": "Prairie Belle, Beadle, South Dakota, United States",
+                    "labelId": "EVENT_PLACE",
+                    "type": "http://gedcomx.org/Interpreted"
+                  }
+                ],
+                "type": "http://gedcomx.org/Place"
+              },
+              {
+                "values": [
+                  {
+                    "text": "Prairie Belle",
+                    "labelId": "EVENT_PLACE_LEVEL_4_ORIG",
+                    "type": "http://gedcomx.org/Original"
+                  },
+                  {
+                    "text": "Prairie Belle",
+                    "labelId": "EVENT_PLACE_LEVEL_4",
+                    "type": "http://gedcomx.org/Interpreted"
+                  }
+                ],
+                "type": "http://gedcomx.org/Township"
+              },
+              {
+                "values": [
+                  {
+                    "text": "Beadle",
+                    "labelId": "EVENT_PLACE_LEVEL_3_ORIG",
+                    "type": "http://gedcomx.org/Original"
+                  },
+                  {
+                    "text": "Beadle",
+                    "labelId": "EVENT_PLACE_LEVEL_3",
+                    "type": "http://gedcomx.org/Interpreted"
+                  }
+                ],
+                "type": "http://gedcomx.org/County"
+              },
+              {
+                "values": [
+                  {
+                    "text": "South Dakota",
+                    "labelId": "EVENT_PLACE_LEVEL_2",
+                    "type": "http://gedcomx.org/Interpreted"
+                  }
+                ],
+                "type": "http://gedcomx.org/State"
+              },
+              {
+                "values": [
+                  {
+                    "text": "United States",
+                    "labelId": "EVENT_PLACE_LEVEL_1",
+                    "type": "http://gedcomx.org/Interpreted"
+                  }
+                ],
+                "type": "http://gedcomx.org/Country"
+              }
+            ],
+            "original": "Prairie Belle, Beadle, South Dakota, United States"
+          },
+          "date": {
+            "fields": [
+              {
+                "values": [
+                  {
+                    "text": "1910",
+                    "labelId": "EVENT_DATE",
+                    "type": "http://gedcomx.org/Interpreted"
+                  }
+                ],
+                "type": "http://gedcomx.org/Date"
+              },
+              {
+                "values": [
+                  {
+                    "text": "1910",
+                    "labelId": "EVENT_YEAR",
+                    "type": "http://gedcomx.org/Interpreted"
+                  }
+                ],
+                "type": "http://gedcomx.org/Year"
+              }
+            ],
+            "original": "1910"
+          },
+          "type": "http://gedcomx.org/Census"
+        },
+        {
+          "place": {
+            "fields": [
+              {
+                "values": [
+                  {
+                    "text": "South Dakota",
+                    "labelId": "PR_BIRTH_PLACE",
+                    "type": "http://gedcomx.org/Interpreted"
+                  }
+                ],
+                "type": "http://gedcomx.org/Place"
+              }
+            ],
+            "original": "South Dakota"
+          },
+          "date": {
+            "fields": [
+              {
+                "values": [
+                  {
+                    "text": "1907",
+                    "labelId": "PR_BIRTH_YEAR_ESTIMATED",
+                    "type": "http://gedcomx.org/Interpreted"
+                  }
+                ],
+                "type": "http://gedcomx.org/Year"
+              }
+            ],
+            "original": "1907"
+          },
+          "type": "http://gedcomx.org/Birth"
+        }
+      ]
+    },
+    {
+      "fields": [
+        {
+          "values": [
+            {
+              "text": "26y",
+              "labelId": "PR_AGE_ORIG",
+              "type": "http://gedcomx.org/Original"
+            },
+            {
+              "text": "26",
+              "labelId": "PR_AGE",
+              "type": "http://gedcomx.org/Interpreted"
+            }
+          ],
+          "type": "http://gedcomx.org/Age"
+        },
+        {
+          "values": [
+            {
+              "text": "White",
+              "labelId": "PR_RACE_OR_COLOR_ORIG",
+              "type": "http://gedcomx.org/Original"
+            },
+            {
+              "text": "White",
+              "labelId": "PR_RACE_OR_COLOR",
+              "type": "http://gedcomx.org/Interpreted"
+            }
+          ],
+          "type": "http://gedcomx.org/Race"
+        },
+        {
+          "values": [
+            {
+              "text": "1046930062",
+              "labelId": "UNIQUE_IDENTIFIER",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/UniqueIdentifier"
+        },
+        {
+          "values": [
+            {
+              "text": "/004449624/004449624_00296.jpg",
+              "labelId": "IMAGE_ID",
+              "type": "http://gedcomx.org/Original"
+            },
+            {
+              "text": "dgs:004449624.004449624_00296",
+              "labelId": "IMAGE_ID_NORM",
+              "type": "http://gedcomx.org/Interpreted"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/ImageId"
+        },
+        {
+          "values": [
+            {
+              "text": "63",
+              "labelId": "HOUSEHOLD_ID",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/HouseholdId"
+        },
+        {
+          "values": [
+            {
+              "text": "Boarder",
+              "labelId": "PR_RELATIONSHIP_TO_HEAD_ORIG",
+              "type": "http://gedcomx.org/Original"
+            },
+            {
+              "text": "Boarder",
+              "labelId": "PR_RELATIONSHIP_TO_HEAD",
+              "type": "http://gedcomx.org/Interpreted"
+            }
+          ],
+          "type": "http://gedcomx.org/RelationshipToHead"
+        },
+        {
+          "values": [
+            {
+              "text": "Norway",
+              "labelId": "PR_FTHR_BIRTH_PLACE",
+              "type": "http://gedcomx.org/Interpreted"
+            }
+          ],
+          "type": "http://gedcomx.org/FatherBirthPlace"
+        },
+        {
+          "values": [
+            {
+              "text": "Norway",
+              "labelId": "PR_MTHR_BIRTH_PLACE",
+              "type": "http://gedcomx.org/Interpreted"
+            }
+          ],
+          "type": "http://gedcomx.org/MotherBirthPlace"
+        },
+        {
+          "values": [
+            {
+              "text": "Census",
+              "labelId": "EVENT_TYPE",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventType"
+        },
+        {
+          "values": [
+            {
+              "text": "12",
+              "labelId": "EVENT_DISTRICT",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventDistrict"
+        },
+        {
+          "values": [
+            {
+              "text": "4B",
+              "labelId": "SOURCE_SHEET_NBR_LTR",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/SourceSheetNbrLtr"
+        },
+        {
+          "values": [
+            {
+              "text": "The U.S. National Archives and Records Administration (NARA)",
+              "labelId": "EXT_REPOSITORY_NAME",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/ExtRepositoryName"
+        },
+        {
+          "values": [
+            {
+              "text": "M1283",
+              "labelId": "EXT_PUB_NBR",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/ExtPubNbr"
+        },
+        {
+          "values": [
+            {
+              "text": "1375489",
+              "labelId": "FILM_NUMBER",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/FilmNumber"
+        },
+        {
+          "values": [
+            {
+              "text": "004449624",
+              "labelId": "DIGITAL_GS_NUMBER",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/DigitalGsNumber"
+        },
+        {
+          "values": [
+            {
+              "text": "00296",
+              "labelId": "IMAGE_NBR",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/ImageNbr"
+        },
+        {
+          "values": [
+            {
+              "text": "United States",
+              "labelId": "EVENT_COUNTRY",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventCountry"
+        },
+        {
+          "values": [
+            {
+              "text": "Beadle",
+              "labelId": "EVENT_COUNTY",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventCounty"
+        },
+        {
+          "values": [
+            {
+              "text": "Beadle",
+              "labelId": "EVENT_COUNTY_ORIG",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventCountyOrig"
+        },
+        {
+          "values": [
+            {
+              "text": "12",
+              "labelId": "EVENT_DISTRICT_ORIG",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventDistrictOrig"
+        },
+        {
+          "values": [
+            {
+              "text": "Country",
+              "labelId": "EVENT_PLACE_LEVEL_1_TYPE",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventPlaceLevel1Type"
+        },
+        {
+          "values": [
+            {
+              "text": "State",
+              "labelId": "EVENT_PLACE_LEVEL_2_TYPE",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventPlaceLevel2Type"
+        },
+        {
+          "values": [
+            {
+              "text": "County",
+              "labelId": "EVENT_PLACE_LEVEL_3_TYPE",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventPlaceLevel3Type"
+        },
+        {
+          "values": [
+            {
+              "text": "Township",
+              "labelId": "EVENT_PLACE_LEVEL_4_TYPE",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventPlaceLevel4Type"
+        },
+        {
+          "values": [
+            {
+              "text": "South Dakota",
+              "labelId": "EVENT_STATE",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventState"
+        },
+        {
+          "values": [
+            {
+              "text": "South Dakota",
+              "labelId": "EVENT_STATE_ORIG",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventStateOrig"
+        },
+        {
+          "values": [
+            {
+              "text": "Prairie Belle",
+              "labelId": "EVENT_TOWNSHIP",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventTownship"
+        },
+        {
+          "values": [
+            {
+              "text": "Prairie Belle",
+              "labelId": "EVENT_TOWNSHIP_ORIG",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/EventTownshipOrig"
+        },
+        {
+          "values": [
+            {
+              "text": "26774573",
+              "labelId": "EXT_2_PERSON_ID",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/Ext2PersonId"
+        },
+        {
+          "values": [
+            {
+              "text": "Ancestry.com",
+              "labelId": "EXT_2_REPOSITORY_NAME",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/Ext2RepositoryName"
+        },
+        {
+          "values": [
+            {
+              "text": "296",
+              "labelId": "FOLDER_IMAGE_SEQ",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/FolderImageSeq"
+        },
+        {
+          "values": [
+            {
+              "text": "004449624",
+              "labelId": "FOLDER",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/Folder"
+        },
+        {
+          "values": [
+            {
+              "text": "597260",
+              "labelId": "FS_BATCH_ID",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/FsBatchId"
+        },
+        {
+          "values": [
+            {
+              "text": "South Dakota, United States",
+              "labelId": "FS_BATCH_LOCALITY",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/FsBatchLocality"
+        },
+        {
+          "values": [
+            {
+              "text": "1727033",
+              "labelId": "FS_COLLECTION_ID",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/FsCollectionId"
+        },
+        {
+          "values": [
+            {
+              "text": "004449624_00296",
+              "labelId": "FS_EASY_IMAGE_ID",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/FsEasyImageId"
+        },
+        {
+          "values": [
+            {
+              "text": "A",
+              "labelId": "FS_PACKET_LTR",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/FsPacketLtr"
+        },
+        {
+          "values": [
+            {
+              "text": "09-0391",
+              "labelId": "FS_PPQ_ID",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/FsPpqId"
+        },
+        {
+          "values": [
+            {
+              "text": "004449624_00296_0",
+              "labelId": "FS_RECORD_ID",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/FsRecordId"
+        },
+        {
+          "values": [
+            {
+              "text": "13678",
+              "labelId": "FS_RECORD_NBR",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/FsRecordNbr"
+        },
+        {
+          "values": [
+            {
+              "text": "N03488-7",
+              "labelId": "FS_UDE_BATCH_NBR",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/FsUdeBatchNbr"
+        },
+        {
+          "values": [
+            {
+              "text": "TH-266-12351-61555-51",
+              "labelId": "IMAGE_APID",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/ImageApid"
+        },
+        {
+          "values": [
+            {
+              "text": "https://familysearch.org/ark:/61903/3:1:S3HT-6LLS-H8R",
+              "labelId": "IMAGE_ARK",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/ImageArk"
+        },
+        {
+          "values": [
+            {
+              "text": "American",
+              "labelId": "PR_ETHNICITY_CSS",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/PrEthnicityCss"
+        },
+        {
+          "values": [
+            {
+              "text": "White",
+              "labelId": "PR_RACE_OR_COLOR_CSS",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/PrRaceOrColorCss"
+        },
+        {
+          "values": [
+            {
+              "text": "Boarder",
+              "labelId": "PR_RELATIONSHIP_TO_HEAD_CSS",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/PrRelationshipToHeadCss"
+        },
+        {
+          "values": [
+            {
+              "text": "South Dakota",
+              "labelId": "RECORD_GROUP",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/RecordGroup"
+        },
+        {
+          "values": [
+            {
+              "text": "000000000_004449624_00296_000_001046930062",
+              "labelId": "SORT_KEY",
+              "type": "http://gedcomx.org/Interpreted"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/SortKey"
+        },
+        {
+          "values": [
+            {
+              "text": "B",
+              "labelId": "SOURCE_SHEET_LTR",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/SourceSheetLtr"
+        },
+        {
+          "values": [
+            {
+              "text": "4",
+              "labelId": "SOURCE_SHEET_NBR",
+              "type": "http://gedcomx.org/Original"
+            }
+          ],
+          "type": "http://familysearch.org/types/fields/SourceSheetNbr"
+        }
+      ],
+      "id": "p_570564312",
+      "links": {
+        "persona": {
+          "href": "https://familysearch.org/platform/records/personas/MPXD-MZD"
+        },
+        "record": {
+          "href": "https://familysearch.org/platform/records/records/9JX9-6LD"
+        }
+      },
+      "extracted": true,
+      "identifiers": {
+        "$": [
+          "https://familysearch.org/platform/externalId/easy/1046930062"
+        ],
+        "http://gedcomx.org/Persistent": [
+          "https://familysearch.org/ark:/61903/1:1:MPXD-MZD"
+        ]
+      },
+      "principal": true,
+      "gender": {
+        "fields": [
+          {
+            "values": [
+              {
+                "resource": "http://gedcomx.org/Unknown",
+                "text": "Male",
+                "labelId": "PR_SEX_CODE_ORIG",
+                "type": "http://gedcomx.org/Original"
+              },
+              {
+                "resource": "http://gedcomx.org/Male",
+                "text": "Male",
+                "labelId": "PR_SEX_CODE",
+                "type": "http://gedcomx.org/Interpreted"
+              }
+            ],
+            "type": "http://gedcomx.org/Gender"
+          }
+        ],
+        "type": "http://gedcomx.org/Male"
+      },
+      "names": [
+        {
+          "nameForms": [
+            {
+              "fields": [
+                {
+                  "values": [
+                    {
+                      "text": "Selvin/Christianson",
+                      "labelId": "PR_NAME_ORIG",
+                      "type": "http://gedcomx.org/Original"
+                    },
+                    {
+                      "text": "Selvin Christianson",
+                      "labelId": "PR_NAME",
+                      "type": "http://gedcomx.org/Interpreted"
+                    }
+                  ],
+                  "type": "http://gedcomx.org/Name"
+                }
+              ],
+              "parts": [
+                {
+                  "fields": [
+                    {
+                      "values": [
+                        {
+                          "text": "Selvin",
+                          "labelId": "PR_NAME_GN_ORIG",
+                          "type": "http://gedcomx.org/Original"
+                        },
+                        {
+                          "text": "Selvin",
+                          "labelId": "PR_NAME_GN",
+                          "type": "http://gedcomx.org/Interpreted"
+                        }
+                      ],
+                      "type": "http://gedcomx.org/Given"
+                    }
+                  ],
+                  "value": "Selvin",
+                  "type": "http://gedcomx.org/Given"
+                },
+                {
+                  "fields": [
+                    {
+                      "values": [
+                        {
+                          "text": "Christianson",
+                          "labelId": "PR_NAME_SURN_ORIG",
+                          "type": "http://gedcomx.org/Original"
+                        },
+                        {
+                          "text": "Christianson",
+                          "labelId": "PR_NAME_SURN",
+                          "type": "http://gedcomx.org/Interpreted"
+                        }
+                      ],
+                      "type": "http://gedcomx.org/Surname"
+                    }
+                  ],
+                  "value": "Christianson",
+                  "type": "http://gedcomx.org/Surname"
+                }
+              ],
+              "fullText": "Selvin Christianson"
+            }
+          ],
+          "type": "http://gedcomx.org/BirthName"
+        }
+      ],
+      "facts": [
+        {
+          "fields": [
+            {
+              "values": [
+                {
+                  "text": "Single",
+                  "labelId": "PR_MARITAL_STATUS_ORIG",
+                  "type": "http://gedcomx.org/Original"
+                },
+                {
+                  "text": "Single",
+                  "labelId": "PR_MARITAL_STATUS",
+                  "type": "http://gedcomx.org/Interpreted"
+                }
+              ],
+              "type": "http://gedcomx.org/MaritalStatus"
+            }
+          ],
+          "value": "Single",
+          "type": "http://gedcomx.org/MaritalStatus"
+        },
+        {
+          "primary": true,
+          "place": {
+            "fields": [
+              {
+                "values": [
+                  {
+                    "text": "Prairie Belle, Beadle, South Dakota, United States",
+                    "labelId": "EVENT_PLACE_ORIG",
+                    "type": "http://gedcomx.org/Original"
+                  },
+                  {
+                    "text": "Prairie Belle, Beadle, South Dakota, United States",
+                    "labelId": "EVENT_PLACE",
+                    "type": "http://gedcomx.org/Interpreted"
+                  }
+                ],
+                "type": "http://gedcomx.org/Place"
+              },
+              {
+                "values": [
+                  {
+                    "text": "Prairie Belle",
+                    "labelId": "EVENT_PLACE_LEVEL_4_ORIG",
+                    "type": "http://gedcomx.org/Original"
+                  },
+                  {
+                    "text": "Prairie Belle",
+                    "labelId": "EVENT_PLACE_LEVEL_4",
+                    "type": "http://gedcomx.org/Interpreted"
+                  }
+                ],
+                "type": "http://gedcomx.org/Township"
+              },
+              {
+                "values": [
+                  {
+                    "text": "Beadle",
+                    "labelId": "EVENT_PLACE_LEVEL_3_ORIG",
+                    "type": "http://gedcomx.org/Original"
+                  },
+                  {
+                    "text": "Beadle",
+                    "labelId": "EVENT_PLACE_LEVEL_3",
+                    "type": "http://gedcomx.org/Interpreted"
+                  }
+                ],
+                "type": "http://gedcomx.org/County"
+              },
+              {
+                "values": [
+                  {
+                    "text": "South Dakota",
+                    "labelId": "EVENT_PLACE_LEVEL_2",
+                    "type": "http://gedcomx.org/Interpreted"
+                  }
+                ],
+                "type": "http://gedcomx.org/State"
+              },
+              {
+                "values": [
+                  {
+                    "text": "United States",
+                    "labelId": "EVENT_PLACE_LEVEL_1",
+                    "type": "http://gedcomx.org/Interpreted"
+                  }
+                ],
+                "type": "http://gedcomx.org/Country"
+              }
+            ],
+            "original": "Prairie Belle, Beadle, South Dakota, United States"
+          },
+          "date": {
+            "fields": [
+              {
+                "values": [
+                  {
+                    "text": "1910",
+                    "labelId": "EVENT_DATE",
+                    "type": "http://gedcomx.org/Interpreted"
+                  }
+                ],
+                "type": "http://gedcomx.org/Date"
+              },
+              {
+                "values": [
+                  {
+                    "text": "1910",
+                    "labelId": "EVENT_YEAR",
+                    "type": "http://gedcomx.org/Interpreted"
+                  }
+                ],
+                "type": "http://gedcomx.org/Year"
+              }
+            ],
+            "original": "1910"
+          },
+          "type": "http://gedcomx.org/Census"
+        },
+        {
+          "place": {
+            "fields": [
+              {
+                "values": [
+                  {
+                    "text": "Iowa",
+                    "labelId": "PR_BIRTH_PLACE",
+                    "type": "http://gedcomx.org/Interpreted"
+                  }
+                ],
+                "type": "http://gedcomx.org/Place"
+              }
+            ],
+            "original": "Iowa"
+          },
+          "date": {
+            "fields": [
+              {
+                "values": [
+                  {
+                    "text": "1884",
+                    "labelId": "PR_BIRTH_YEAR_ESTIMATED",
+                    "type": "http://gedcomx.org/Interpreted"
+                  }
+                ],
+                "type": "http://gedcomx.org/Year"
+              }
+            ],
+            "original": "1884"
+          },
+          "type": "http://gedcomx.org/Birth"
+        }
+      ]
+    }
+  ],
+  "id": "r_1153479342"
+}
