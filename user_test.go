@@ -22,3 +22,28 @@ func TestGetCurrentUser(t *testing.T) {
 		So(user, ShouldResemble, want)
 	})
 }
+
+func TestGetAgent(t *testing.T) {
+	testSetup()
+	defer testTeardown()
+
+	Convey("GetAgent", t, func() {
+		testRespond(t, "GET", "/platform/users/agents/12345", nil, "")
+		agent, err := testClient().GetAgent("12345")
+		So(err, ShouldBeNil)
+		want := &Agent{
+			ID: "12345",
+			Names: []*AgentName{&AgentName{
+				Value: "John Smith",
+				Type:  "http://familysearch.org/v1//DisplayName",
+			}},
+			Accounts: []*AgentAccount{&AgentAccount{
+				AccountName: "account",
+			}},
+			Emails: []*AgentEmail{&AgentEmail{
+				Resource: "mailto:someone@somewhere.org",
+			}},
+		}
+		So(agent, ShouldResemble, want)
+	})
+}
