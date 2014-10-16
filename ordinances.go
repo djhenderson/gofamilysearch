@@ -6,7 +6,7 @@ func (c *Client) GetOrdinanceAccess() (bool, error) {
 	if err != nil {
 		return false, err
 	}
-	res, err := c.doHTTPRequest("GET", u, map[string]string{"Accept": "application/x-fs-v1+json"})
+	res, err := c.HTTP("GET", u, map[string]string{"Accept": "application/x-fs-v1+json"})
 	if err != nil {
 		return false, err
 	}

@@ -3,6 +3,7 @@ package gofamilysearch
 import (
 	. "github.com/smartystreets/goconvey/convey"
 	"testing"
+	"net/http"
 )
 
 func TestGetPersonWithRelationships(t *testing.T) {
@@ -27,5 +28,36 @@ func TestGetPersonWithRelationships(t *testing.T) {
 			ShouldEqual, "Christian Ludvic Jensen")
 		So(len(pwr.GetSpouseRelationships()), ShouldBeGreaterThan, 0)
 		So(pwr.GetSpouseRelationships()[0].Person2.ResourceID, ShouldEqual, "KW7S-JB7")
+	})
+}
+
+func TestGetPersonPortraitURL(t *testing.T) {
+	testSetup()
+	defer testTeardown()
+
+	Convey("GetPersonPortraitURL", t, func() {
+		testMux.HandleFunc("/platform/tree/persons/123/portrait", func(w http.ResponseWriter, r *http.Request) {
+			testMethod(t, r, "GET")
+			w.Header().Set("Location", "http://familysearch.org/pic.jpg")
+			w.WriteHeader(307)
+		})
+		url, err := testClient().GetPersonPortraitURL("123")
+		So(err, ShouldBeNil)
+		So(url, ShouldEqual, "http://familysearch.org/pic.jpg")
+	})
+}
+
+func TestGetPersonPortraitURLNotFound(t *testing.T) {
+	testSetup()
+	defer testTeardown()
+
+	Convey("GetOrdinanceAccessForbidden", t, func() {
+		testMux.HandleFunc("/platform/tree/persons/123/portrait", func(w http.ResponseWriter, r *http.Request) {
+			testMethod(t, r, "GET")
+			w.WriteHeader(204)
+		})
+		url, err := testClient().GetPersonPortraitURL("123")
+		So(err, ShouldBeNil)
+		So(url, ShouldEqual, "")
 	})
 }

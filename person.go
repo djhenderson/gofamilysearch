@@ -1,5 +1,7 @@
 package gofamilysearch
 
+import "fmt"
+
 // PersonWithRelationships is the GetPersonWithRelationships response
 type PersonWithRelationships struct {
 	Persons                      []*Person                      `json:"persons"`
@@ -143,4 +145,25 @@ func (c *Client) GetPersonWithRelationships(pid string) (*PersonWithRelationship
 	personWithRelationships := &PersonWithRelationships{}
 	err = c.Get(u, map[string]string{"person": pid, "persons": "true"}, nil, personWithRelationships)
 	return personWithRelationships, err
+}
+
+
+// GetPersonPortraitURL returns the URL of the person portrait or the empty string
+func (c *Client) GetPersonPortraitURL(pid string) (string, error) {
+	u, err := c.GetURL("person-portrait-template", map[string]string{"pid": pid})
+	if err != nil {
+		return "", err
+	}
+	res, err := c.HTTP("GET", u, nil)
+	if err != nil {
+		return "", err
+	}
+	defer res.Body.Close()
+
+	if res.StatusCode >= 200 && res.StatusCode <= 299 {
+		return "", nil
+	} else if res.StatusCode >= 300 && res.StatusCode <= 399 {
+		return res.Header.Get("Location"), nil
+	}
+	return "", fmt.Errorf("Status code %d", res.StatusCode)
 }

@@ -38,38 +38,28 @@ func (c *Client) GetURL(key string, params map[string]string) (*url.URL, error) 
 // Get fetches the contents of the URL into the target
 func (c *Client) Get(u *url.URL, params map[string]string, headers map[string]string, target interface{}) error {
 	appendQueryParameters(u, params)
-	body, err := c.HTTP("GET", u, extend(map[string]string{"Accept": "application/x-fs-v1+json"}, headers))
+	res, err := c.HTTP("GET", u, extend(map[string]string{"Accept": "application/x-fs-v1+json"}, headers))
 	if err != nil {
 		return err
+	}
+	defer res.Body.Close()
+
+	if res.StatusCode < 200 || res.StatusCode > 299 {
+		return fmt.Errorf("Status code %d", res.StatusCode)
+	}
+
+	body, err := ioutil.ReadAll(res.Body)
+	if err != nil {
+		return err
+	}
+	if len(body) == 0 { // an empty response shouldn't return an error; leave target as-is
+		return nil
 	}
 	return json.Unmarshal(body, target)
 }
 
-// HTTP is the low-level call
-func (c *Client) HTTP(method string, u *url.URL, headers map[string]string) ([]byte, error) {
-	retries := 3
-	for {
-		res, err := c.doHTTPRequest(method, u, headers)
-		if err != nil {
-			return nil, err
-		}
-		defer res.Body.Close()
-
-		if res.StatusCode >= 200 && res.StatusCode <= 299 {
-			return ioutil.ReadAll(res.Body)
-		} else if res.StatusCode >= 300 && res.StatusCode <= 399 {
-			return []byte(res.Header.Get("Location")), nil
-		} else if res.StatusCode == 429 { // throttling response
-			time.Sleep(500)
-		} else if res.StatusCode >= 500 && method == "GET" && retries > 0 { // possibly-transient error
-			retries--
-		} else { // error
-			return nil, fmt.Errorf("Status code %d", res.StatusCode)
-		}
-	}
-}
-
-func (c *Client) doHTTPRequest(method string, u *url.URL, headers map[string]string) (*http.Response, error) {
+// It is the caller's responsibility to close the response body
+func (c *Client) HTTP(method string, u *url.URL, headers map[string]string) (*http.Response, error) {
 	if c.AccessToken != "" {
 		headers = extend(map[string]string{"Authorization": "Bearer " + c.AccessToken}, headers)
 	}
@@ -80,7 +70,24 @@ func (c *Client) doHTTPRequest(method string, u *url.URL, headers map[string]str
 	for key, value := range headers {
 		req.Header.Set(key, value)
 	}
-	return c.HTTPClient.Do(req)
+
+	retries := 3
+	for {
+	 	// Must use the low-level Transport call here instead of Client
+ 		// because FS likes to use redirect statuses and we don't want to follow redirects automatically
+		res, err := c.Transport.RoundTrip(req)
+		if err != nil {
+			return nil, err
+		}
+
+		if res.StatusCode == 429 { // throttling response; wait for awhile and try again
+			time.Sleep(500)
+		} else if res.StatusCode >= 500 && method == "GET" && retries > 0 { // possibly-transient error
+			retries--
+		} else {
+		    return res, nil
+		}
+	}
 }
 
 func (c *Client) getTemplate(key string) (string, error) {

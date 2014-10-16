@@ -34,7 +34,7 @@ Here's how you might use the SDK
          c := &gofamilysearch.Client{
             Context: ctx,
             AccessToken: "access token for the requesting user goes here",
-            HTTPClient: &http.Client{}, // pass in client to allow running normally or on appengine
+            Transport: DefaultTransport, // pass in transport to allow running normally or on appengine
          }
       
          user, err := c.GetCurrentUser()
