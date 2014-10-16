@@ -14,6 +14,14 @@ type discussionResponse struct {
 	Discussions []*Discussion `json:"discussions"`
 }
 
+type commentsResponse struct {
+	Discussions []*commentContainer `json:"discussions"`
+}
+
+type commentContainer struct {
+	Comments []*Comment `json:"comments"`
+}
+
 // Discussion contains information about a discussion
 type Discussion struct {
 	ID               string      `json:"id"`
@@ -36,6 +44,14 @@ type DiscussionRef struct {
 	Modified         int         `json:"modified"`
 	NumberOfComments int         `json:"numberOfComments"`
 	Contributor      ResourceRef `json:"contributor"`
+}
+
+// Comment contains information about a comment
+type Comment struct {
+	ID          string      `json:"id"`
+	Text        string      `json:"text"`
+	Created     int         `json:"created"`
+	Contributor ResourceRef `json:"contributor"`
 }
 
 // GetPersonDiscussionRefs https://familysearch.org/developers/docs/api/tree/Person_Discussion_References_resource
