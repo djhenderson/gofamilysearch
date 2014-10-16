@@ -131,9 +131,9 @@ type HistoricalRecordFieldValue struct {
 // RecordCollection describes a collection of (historical) records
 type RecordCollection struct {
 	SourceDescriptions []*RecordCollectionSourceDescription `json:"sourceDescriptions"`
-	Collections []*RecordCollectionCollection `json:"collections"`
-	RecordDescriptors []*RecordCollectionRecordDescriptor `json:"recordDescriptors"`
-	Description string `json:"description"`
+	Collections        []*RecordCollectionCollection        `json:"collections"`
+	RecordDescriptors  []*RecordCollectionRecordDescriptor  `json:"recordDescriptors"`
+	Description        string                               `json:"description"`
 }
 
 // RecordCollectionSourceDescription contains a SourceDescription for a collection
@@ -144,38 +144,43 @@ type RecordCollectionSourceDescription struct {
 	ComponentOf  FSDescription               `json:"componentOf"`
 	Titles       []*FSValue                  `json:"titles"`
 	ResourceType string                      `json:"resourceType"`
-	Rights		 []string					 `json:"rights"`
-	Descriptions []*FSValue					 `json:"descriptions"`
+	Rights       []string                    `json:"rights"`
+	Descriptions []*FSValue                  `json:"descriptions"`
 	Identifiers  map[string][]string         `json:"identifiers"`
 	Coverage     []*HistoricalRecordCoverage `json:"coverage"`
 }
 
+// RecordCollectionCollection contains information about the collection
 type RecordCollectionCollection struct {
-	Lang string `json:"lang"`
+	Lang    string                     `json:"lang"`
 	Content []*RecordCollectionContent `json:"content"`
-	Title string `json:"title"`
-	Size int `json:"size"`
+	Title   string                     `json:"title"`
+	Size    int                        `json:"size"`
 }
 
+// RecordCollectionContent contains information about the collection type and extent
 type RecordCollectionContent struct {
-	ResourceType string `json:"resourceType"`
-	Count int `json:"count"`
+	ResourceType string  `json:"resourceType"`
+	Count        int     `json:"count"`
 	Completeness float32 `json:"completeness"`
 }
 
+// RecordCollectionRecordDescriptor contains information for displaying record collection fields
 type RecordCollectionRecordDescriptor struct {
-	ID string `json:"id"`
+	ID     string                   `json:"id"`
 	Fields []*RecordCollectionField `json:"fields"`
 }
 
+// RecordCollectionField contains a list of values
 type RecordCollectionField struct {
 	Values []*RecordCollectionFieldValue `json:"values"`
 }
 
+// RecordCollectionFieldValue contains language-specific labels for the field
 type RecordCollectionFieldValue struct {
-	LabelID string `json:"labelId"`
-	Type string `json:"type"`
-	Labels []*FSValue `json:"labels"`
+	LabelID string     `json:"labelId"`
+	Type    string     `json:"type"`
+	Labels  []*FSValue `json:"labels"`
 }
 
 // GetHistoricalRecord reads the historical record with the specified id

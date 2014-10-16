@@ -328,8 +328,8 @@ func TestGetRecordCollection(t *testing.T) {
 		So(err, ShouldBeNil)
 
 		wantSourceDescription := &RecordCollectionSourceDescription{
-			ID:           "1727033",
-			About:        "https://familysearch.org/platform/records/collections/1727033",
+			ID:    "1727033",
+			About: "https://familysearch.org/platform/records/collections/1727033",
 			Citations: []*FSValue{&FSValue{
 				Value: "\"United States Census, 1910.\" Index and images. <i>FamilySearch</i>. http://FamilySearch.org : accessed 2014. Citing NARA microfilm publication T624. Washington, D.C.: National Archives and Records Administration, n.d.",
 			}},
@@ -344,7 +344,7 @@ func TestGetRecordCollection(t *testing.T) {
 			},
 			Descriptions: []*FSValue{&FSValue{
 				Value: "Index to the 1910 population census schedules. Indexing is currently in progress and will include the entire census comprising 48 states, two territories (Arizona and New Mexico), Puerto Rico, and Military and Naval (in Philippines, Hospitals, Ships, and Stations). The index is being created by FamilySearch and Ancestry.com.",
-				Lang: "en_US",
+				Lang:  "en_US",
 			}},
 			Identifiers: map[string][]string{
 				"http://gedcomx.org/Primary": []string{"https://familysearch.org/platform/records/collections/1727033"},
@@ -363,26 +363,26 @@ func TestGetRecordCollection(t *testing.T) {
 			Content: []*RecordCollectionContent{
 				&RecordCollectionContent{
 					ResourceType: "http://gedcomx.org/Record",
-					Count: 93682083,
+					Count:        93682083,
 					Completeness: 0.98,
 				},
 				&RecordCollectionContent{
 					ResourceType: "http://gedcomx.org/Person",
-					Count: 93682083,
+					Count:        93682083,
 					Completeness: 0.98,
 				},
 				&RecordCollectionContent{
 					ResourceType: "http://gedcomx.org/DigitalArtifact",
-					Count: 2068253,
+					Count:        2068253,
 					Completeness: 0,
 				},
 			},
 			Title: "United States Census, 1910",
-			Size: 95750336,
+			Size:  95750336,
 		}
 
 		wantLabel := &FSValue{
-			Lang: "en_US",
+			Lang:  "en_US",
 			Value: "Name",
 		}
 
