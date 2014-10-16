@@ -1,0 +1,28 @@
+{
+  "sourceDescriptions" : [ {
+    "id" : "SD-LDSO",
+    "about" : "#LDSO",
+    "componentOf" : {
+      "description" : "https://familysearch.org/platform/collection"
+    },
+    "titles" : [ {
+      "value" : "LDS Ordinances"
+    } ]
+  } ],
+  "collections" : [ {
+    "id" : "LDSO",
+    "links" : {
+      "http://oauth.net/core/2.0/endpoint/token" : {
+        "href" : "https://familysearch.org/platform/oauth2/v3/token"
+      },
+      "http://oauth.net/core/2.0/endpoint/authorize" : {
+        "href" : "https://familysearch.org/platform/oauth2/v3/authorization"
+      },
+      "current-user" : {
+        "href" : "https://familysearch.org/platform/users/current"
+      }
+    },
+    "title" : "LDS Ordinances"
+  } ],
+  "description" : "#SD-LDSO"
+}

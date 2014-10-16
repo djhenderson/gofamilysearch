@@ -47,19 +47,9 @@ func (c *Client) Get(u *url.URL, params map[string]string, headers map[string]st
 
 // HTTP is the low-level call
 func (c *Client) HTTP(method string, u *url.URL, headers map[string]string) ([]byte, error) {
-	if c.AccessToken != "" {
-		headers = extend(map[string]string{"Authorization": "Bearer " + c.AccessToken}, headers)
-	}
-	req, err := http.NewRequest(method, u.String(), nil)
-	if err != nil {
-		return nil, err
-	}
-	for key, value := range headers {
-		req.Header.Set(key, value)
-	}
 	retries := 3
 	for {
-		res, err := c.HTTPClient.Do(req)
+		res, err := c.doHTTPRequest(method, u, headers)
 		if err != nil {
 			return nil, err
 		}
@@ -77,6 +67,20 @@ func (c *Client) HTTP(method string, u *url.URL, headers map[string]string) ([]b
 			return nil, fmt.Errorf("Status code %d", res.StatusCode)
 		}
 	}
+}
+
+func (c *Client) doHTTPRequest(method string, u *url.URL, headers map[string]string) (*http.Response, error) {
+	if c.AccessToken != "" {
+		headers = extend(map[string]string{"Authorization": "Bearer " + c.AccessToken}, headers)
+	}
+	req, err := http.NewRequest(method, u.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+	for key, value := range headers {
+		req.Header.Set(key, value)
+	}
+	return c.HTTPClient.Do(req)
 }
 
 func (c *Client) getTemplate(key string) (string, error) {
