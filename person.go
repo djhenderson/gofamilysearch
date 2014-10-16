@@ -1,6 +1,9 @@
 package gofamilysearch
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 // PersonWithRelationships is the GetPersonWithRelationships response
 type PersonWithRelationships struct {
@@ -164,6 +167,28 @@ func (c *Client) GetPersonPortraitURL(pid string) (string, error) {
 		return "", nil
 	} else if res.StatusCode >= 300 && res.StatusCode <= 399 {
 		return res.Header.Get("Location"), nil
+	}
+	return "", fmt.Errorf("Status code %d", res.StatusCode)
+}
+
+// GetPreferredParentsURL returns the ID of the preferred parent relationship for the specified user.TreeUserID and personID
+// or the empty string if no parents are preferred
+func (c *Client) GetPreferredParentsID(tuid, pid string) (string, error) {
+	u, err := c.GetURL("preferred-parent-relationship-template", map[string]string{"uid": tuid, "pid": pid})
+	if err != nil {
+		return "", err
+	}
+	res, err := c.HTTP("GET", u, nil)
+	if err != nil {
+		return "", err
+	}
+	defer res.Body.Close()
+
+	if res.StatusCode >= 200 && res.StatusCode <= 299 {
+		return "", nil
+	} else if res.StatusCode >= 300 && res.StatusCode <= 399 {
+		url := strings.Split(res.Header.Get("Location"), "?")[0] // remove query if any
+		return url[strings.LastIndex(url,"/")+1:] , nil
 	}
 	return "", fmt.Errorf("Status code %d", res.StatusCode)
 }

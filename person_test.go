@@ -61,3 +61,34 @@ func TestGetPersonPortraitURLNotFound(t *testing.T) {
 		So(url, ShouldEqual, "")
 	})
 }
+
+func TestGetPreferredParentsID(t *testing.T) {
+	testSetup()
+	defer testTeardown()
+
+	Convey("GetGetPreferredParentsID", t, func() {
+		testMux.HandleFunc("/platform/tree/users/PXRQ-FMXT/preferred-parent-relationships/PPPJ-MYY", func(w http.ResponseWriter, r *http.Request) {
+			testMethod(t, r, "GET")
+			w.Header().Set("Location", "https://familysearch.org/platform/tree/child-and-parents-relationships/23456")
+			w.WriteHeader(303)
+		})
+		id, err := testClient().GetPreferredParentsID("PXRQ-FMXT", "PPPJ-MYY")
+		So(err, ShouldBeNil)
+		So(id, ShouldEqual, "23456")
+	})
+}
+
+func TestGetPreferredParentsIDNone(t *testing.T) {
+	testSetup()
+	defer testTeardown()
+
+	Convey("GetGetPreferredParentsIDNone", t, func() {
+		testMux.HandleFunc("/platform/tree/users/PXRQ-FMXT/preferred-parent-relationships/PPPJ-MYY", func(w http.ResponseWriter, r *http.Request) {
+			testMethod(t, r, "GET")
+			w.WriteHeader(204)
+		})
+		id, err := testClient().GetPreferredParentsID("PXRQ-FMXT", "PPPJ-MYY")
+		So(err, ShouldBeNil)
+		So(id, ShouldEqual, "")
+	})
+}
