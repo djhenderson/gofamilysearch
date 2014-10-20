@@ -13,6 +13,7 @@ import (
 
 var apiServer = map[string]string{
 	"sandbox": "https://sandbox.familysearch.org",
+        "beta": "https://beta.familysearch.org",
 }
 
 var urlTemplateRegexp = regexp.MustCompile("[{}]")
